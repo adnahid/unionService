@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/black"
+        android:background="#ffffff"
+        app:navigationIcon="@layout/baseline_menu_24"
+        app:title="কোম্পানীগঞ্জ ইউপি সার্ভিস"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/contentCardView"
+        android:layout_below="@+id/materialToolbar"
+        android:background="#ffffff"
+        >
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/contentCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:elevation="5dp"
+        android:backgroundTint="#E7DDFF"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="#000"
+        android:background="#E7DDFF"
+
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabsItem1st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="হোম"
+            android:icon="@drawable/exit"
+            android:padding="8dp"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabsItem2nd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="জরুরী"
+            android:icon="@drawable/exit"
+            android:padding="8dp"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabsItem3rd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bangla"
+            android:icon="@drawable/exit"
+            android:padding="8dp"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabsItem4th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ইউনিয়ন"
+            android:icon="@drawable/exit"
+            android:padding="8dp"
+            />
+
+    </com.google.android.material.tabs.TabLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

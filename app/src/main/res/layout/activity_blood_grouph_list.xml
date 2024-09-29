@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="HealthPackage.BloodGrouphList"
+    android:background="#ffffff"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:title="Blood page"
+        app:titleTextColor="@color/white"
+        android:background="#009688"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="#ffffff"
+        android:padding="10dp"
+        tools:ignore="ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+<!--            <com.google.android.material.tabs.TabLayout-->
+<!--                android:id="@+id/BloodTabLayout"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                >-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:id="@+id/bloodAPos"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout="@layout/ab_pos_item"-->
+<!--                    />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:id="@+id/bloodANeg"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout="@layout/a_neg_item"-->
+<!--                    />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:id="@+id/bloodBPos"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout="@layout/b_pos_item"-->
+<!--                    />-->
+
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:id="@+id/bloodBNeg"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout="@layout/b_neg_item"-->
+<!--                    />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:id="@+id/bloodOPos"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout="@layout/o_pos_item"-->
+<!--                    />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:id="@+id/bloodONeg"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout="@layout/o_neg_item"-->
+<!--                    />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:id="@+id/bloodAbPos"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout="@layout/ab_pos_item"-->
+<!--                    />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:id="@+id/bloodAbNeg"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout="@layout/ab_neg_item"-->
+<!--                    />-->
+<!--            </com.google.android.material.tabs.TabLayout>-->
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aPositive"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#F44336"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/aPos"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aNagitive"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#F44336"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/aNeg"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bPositive"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#F44336"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/bPos"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bNegitive"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#F44336"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/bNeg"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/oPositive"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#F44336"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/oPos"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/oNegitive"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#F44336"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/oNeg"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/abPositive"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#F44336"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/AbPos"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/abNagitive"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#F44336"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/AbNeg"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/BloodViewPager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/horizontalScrollView"-->
+<!--        android:background="#ffffff"-->
+<!--        >-->
+<!--    </androidx.viewpager.widget.ViewPager>-->
+
+
+    <FrameLayout
+        android:id="@+id/bloodFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalScrollView"
+        >
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/abPositiveRecyclerView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+
+<!--        </androidx.recyclerview.widget.RecyclerView>-->
+
+
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ItemLayout.DetailsUnion"
+    android:background="#009688"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:title="Institute Details"
+        app:titleTextColor="#ffffff"
+        android:background="#009688"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/desFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="কোম্পানীগঞ্জ উপজেলা বাংলাদেশের নোয়াখালী জেলার অন্তর্গত একটি প্রশাসনিক এলাকা।"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:background="#2F4F4F"
+                android:layout_marginTop="1dp"
+                />
+
+
+            <TextView
+                android:id="@+id/sizeTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:text="আয়তনঃ"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:background="#96000000"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/sizeDesTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:text=""
+                android:background="#2F4F4F"
+                android:layout_marginTop="1dp"
+                />
+
+            <TextView
+                android:id="@+id/peopleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="জনসংখ্যাঃ"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:background="#96000000"
+                />
+
+            <TextView
+                android:id="@+id/peopleDesTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:text=""
+                android:background="#2F4F4F"
+                android:layout_marginTop="1dp"
+                />
+
+            <TextView
+                android:id="@+id/stayTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="অবস্থান ও সীমানাঃ"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:background="#96000000"
+                />
+
+            <TextView
+                android:id="@+id/stayDesTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:background="#2F4F4F"
+                android:layout_marginTop="1dp"
+                />
+
+            <TextView
+                android:id="@+id/administrativeTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="প্রশাসনিক কাঠামোঃ"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:background="#96000000"
+                />
+
+
+            <TextView
+                android:id="@+id/administrativeDesTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:text=""
+                android:background="#2F4F4F"
+                />
+
+            <TextView
+                android:id="@+id/studiesTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="শিক্ষা ব্যবস্থাঃ"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:background="#96000000"
+                />
+
+
+            <TextView
+                android:id="@+id/studiesDesTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:background="#2F4F4F"
+                android:layout_marginTop="1dp"
+                />
+
+            <TextView
+                android:id="@+id/educationalInstitutionsTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="শিক্ষা প্রতিষ্ঠানঃ"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:background="#96000000"
+                />
+
+
+            <TextView
+                android:id="@+id/educationalInstitutionsDesTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:text=""
+                android:background="#2F4F4F"
+                />
+
+            <TextView
+                android:id="@+id/communicationTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="যোগাযোগ ব্যবস্থাঃ"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:background="#96000000"
+                />
+
+
+
+            <TextView
+                android:id="@+id/communicationDesTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:text=""
+                android:background="#2F4F4F"
+                android:layout_marginTop="1dp"
+                />
+
+            <TextView
+                android:id="@+id/riverTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="খাল ও নদীঃ"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:background="#96000000"
+                />
+
+            <TextView
+                android:id="@+id/riverListTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="খাল ও নদীর তালিকাঃ"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:background="#96000000"
+                android:layout_marginTop="1dp"
+                />
+
+
+            <TextView
+                android:id="@+id/riverDesTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:text=""
+                android:background="#2F4F4F"
+                android:layout_marginTop="1dp"
+                />
+
+            <TextView
+                android:id="@+id/bazerTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="হাট-বাজারঃ"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                android:background="#96000000"
+                />
+
+
+            <TextView
+                android:id="@+id/bazerListTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:text="হাট-বাজারের তালিকাঃ"
+                android:background="#96000000"
+                android:padding="5dp"
+                android:layout_marginTop="1dp"
+                />
+
+
+            <TextView
+                android:id="@+id/bazerListDesTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:text=""
+                android:background="#96000000"
+                />
+
+            <TextView
+                android:id="@+id/representativeTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="জনপ্রতিনিধিঃ"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewStart"
+                android:padding="5dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/representativeImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/no_wifi"
+                android:layout_margin="5dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

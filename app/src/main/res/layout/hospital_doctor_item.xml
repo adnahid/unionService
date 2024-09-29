@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hospitalItemCardView"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#ffffff"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="5dp"
+            android:elevation="3dp"
+            android:layout_marginTop="1dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="2dp"
+                    >
+
+                <TextView
+                    android:id="@+id/hospitalName"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    android:text="বসুরহাট সিটি হসপিটাল"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:fontFamily="serif"
+                    />
+
+                    <TextView
+                        android:id="@+id/hospitalDoctorList"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="ডাক্তার সমূহ"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:fontFamily="casual"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/doctor_hospitalImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/hospital"
+                    android:layout_marginStart="2dp"
+                    android:padding="2dp"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>
