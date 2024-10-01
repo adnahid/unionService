@@ -21,6 +21,8 @@
             android:orientation="vertical"
             >
 
+
+
     <LinearLayout
         android:id="@+id/FirstLayout"
         android:layout_width="match_parent"
@@ -125,7 +127,6 @@
     </LinearLayout>
 
 
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -178,12 +179,13 @@
 
 
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:weightSum="3"
+                        android:weightSum="4"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
                         >
 
 
@@ -206,7 +208,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
-                                android:layout_gravity="center"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="4dp"
                                 >
 
                                 <TextView
@@ -216,27 +219,199 @@
                                     android:text="উপজেলা তথ্য"
                                     android:textStyle="bold"
                                     android:textColor="#000000"
+                                    android:layout_marginTop="1dp"
                                     android:layout_gravity="center_horizontal"
                                     android:fontFamily="serif"
                                     />
 
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/doctor"
+                                        android:layout_gravity="center_horizontal"
+                                        android:padding="5dp"
+                                        />
 
+
+
+
+
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/pastTeam"
+                            android:layout_width="0dp"
+                            android:layout_height="90dp"
+                            android:backgroundTint="#ffffff"
+                            android:layout_weight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            app:cardCornerRadius="8dp"
+                            android:layout_margin="1dp"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="4dp"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="8sp"
+                                    android:text="প্রাক্তন পরিষদ"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="serif"
+                                    />
 
                                 <ImageView
-                                    android:layout_width="40dp"
+                                    android:layout_width="30dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
-                                    android:padding="3dp"
+                                    android:padding="5dp"
                                     />
+
+
+
+
+
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/educationOPfficer"
+                            android:layout_width="0dp"
+                            android:layout_height="90dp"
+                            android:backgroundTint="#ffffff"
+                            android:layout_weight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            app:cardCornerRadius="8dp"
+                            android:layout_margin="1dp"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="4dp"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="8sp"
+                                    android:text="শিক্ষা অফিসার"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="serif"
+                                    />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/doctor"
+                                    android:layout_gravity="center_horizontal"
+                                    android:padding="5dp"
+                                    />
+
+
+
+
+
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/animalOfficer"
+                            android:layout_width="0dp"
+                            android:layout_height="90dp"
+                            android:backgroundTint="#ffffff"
+                            android:layout_weight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            app:cardCornerRadius="8dp"
+                            android:layout_margin="1dp"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center_vertical"
+                                android:layout_margin="4dp"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="8sp"
+                                    android:text="প্রাণিসম্পদ কর্মকর্তা"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="serif"
+                                    />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/doctor"
+                                    android:layout_gravity="center_horizontal"
+                                    android:padding="5dp"
+                                    />
+
+
+
+
+
+
+
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
 
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        >
+
+
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/postOffice"
+                            android:id="@+id/farmerOfficer"
                             android:layout_width="0dp"
                             android:layout_height="90dp"
                             android:backgroundTint="#ffffff"
@@ -260,7 +435,54 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textSize="8sp"
-                                    android:text="পোস্ট অফিস"
+                                    android:text="কৃষি অফিসার"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="serif"
+                                    />
+
+
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/doctor"
+                                    android:layout_gravity="center_horizontal"
+                                    android:padding="3dp"
+                                    />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/foodOfficer"
+                            android:layout_width="0dp"
+                            android:layout_height="90dp"
+                            android:backgroundTint="#ffffff"
+                            android:layout_weight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            app:cardCornerRadius="8dp"
+                            android:layout_margin="1dp"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="8sp"
+                                    android:text="খাদ্য নিয়ন্ত্রক"
                                     android:textStyle="bold"
                                     android:textColor="#000000"
                                     android:layout_gravity="center_horizontal"
@@ -281,7 +503,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/poll"
+                            android:id="@+id/subRegister"
                             android:layout_width="0dp"
                             android:layout_height="90dp"
                             android:backgroundTint="#ffffff"
@@ -305,7 +527,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textSize="8sp"
-                                    android:text="পল্লী বিদ্যুৎ"
+                                    android:text="সাব রেজিস্ট্রার"
                                     android:textStyle="bold"
                                     android:textColor="#000000"
                                     android:layout_gravity="center_horizontal"
@@ -340,7 +562,7 @@
 
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/pastTeam"
+                            android:id="@+id/electionOffice"
                             android:layout_width="0dp"
                             android:layout_height="90dp"
                             android:backgroundTint="#ffffff"
@@ -364,7 +586,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textSize="8sp"
-                                    android:text="প্রাক্তন পরিষদ"
+                                    android:text="নির্বাচন অফিসার"
                                     android:textStyle="bold"
                                     android:textColor="#000000"
                                     android:layout_gravity="center_horizontal"
@@ -385,52 +607,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/freedomFiter"
-                            android:layout_width="0dp"
-                            android:layout_height="90dp"
-                            android:backgroundTint="#ffffff"
-                            android:layout_weight="1"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:clickable="true"
-                            android:focusable="true"
-                            app:cardCornerRadius="8dp"
-                            android:layout_margin="1dp"
-                            >
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_gravity="center"
-                                >
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:textSize="7sp"
-                                    android:text="বীর মুক্তিযোদ্ধাদের তালিকা"
-                                    android:textStyle="bold"
-                                    android:textColor="#000000"
-                                    android:layout_gravity="center_horizontal"
-                                    android:fontFamily="serif"
-                                    />
-
-
-
-                                <ImageView
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
-                                    android:src="@drawable/gm"
-                                    android:layout_gravity="center_horizontal"
-                                    android:padding="3dp"
-                                    />
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/fireOfficer"
+                            android:id="@+id/fresherOfficer"
                             android:layout_width="0dp"
                             android:layout_height="90dp"
                             android:backgroundTint="#ffffff"
@@ -454,7 +631,52 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textSize="8sp"
-                                    android:text="ফায়ার সার্ভিস"
+                                    android:text="মৎস্য কর্মকর্তা"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="serif"
+                                    />
+
+
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/gm"
+                                    android:layout_gravity="center_horizontal"
+                                    android:padding="3dp"
+                                    />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/vumiOfficer"
+                            android:layout_width="0dp"
+                            android:layout_height="90dp"
+                            android:backgroundTint="#ffffff"
+                            android:layout_weight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            app:cardCornerRadius="8dp"
+                            android:layout_margin="1dp"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="8sp"
+                                    android:text="ভূমি অফিস"
                                     android:textStyle="bold"
                                     android:textColor="#000000"
                                     android:layout_gravity="center_horizontal"
@@ -1569,6 +1791,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/freedomFiter"
                         android:layout_width="0dp"
                         android:layout_height="90dp"
                         android:backgroundTint="#ffffff"
@@ -1593,7 +1816,143 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="8sp"
-                                android:text="বয়স্ক"
+                                android:text="বীর মুক্তিযোদ্ধাদের"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:layout_marginTop="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="serif"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/doctor"
+                                    android:layout_gravity="center_horizontal"
+                                    android:padding="5dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="তালিকা"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_gravity="center_vertical"
+                                    />
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/postOffice"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:backgroundTint="#ffffff"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="1dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="8sp"
+                                android:text="পোস্ট অফিস"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:layout_marginTop="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="serif"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/doctor"
+                                    android:layout_gravity="center_horizontal"
+                                    android:padding="5dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="তালিকা"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_gravity="center_vertical"
+                                    />
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/poll"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:backgroundTint="#ffffff"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="1dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="8sp"
+                                android:text="পল্লী বিদ্যুৎ"
                                 android:textStyle="bold"
                                 android:textColor="#000000"
                                 android:layout_marginTop="1dp"
@@ -1636,6 +1995,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/fireOfficer"
                         android:layout_width="0dp"
                         android:layout_height="90dp"
                         android:backgroundTint="#ffffff"
@@ -1660,141 +2020,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="8sp"
-                                android:text="বিধবা"
-                                android:textStyle="bold"
-                                android:textColor="#000000"
-                                android:layout_marginTop="1dp"
-                                android:layout_gravity="center_horizontal"
-                                android:fontFamily="serif"
-                                />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:gravity="center"
-                                >
-
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="40dp"
-                                    android:src="@drawable/doctor"
-                                    android:layout_gravity="center_horizontal"
-                                    android:padding="5dp"
-                                    />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:textSize="10sp"
-                                    android:text="ভাতা"
-                                    android:textStyle="bold"
-                                    android:textColor="#000000"
-                                    android:layout_marginTop="1dp"
-                                    android:layout_gravity="center_vertical"
-                                    />
-                            </LinearLayout>
-
-
-
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="90dp"
-                        android:backgroundTint="#ffffff"
-                        android:layout_weight="1"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:focusable="true"
-                        app:cardCornerRadius="8dp"
-                        android:layout_margin="1dp"
-                        >
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="4dp"
-                            >
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="8sp"
-                                android:text="মাতৃত্বকালীন"
-                                android:textStyle="bold"
-                                android:textColor="#000000"
-                                android:layout_marginTop="1dp"
-                                android:layout_gravity="center_horizontal"
-                                android:fontFamily="serif"
-                                />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:gravity="center"
-                                >
-
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="40dp"
-                                    android:src="@drawable/doctor"
-                                    android:layout_gravity="center_horizontal"
-                                    android:padding="5dp"
-                                    />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:textSize="10sp"
-                                    android:text="ভাতা"
-                                    android:textStyle="bold"
-                                    android:textColor="#000000"
-                                    android:layout_marginTop="1dp"
-                                    android:layout_gravity="center_vertical"
-                                    />
-                            </LinearLayout>
-
-
-
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="90dp"
-                        android:backgroundTint="#ffffff"
-                        android:layout_weight="1"
-                        android:foreground="?android:attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:focusable="true"
-                        app:cardCornerRadius="8dp"
-                        android:layout_margin="1dp"
-                        >
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center_vertical"
-                            android:layout_margin="4dp"
-                            >
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="8sp"
-                                android:text="প্রতিবন্ধী"
+                                android:text="ফায়ার সার্ভিস"
                                 android:textStyle="bold"
                                 android:textColor="#000000"
                                 android:layout_marginTop="1dp"
@@ -1838,6 +2064,8 @@
 
 
                 </LinearLayout>
+
+
 
             </RelativeLayout>
 

@@ -1,20 +1,21 @@
 package Upzila;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,13 +25,11 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import HealthPackage.DoctorList;
-import HealthPackage.DoctorProfile;
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class FireService extends AppCompatActivity {
+public class FoodOfficer extends AppCompatActivity {
 
-    RecyclerView fireServiceRecyclerView;
+    RecyclerView foodOfficerRecyclerView;
     Toolbar toolbar;
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
@@ -40,9 +39,9 @@ public class FireService extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_fire_service);
+        setContentView(R.layout.activity_food_officer);
         toolbar  = findViewById(R.id.toolbar);
-        fireServiceRecyclerView = findViewById(R.id.fireServiceRecyclerView);
+        foodOfficerRecyclerView = findViewById(R.id.foodOfficerRecyclerView);
         DetailsTable();
 
         toolbar.setOnClickListener(new View.OnClickListener() {
@@ -55,14 +54,15 @@ public class FireService extends AppCompatActivity {
 
 
 
-        FireServiceAdapter fireServiceAdapter = new FireServiceAdapter();
-        fireServiceRecyclerView.setAdapter(fireServiceAdapter);
-        //GridLayoutManager layoutManager = new GridLayoutManager(ThanaPolicy.this,3);
-        fireServiceRecyclerView.setLayoutManager(new LinearLayoutManager(FireService.this));
+        FoodOfficeAdapter foodOfficeAdapter = new FoodOfficeAdapter();
+        foodOfficerRecyclerView.setAdapter(foodOfficeAdapter);
+        foodOfficerRecyclerView.setLayoutManager(new LinearLayoutManager(FoodOfficer.this));
+
+
 
     }
 
-    private class FireServiceAdapter extends RecyclerView.Adapter{
+    private class FoodOfficeAdapter extends RecyclerView.Adapter{
 
         int Native = 0;
         int Read = 1;
@@ -146,7 +146,7 @@ public class FireService extends AppCompatActivity {
             readHolder.upItemCard.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(FireService.this, UpzilaPersonProfile.class);
+                    Intent intent = new Intent(FoodOfficer.this, UpzilaPersonProfile.class);
 
                     UpzilaPersonProfile.UPGmail = upGmail;
                     UpzilaPersonProfile.UPName = upName;
@@ -252,62 +252,38 @@ public class FireService extends AppCompatActivity {
         arrayList = new ArrayList<>();
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
+        hashMap.put("upName", "অরবিন্দু ভৌমিক");
+        hashMap.put("upLevel", "উপজেলা খাদ্য নিয়ন্ত্রক");
+        hashMap.put("upNumber", "০১৮৫১৬৪৯২৮১");
         hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
+        hashMap.put("upGmail", "ucf.compa.noa456@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "২২ জানুয়ারি ২০১৩");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         arrayList.add(hashMap);
 
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
+        hashMap.put("upName", "অরবিন্দু ভৌমিক");
+        hashMap.put("upLevel", "উপজেলা খাদ্য নিয়ন্ত্রক");
+        hashMap.put("upNumber", "০১৮৫১৬৪৯২৮১");
         hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
+        hashMap.put("upGmail", "ucf.compa.noa456@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "২২ জানুয়ারি ২০১৩");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
+        hashMap.put("upName", "অরবিন্দু ভৌমিক");
+        hashMap.put("upLevel", "উপজেলা খাদ্য নিয়ন্ত্রক");
+        hashMap.put("upNumber", "০১৮৫১৬৪৯২৮১");
         hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
+        hashMap.put("upGmail", "ucf.compa.noa456@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
-        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
-        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
-        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
-        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
-        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
-        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "২২ জানুয়ারি ২০১৩");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         arrayList.add(hashMap);

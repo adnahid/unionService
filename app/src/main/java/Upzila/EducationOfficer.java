@@ -1,20 +1,21 @@
 package Upzila;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,13 +25,12 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import HealthPackage.DoctorList;
-import HealthPackage.DoctorProfile;
+import HealthPackage.AmbulanceList;
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class FireService extends AppCompatActivity {
+public class EducationOfficer extends AppCompatActivity {
 
-    RecyclerView fireServiceRecyclerView;
+    RecyclerView EducationRecyclerView;
     Toolbar toolbar;
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
@@ -40,9 +40,9 @@ public class FireService extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_fire_service);
-        toolbar  = findViewById(R.id.toolbar);
-        fireServiceRecyclerView = findViewById(R.id.fireServiceRecyclerView);
+        setContentView(R.layout.activity_education_officer);
+        toolbar = findViewById(R.id.toolbar);
+        EducationRecyclerView = findViewById(R.id.EducationRecyclerView);
         DetailsTable();
 
         toolbar.setOnClickListener(new View.OnClickListener() {
@@ -55,14 +55,13 @@ public class FireService extends AppCompatActivity {
 
 
 
-        FireServiceAdapter fireServiceAdapter = new FireServiceAdapter();
-        fireServiceRecyclerView.setAdapter(fireServiceAdapter);
-        //GridLayoutManager layoutManager = new GridLayoutManager(ThanaPolicy.this,3);
-        fireServiceRecyclerView.setLayoutManager(new LinearLayoutManager(FireService.this));
+        EduAdapter eduAdapter = new EduAdapter();
+        EducationRecyclerView.setAdapter(eduAdapter);
+        EducationRecyclerView.setLayoutManager(new LinearLayoutManager(EducationOfficer.this));
 
     }
 
-    private class FireServiceAdapter extends RecyclerView.Adapter{
+    private class EduAdapter extends RecyclerView.Adapter{
 
         int Native = 0;
         int Read = 1;
@@ -132,7 +131,7 @@ public class FireService extends AppCompatActivity {
             String upTimeTitle = hashMap.get("upTimeTitle");
             String upBatchNo = hashMap.get("upBatchNo");
 
-            readHolder.upItemCard.startAnimation(AnimationUtils.loadAnimation(readHolder.upItemCard.getContext(),R.anim.recycler_anim02));
+            readHolder.upItemCard.startAnimation(AnimationUtils.loadAnimation(readHolder.upItemCard.getContext(),R.anim.recycler_anim01));
             Picasso.get().load(upImage).into(readHolder.uPImage);
 
 
@@ -146,7 +145,7 @@ public class FireService extends AppCompatActivity {
             readHolder.upItemCard.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(FireService.this, UpzilaPersonProfile.class);
+                    Intent intent = new Intent(EducationOfficer.this, UpzilaPersonProfile.class);
 
                     UpzilaPersonProfile.UPGmail = upGmail;
                     UpzilaPersonProfile.UPName = upName;
@@ -252,13 +251,13 @@ public class FireService extends AppCompatActivity {
         arrayList = new ArrayList<>();
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
+        hashMap.put("upName", "মোঃ জয়নাল আবেদিন");
+        hashMap.put("upLevel", "উপজেলা শিক্ষা অফিসার");
+        hashMap.put("upNumber", "০১৭১২৪৮৫০৭৯");
         hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
+        hashMap.put("upGmail", "ueocompanigonj@yahoo.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "২৮ ফেব্রুয়ারী ২০২১");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         arrayList.add(hashMap);

@@ -7,13 +7,13 @@
     >
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/upItemCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#2F4F4F"
+        android:backgroundTint="#3A1B1B"
         android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
-        android:id="@+id/policeCardView"
         >
 
         <RelativeLayout
@@ -24,18 +24,15 @@
 
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/policeImage"
-                android:layout_width="120dp"
-                android:layout_height="110dp"
+                android:id="@+id/uPImage"
+                android:layout_width="95dp"
+                android:layout_height="100dp"
                 android:src="@drawable/doctor"
                 app:civ_border_color="#DFD6F6"
-                android:padding="8dp"
-                android:background="@drawable/ovel_bac"
+                android:padding="1dp"
+                android:background="@drawable/up_ovel_bac"
                 android:layout_alignParentEnd="true"
                 />
-
-
-
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -46,7 +43,7 @@
                 >
 
                 <TextView
-                    android:id="@+id/policeName"
+                    android:id="@+id/upName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
@@ -54,64 +51,41 @@
                     android:textStyle="bold"
                     android:textColor="#ffffff"
                     android:fontFamily="sans-serif"
+                    android:layout_marginStart="2dp"
                     />
 
+
+
                 <TextView
-                    android:id="@+id/policeQulafication"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/upDegree"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:text="অফিসার ইনচার্জ"
                     android:textStyle="bold"
                     android:textColor="#ffffff"
                     android:fontFamily="serif"
+                    android:layout_marginStart="2dp"
                     />
 
                 <TextView
-                    android:id="@+id/joinTime"
-                    android:layout_width="200dp"
+                    android:id="@+id/upBatchNo"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="বর্তমান কর্মস্থলে যোগদানের তারিখ : ০৯ আগষ্ট ২০২২"
+                    android:text="ব্যাচ (বিসিএস) : ৪১"
                     android:textStyle="bold"
                     android:textColor="#ffffff"
                     android:fontFamily="serif"
+                    android:layout_marginStart="2dp"
                     />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="5dp"
                     >
-
-
-
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#673AB7"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:focusable="true"
-                    app:cardCornerRadius="8dp"
-                    >
-
-
-                    <Button
-                        android:id="@+id/policeDail"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#673AB7"
-                        android:textStyle="bold"
-                        android:textSize="20sp"
-                        android:textColor="#ffffff"
-                        android:text="Call"
-                        />
-
-
-                </androidx.cardview.widget.CardView>
 
 
                     <de.hdodenhof.circleimageview.CircleImageView
@@ -126,7 +100,7 @@
 
 
                     <TextView
-                        android:id="@+id/policeGmail"
+                        android:id="@+id/upGmail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="10sp"

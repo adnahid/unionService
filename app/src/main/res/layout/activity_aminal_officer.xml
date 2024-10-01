@@ -5,18 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Upzila.FireService"
+    tools:context="Upzila.AminalOfficer"
     android:background="@color/white"
     >
-
-
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
-        app:title="Fire Service"
+        app:title="Animal officer"
         app:titleTextColor="#FFEB3B"
         android:background="#009688"
         >
@@ -24,13 +22,12 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/fireServiceRecyclerView"
+        android:id="@+id/AnimalOfficerRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
         >
 
     </androidx.recyclerview.widget.RecyclerView>
-
 
 </RelativeLayout>

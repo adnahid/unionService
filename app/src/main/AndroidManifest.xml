@@ -23,7 +23,34 @@
         android:theme="@style/Theme.UnionService"
         tools:targetApi="31">
         <activity
-            android:name="NagorikSheba.FireService"
+            android:name="Upzila.FresherOfficer"
+            android:exported="false" />
+        <activity
+            android:name="Upzila.ElectionActivity"
+            android:exported="false" />
+        <activity
+            android:name="Upzila.SubRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="Upzila.VumiOfficer"
+            android:exported="false" />
+        <activity
+            android:name="Upzila.FoodOfficer"
+            android:exported="false" />
+        <activity
+            android:name="Upzila.FarmerOfficer"
+            android:exported="false" />
+        <activity
+            android:name="Upzila.AminalOfficer"
+            android:exported="false" />
+        <activity
+            android:name="Upzila.EducationOfficer"
+            android:exported="false" />
+        <activity
+            android:name="Upzila.UpzilaPersonProfile"
+            android:exported="false" />
+        <activity
+            android:name="Upzila.FireService"
             android:exported="false" />
         <activity
             android:name="ItemLayout.PollyBs"

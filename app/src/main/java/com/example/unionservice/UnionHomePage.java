@@ -24,7 +24,15 @@ import ItemLayout.DetailsUnion;
 import ItemLayout.PollyBs;
 import ItemLayout.ThanaPolicy;
 import NagorikSheba.EmergencyNumber;
-import NagorikSheba.FireService;
+import Upzila.AminalOfficer;
+import Upzila.EducationOfficer;
+import Upzila.ElectionActivity;
+import Upzila.FarmerOfficer;
+import Upzila.FireService;
+import Upzila.FoodOfficer;
+import Upzila.FresherOfficer;
+import Upzila.SubRegisterActivity;
+import Upzila.VumiOfficer;
 
 
 public class UnionHomePage extends Fragment {
@@ -32,7 +40,8 @@ public class UnionHomePage extends Fragment {
 CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         NewHoldding,BumihinSonod,BumiBavohar,EmarotBuldding,postOffice,
         ambulance,donet,hospital,emergencyNumber,police,upzilaNews,bdJobs,freedomFiter,
-        poll,pastTeam,fireOfficer;
+        poll,pastTeam,fireOfficer,educationOPfficer,animalOfficer,farmerOfficer,foodOfficer,
+        subRegister,electionOffice,fresherOfficer,vumiOfficer;
 
 
 
@@ -73,7 +82,16 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         freedomFiter = view.findViewById(R.id.freedomFiter);
         poll = view.findViewById(R.id.poll);
         pastTeam = view.findViewById(R.id.pastTeam);
+
         fireOfficer = view.findViewById(R.id.fireOfficer);
+        educationOPfficer = view.findViewById(R.id.educationOPfficer);
+        animalOfficer = view.findViewById(R.id.animalOfficer);
+        foodOfficer = view.findViewById(R.id.foodOfficer);
+        subRegister = view.findViewById(R.id.subRegister);
+        electionOffice = view.findViewById(R.id.electionOffice);
+        fresherOfficer = view.findViewById(R.id.fresherOfficer);
+        farmerOfficer = view.findViewById(R.id.farmerOfficer);
+        vumiOfficer = view.findViewById(R.id.vumiOfficer);
 
 
         //Image Slider
@@ -97,6 +115,77 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         list.add(new SlideModel(url6th, ScaleTypes.FIT));
         list.add(new SlideModel(url7th, ScaleTypes.FIT));
         image_slider.setImageList(list);
+
+
+
+
+
+        educationOPfficer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), EducationOfficer.class);
+                startActivity(intent);
+            }
+        });
+
+        animalOfficer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), AminalOfficer.class);
+                startActivity(intent);
+            }
+        });
+
+        farmerOfficer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), FarmerOfficer.class);
+                startActivity(intent);
+            }
+        });
+
+
+        foodOfficer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), FoodOfficer.class);
+                startActivity(intent);
+            }
+        });
+
+        subRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), SubRegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        electionOffice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ElectionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        fresherOfficer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), FresherOfficer.class);
+                startActivity(intent);
+            }
+        });
+
+        vumiOfficer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), VumiOfficer.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         Oyaris.setOnClickListener(new View.OnClickListener() {
             @Override
