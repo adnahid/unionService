@@ -27,6 +27,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
+import Upzila.UpzilaPersonProfile;
 import javaClass.pageAdapter;
 
 public class MainActivity extends AppCompatActivity {
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
     TabItem tabsItem1st,tabsItem2nd;
     pageAdapter vpAdpter;
 
+    public static String gmail = "myselfabout432@gmail.com";
+    public static String phone = "+8801648529374";
 
     public static final String Url = "https://play.google.com/store/apps/details?id=";
     @Override
@@ -109,22 +112,21 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 if (item.getItemId()==R.id.home){
-                    Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_SHORT).show();
+
+                    Toast.makeText(MainActivity.this, "হোম", Toast.LENGTH_SHORT).show();
                     drawerLayout.closeDrawer(GravityCompat.START);
+
                 } else if (item.getItemId()==R.id.share){
                     Intent intent = new Intent(Intent.ACTION_SEND);
                     intent.setType("text/plain");
                     intent.putExtra(Intent.EXTRA_SUBJECT,"Share Other");
                     intent.putExtra(Intent.EXTRA_TEXT,"This is an Nicely apps for android user........."+Url+getPackageName());
                     startActivity(Intent.createChooser(intent,"Share App Vai "));
-                    //Toast.makeText(HomeActivity.this, "Offer", Toast.LENGTH_SHORT).show();
                     drawerLayout.closeDrawer(GravityCompat.START);
 
+
                 }else if (item.getItemId()==R.id.rate){
-                    //Toast.makeText(HomeActivity.this, "Offer", Toast.LENGTH_SHORT).show();
-
                     try {
-
                         Intent intent = new Intent(Intent.ACTION_VIEW);
                         intent.setData(Uri.parse(Url+getPackageName()));
                         intent.setPackage(getPackageName());
@@ -137,16 +139,39 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
 
-
                     drawerLayout.closeDrawer(GravityCompat.START);
-                }else if (item.getItemId()==R.id.policy){
 
+
+                }else if (item.getItemId()==R.id.policy){
                     webViewActivity.url = "https://bdnews24.com/";
                     Intent intent = new Intent(MainActivity.this, webViewActivity.class);
                     startActivity(intent);
-
-                    //Toast.makeText(HomeActivity.this, "Offer", Toast.LENGTH_SHORT).show();
                     drawerLayout.closeDrawer(GravityCompat.START);
+                } else if (item.getItemId() == R.id.contact) {
+
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse("tel:"+phone));
+                    startActivity(intent);
+
+                } else if (item.getItemId() == R.id.emailSent) {
+                    Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                    emailIntent.setData(Uri.parse("mailto:"+gmail));
+                    //Only email apps should handle this
+//                emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"recipient@example.com"});
+//                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject of the email");
+//                emailIntent.putExtra(Intent.EXTRA_TEXT, "Body of the email");
+//                Check if there is an email client available to handle the intent
+                    if (emailIntent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(emailIntent);
+                    } else {
+                        // Handle the case when no email client is available
+                        Toast.makeText(MainActivity.this, "No email client installed!", Toast.LENGTH_SHORT).show();
+                    }
+
+                } else if (item.getItemId() == R.id.mySelf) {
+                    Intent intent = new Intent(MainActivity.this,MyselfAppsDetails.class);
+                    startActivity(intent);
+
                 }
 
                 return true;

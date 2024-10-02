@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/white"
     tools:openDrawer="start"
     >
 
@@ -25,7 +24,6 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/nev_headder"
         app:menu="@menu/buttonnavigation_item"
-        android:backgroundTint="#B32F4F4F"
         />
 
 

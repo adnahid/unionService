@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyselfAppsDetails"
+    android:background="#2F4F4F"
+    >
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:title="Developer Details"
+        app:titleTextColor="#FFEB3B"
+        android:background="#009688"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/topLayout"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:src="@drawable/doctor"
+            app:civ_border_color="#DFD6F6"
+            android:layout_centerHorizontal="true"
+            />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/topLayout"
+                >
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Md delower Hossain"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Apps developer and Design"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        >
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/phone"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@color/white"
+            app:civ_border_color="#DFD6F6"
+            app:civ_border_overlay="true"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gmail"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@color/white"
+            app:civ_border_color="#DFD6F6"
+            app:civ_border_overlay="true"
+            android:layout_marginStart="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/facebook"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@color/white"
+            app:civ_border_color="#DFD6F6"
+            app:civ_border_overlay="true"
+            android:layout_marginStart="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Kisu Khotha"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:fontFamily="serif"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="#58000000"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

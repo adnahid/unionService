@@ -7,9 +7,15 @@
         >
 
     <item android:id="@+id/home"
-        android:title="Home"
+        android:title="হোম"
         android:icon="@drawable/exit"
-        android:iconTint="@color/white"
+        android:checkable="true"
+        >
+    </item>
+
+    <item android:id="@+id/mySelf"
+        android:title="ডেভোলপার"
+        android:icon="@drawable/exit"
         android:checkable="true"
         >
     </item>
@@ -20,18 +26,26 @@
     <group
        android:id="@+id/group2nd"
         >
-        <item android:id="@+id/share"
-            android:title="Share"
+
+
+        <item android:id="@+id/appsDetails"
+            android:title="অ্যাপস সম্পর্কে"
             android:icon="@drawable/exit"
-            android:iconTint="@color/white"
+            android:checkable="true"
+            >
+        </item>
+
+
+        <item android:id="@+id/share"
+            android:title="শেয়ার করুন"
+            android:icon="@drawable/exit"
             android:checkable="true"
             >
         </item>
 
         <item android:id="@+id/rate"
-            android:title="Rate"
+            android:title="রিভিউ দিন"
             android:icon="@drawable/exit"
-            android:iconTint="@color/white"
             android:checkable="true"
             >
         </item>
@@ -42,10 +56,42 @@
     <group
         android:id="@+id/group3rd"
         >
-        <item android:id="@+id/policy"
-            android:title="Policy and Privacy"
+        <item android:id="@+id/emailSent"
+            android:title="ইমেইল করুন"
             android:icon="@drawable/exit"
-            android:iconTint="@color/white"
+            android:checkable="true"
+            >
+        </item>
+
+        <item android:id="@+id/contact"
+            android:title="প্রয়োজনে যোগাযোগ"
+            android:icon="@drawable/exit"
+            android:checkable="true"
+            >
+        </item>
+
+        <item android:id="@+id/abs"
+            android:title="বিজ্ঞাপন দিন"
+            android:icon="@drawable/exit"
+            android:checkable="true"
+            >
+        </item>
+    </group>
+
+
+    <group
+        android:id="@+id/group4th"
+        >
+        <item android:id="@+id/policy"
+            android:title="প্রাইভেসি পলিসি"
+            android:icon="@drawable/exit"
+            android:checkable="true"
+            >
+        </item>
+
+        <item android:id="@+id/updateCheak"
+            android:title="অ্যাপ আপডেট চেক"
+            android:icon="@drawable/exit"
             android:checkable="true"
             >
         </item>
