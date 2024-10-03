@@ -23,6 +23,15 @@
         android:theme="@style/Theme.UnionService"
         tools:targetApi="31">
         <activity
+            android:name="ItemLayout.DecoumtWritter"
+            android:exported="false" />
+        <activity
+            android:name="ItemLayout.AdvocateActivity"
+            android:exported="false" />
+        <activity
+            android:name="ItemLayout.LRDWProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".MyselfAppsDetails"
             android:exported="false" />
         <activity

@@ -15,12 +15,15 @@ import androidx.core.view.WindowInsetsCompat;
 import com.squareup.picasso.Picasso;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import javaClass.gmailClass;
 
 public class MyselfAppsDetails extends AppCompatActivity {
 
     CircleImageView phone,gmail,facebook;
 
-    String fb = "https://www.facebook.com/profile.php?id=100052377380714&mibextid=ZbWKwL";
+    gmailClass gmailClass;
+
+    String fb = "https://www.facebook.com/profile.php?id=100052377380714";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,20 +55,12 @@ public class MyselfAppsDetails extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("message/rfc822");
+                intent.putExtra(Intent.EXTRA_TEXT, "Text you want to share");
+                startActivity(Intent.createChooser(intent, ""+MainActivity.gmail));
 
-                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                emailIntent.setData(Uri.parse("mailto:"+MainActivity.gmail));
-                //Only email apps should handle this
-//                emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"recipient@example.com"});
-//                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject of the email");
-//                emailIntent.putExtra(Intent.EXTRA_TEXT, "Body of the email");
-//                Check if there is an email client available to handle the intent
-                if (emailIntent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(emailIntent);
-                } else {
-                    // Handle the case when no email client is available
-                    Toast.makeText(MyselfAppsDetails.this, "No email client installed!", Toast.LENGTH_SHORT).show();
-                }
+                //gmailClass.gmailMethod();
 
 
             }

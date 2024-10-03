@@ -124,8 +124,6 @@
             android:layout_width="30dp"
             android:layout_height="35dp"
             android:src="@color/white"
-            app:civ_border_color="#DFD6F6"
-            app:civ_border_overlay="true"
             android:layout_marginStart="30dp"
             android:clickable="true"
             android:focusable="true"

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ItemLayout.LRDWProfileActivity"
+    android:background="#ffffff"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:title="Advocate Activity"
+        app:titleTextColor="#FFEB3B"
+        android:background="#009688"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/nev_topbag"
+        android:layout_margin="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="5dp"
+            android:layout_margin="15dp">
+
+
+
+
+            <ImageView
+                android:id="@+id/advocateImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/doctor"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/advocateName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মোঃ হেফজুল বাহার"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    />
+
+                <TextView
+                    android:id="@+id/advocateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="এল.এল.বি (অনার্স), এল.এল.এম
+এডভোকেট দেওয়ানী ও ফৌজদারী আদালত জজ কোর্ট, নোয়াখালী।"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/advocatePhone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:backgroundTint="#FFFFFF"
+                        app:cardCornerRadius="5dp"
+                        style="@style/Base.Theme.Neumorph"
+                        android:layout_marginEnd="10dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        >
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:src="@drawable/phone"
+                            app:civ_border_color="#36F3E8E8"
+                            app:civ_border_width="3dp"
+                            android:scaleType="centerCrop"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/advocateGmail"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:backgroundTint="#FFFFFF"
+                        app:cardCornerRadius="5dp"
+                        style="@style/Base.Theme.Neumorph"
+                        android:layout_marginEnd="10dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        >
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/gmail"
+                            app:civ_border_color="#36F3E8E8"
+                            android:padding="5dp"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/advocateMessage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:backgroundTint="#FFFFFF"
+                        app:cardCornerRadius="5dp"
+                        style="@style/Base.Theme.Neumorph"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        >
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:src="@drawable/gm"
+                            app:civ_border_color="#36F3E8E8"
+                            app:civ_border_width="3dp"
+                            android:scaleType="centerCrop"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#03A9F4"
+                app:cardCornerRadius="8dp"
+                android:elevation="5dp"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/advocateCh01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="বসুরহাট চেম্বার।"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="serif"
+                        />
+
+                    <TextView
+                        android:id="@+id/advocateCh01des"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="রৌশন আরা মার্কেট, কবিরহাট রোড, বসুরহাট, কোম্পানীগঞ্জ, নোয়াখালী।"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="1dp"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#0F6568"
+                app:cardCornerRadius="8dp"
+                android:elevation="5dp"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/advocateCh02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="কোর্ট চেম্বার।"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="serif"
+                        />
+
+                    <TextView
+                        android:id="@+id/advocateCh02des"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="শাহাদাত এন্ড এসোসিয়েটস রুম নং-৯৮, জজ কোর্ট, নোয়াখালী।(নোয়াখালী)"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="1dp"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#03A9F4"
+        app:cardCornerRadius="4dp"
+        android:elevation="5dp"
+        android:layout_alignParentBottom="true"
+        >
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:text="Ads Shows"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                />
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

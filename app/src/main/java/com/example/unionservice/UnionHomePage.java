@@ -20,6 +20,8 @@ import java.util.List;
 import HealthPackage.AmbulanceList;
 import HealthPackage.BloodDonet;
 import HealthPackage.HospitalMenu;
+import ItemLayout.AdvocateActivity;
+import ItemLayout.DecoumtWritter;
 import ItemLayout.DetailsUnion;
 import ItemLayout.PollyBs;
 import ItemLayout.ThanaPolicy;
@@ -41,7 +43,7 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         NewHoldding,BumihinSonod,BumiBavohar,EmarotBuldding,postOffice,
         ambulance,donet,hospital,emergencyNumber,police,upzilaNews,bdJobs,freedomFiter,
         poll,pastTeam,fireOfficer,educationOPfficer,animalOfficer,farmerOfficer,foodOfficer,
-        subRegister,electionOffice,fresherOfficer,vumiOfficer;
+        subRegister,electionOffice,fresherOfficer,vumiOfficer,advocate,decumentWritter;
 
 
 
@@ -92,6 +94,8 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         fresherOfficer = view.findViewById(R.id.fresherOfficer);
         farmerOfficer = view.findViewById(R.id.farmerOfficer);
         vumiOfficer = view.findViewById(R.id.vumiOfficer);
+        advocate = view.findViewById(R.id.advocate);
+        decumentWritter = view.findViewById(R.id.decumentWritter);
 
 
         //Image Slider
@@ -119,6 +123,25 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
 
 
 
+
+
+        advocate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), AdvocateActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        decumentWritter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), DecoumtWritter.class);
+                startActivity(intent);
+            }
+        });
 
         educationOPfficer.setOnClickListener(new View.OnClickListener() {
             @Override

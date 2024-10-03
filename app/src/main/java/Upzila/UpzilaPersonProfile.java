@@ -17,6 +17,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.unionservice.MainActivity;
 import com.example.unionservice.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -61,8 +62,8 @@ public class UpzilaPersonProfile extends AppCompatActivity {
         titleUp.setText(UPLevel);
         textTvHeadLine1st.setText(UPJoinTimeTitle);
         textTvHeadLine2nd.setText(UPJoinTime);
-        textTvHeadLine3rd.setText(UPBscBatch);
-        textTvHeadLine4th.setText(UPBscBatchNo);
+        textTvHeadLine3rd.setText(UPBscBatchNo);
+        textTvHeadLine4th.setText(UPBscBatch);
 
         callCardUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,19 +97,10 @@ public class UpzilaPersonProfile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                emailIntent.setData(Uri.parse("mailto:"+UPGmail)); // Only email apps should handle this
-//                emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"recipient@example.com"});
-//                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject of the email");
-//                emailIntent.putExtra(Intent.EXTRA_TEXT, "Body of the email");
-
-// Check if there is an email client available to handle the intent
-                if (emailIntent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(emailIntent);
-                } else {
-                    // Handle the case when no email client is available
-                    Toast.makeText(UpzilaPersonProfile.this, "No email client installed!", Toast.LENGTH_SHORT).show();
-                }
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("message/rfc822");
+                intent.putExtra(Intent.EXTRA_TEXT, "Text you want to share");
+                startActivity(Intent.createChooser(intent, ""+UPGmail));
 
             }
         });

@@ -1430,6 +1430,7 @@
 
 
                             <androidx.cardview.widget.CardView
+                                android:id="@+id/advocate"
                                 android:layout_width="0dp"
                                 android:layout_height="80dp"
                                 android:backgroundTint="#4CE496"
@@ -1516,6 +1517,7 @@
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
+                                android:id="@+id/decumentWritter"
                                 android:layout_width="0dp"
                                 android:layout_height="80dp"
                                 android:backgroundTint="#4CE496"
