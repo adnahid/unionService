@@ -31,6 +31,7 @@ public class DoctorList extends AppCompatActivity {
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,7 +83,7 @@ public class DoctorList extends AppCompatActivity {
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             LayoutInflater layoutInflater = getLayoutInflater();
-            View view = layoutInflater.inflate(R.layout.doctor_item, parent, false);
+            View view = layoutInflater.inflate(R.layout.hospital_name_item, parent, false);
             return new readHolder(view);
         }
 

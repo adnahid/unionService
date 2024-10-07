@@ -125,6 +125,21 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
 
 
 
+
+
+
+
+        DeadSonod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                webViewActivity.url= "https://bdris.gov.bd/dr/application";
+                Intent intent = new Intent(getActivity(),webViewActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
         advocate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -213,7 +228,7 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         Oyaris.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                webViewActivity.url= "http://step-dte.gov.bd/";
+                webViewActivity.url= "https://prottoyon.gov.bd/application/additional-information/create/PVHnLY8ctOL20170419110045";
                 Intent intent = new Intent(getActivity(),webViewActivity.class);
                 startActivity(intent);
             }
