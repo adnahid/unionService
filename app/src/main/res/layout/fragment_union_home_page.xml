@@ -183,7 +183,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:weightSum="4"
+                        android:weightSum="3"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
                         >
@@ -232,67 +232,11 @@
                                         android:padding="5dp"
                                         />
 
-
-
-
-
-
-
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
 
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/pastTeam"
-                            android:layout_width="0dp"
-                            android:layout_height="90dp"
-                            android:backgroundTint="#ffffff"
-                            android:layout_weight="1"
-                            android:foreground="?android:attr/selectableItemBackground"
-                            android:clickable="true"
-                            android:focusable="true"
-                            app:cardCornerRadius="8dp"
-                            android:layout_margin="1dp"
-                            >
 
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:layout_gravity="center_vertical"
-                                android:layout_margin="4dp"
-                                >
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:textSize="8sp"
-                                    android:text="প্রাক্তন পরিষদ"
-                                    android:textStyle="bold"
-                                    android:textColor="#000000"
-                                    android:layout_marginTop="1dp"
-                                    android:layout_gravity="center_horizontal"
-                                    android:fontFamily="serif"
-                                    />
-
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="40dp"
-                                    android:src="@drawable/doctor"
-                                    android:layout_gravity="center_horizontal"
-                                    android:padding="5dp"
-                                    />
-
-
-
-
-
-
-
-                            </LinearLayout>
-
-                        </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/educationOPfficer"
@@ -1237,7 +1181,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:weightSum="4"
+                            android:weightSum="3"
                             android:padding="2dp"
                             >
 
@@ -1284,7 +1228,6 @@
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
-
 
 
                             <androidx.cardview.widget.CardView
@@ -1375,6 +1318,20 @@
 
                             </androidx.cardview.widget.CardView>
 
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+                            android:padding="2dp"
+                            >
+
+
                             <androidx.cardview.widget.CardView
                                 android:layout_width="0dp"
                                 android:layout_height="80dp"
@@ -1420,61 +1377,6 @@
 
 
 
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:weightSum="4"
-                            android:padding="2dp"
-                            >
-
-
-                            <androidx.cardview.widget.CardView
-                                android:id="@+id/advocate"
-                                android:layout_width="0dp"
-                                android:layout_height="80dp"
-                                android:backgroundTint="#4CE496"
-                                android:layout_weight="1"
-                                android:foreground="?android:attr/selectableItemBackground"
-                                android:clickable="true"
-                                android:focusable="true"
-                                >
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical"
-                                    android:layout_gravity="center_vertical"
-                                    >
-
-                                    <de.hdodenhof.circleimageview.CircleImageView
-                                        android:layout_width="40dp"
-                                        android:layout_height="55dp"
-                                        android:padding="3dp"
-                                        android:src="@color/white"
-                                        app:civ_border_color="#36F3E8E8"
-                                        app:civ_border_width="3dp"
-                                        android:layout_gravity="center_horizontal"
-                                        android:scaleType="centerCrop"
-                                        />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:textSize="10sp"
-                                        android:text="আইনজীবী"
-                                        android:textStyle="bold"
-                                        android:textColor="#ffffff"
-                                        android:layout_marginTop="1dp"
-                                        android:layout_gravity="center_horizontal"
-                                        />
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-
                             <androidx.cardview.widget.CardView
                                 android:layout_width="0dp"
                                 android:layout_height="80dp"
@@ -1518,49 +1420,6 @@
 
                             </androidx.cardview.widget.CardView>
 
-                            <androidx.cardview.widget.CardView
-                                android:id="@+id/decumentWritter"
-                                android:layout_width="0dp"
-                                android:layout_height="80dp"
-                                android:backgroundTint="#4CE496"
-                                android:layout_weight="1"
-                                android:foreground="?android:attr/selectableItemBackground"
-                                android:clickable="true"
-                                android:focusable="true"
-                                >
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical"
-                                    android:layout_gravity="center_vertical"
-                                    >
-
-                                    <de.hdodenhof.circleimageview.CircleImageView
-                                        android:layout_width="40dp"
-                                        android:layout_height="55dp"
-                                        android:padding="3dp"
-                                        android:src="@color/white"
-                                        app:civ_border_color="#36F3E8E8"
-                                        app:civ_border_width="3dp"
-                                        android:layout_gravity="center_horizontal"
-                                        android:scaleType="centerCrop"
-                                        />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:textSize="10sp"
-                                        android:text="দলীল লেখক"
-                                        android:textStyle="bold"
-                                        android:textColor="#ffffff"
-                                        android:layout_marginTop="1dp"
-                                        android:layout_gravity="center_horizontal"
-                                        />
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
                                 android:id="@+id/emergencyNumber"
@@ -1771,7 +1630,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="15sp"
-                        android:text="বিভিন্ন ভাতাভোগীর তালিকা"
+                        android:text="বিভিন্ন তালিকা"
                         android:textStyle="bold"
                         android:textColor="#000000"
                         android:fontFamily="sans-serif"
@@ -1931,7 +1790,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/poll"
+                        android:id="@+id/pastTeam"
                         android:layout_width="0dp"
                         android:layout_height="90dp"
                         android:backgroundTint="#ffffff"
@@ -1956,7 +1815,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="8sp"
-                                android:text="পল্লী বিদ্যুৎ"
+                                android:text="প্রাক্তন পরিষদ"
                                 android:textStyle="bold"
                                 android:textColor="#000000"
                                 android:layout_marginTop="1dp"
@@ -1983,7 +1842,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textSize="10sp"
-                                    android:text="ভাতা"
+                                    android:text="তালিকা"
                                     android:textStyle="bold"
                                     android:textColor="#000000"
                                     android:layout_marginTop="1dp"
@@ -1996,6 +1855,185 @@
 
                         </LinearLayout>
 
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:backgroundTint="#ffffff"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="1dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="8sp"
+                                android:text="ভাতা"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:layout_marginTop="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="serif"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/doctor"
+                                    android:layout_gravity="center_horizontal"
+                                    android:padding="5dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="তালিকা"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_gravity="center_vertical"
+                                    />
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:id="@+id/titleSp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    >
+
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/arrow"
+                        app:civ_border_color="#36F3E8E8"
+                        app:civ_border_width="2dp"
+                        android:scaleType="centerCrop"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="বিশেষ সুবিধা সমূহ"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginStart="5dp"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_below="@+id/titleSp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    >
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/poll"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:backgroundTint="#ffffff"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="1dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="4dp"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/doctor"
+                                android:layout_gravity="center_horizontal"
+                                android:padding="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="8sp"
+                                android:text="পল্লী বিদ্যুৎ"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:layout_marginTop="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="serif"
+                                />
+
+                        </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -2020,6 +2058,15 @@
                             android:layout_margin="4dp"
                             >
 
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/doctor"
+                                android:layout_gravity="center_horizontal"
+                                android:padding="5dp"
+                                />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -2032,39 +2079,102 @@
                                 android:fontFamily="serif"
                                 />
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/advocate"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:backgroundTint="#ffffff"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="1dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="4dp"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/doctor"
+                                android:layout_gravity="center_horizontal"
+                                android:padding="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:gravity="center"
-                                >
-
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="40dp"
-                                    android:src="@drawable/doctor"
-                                    android:layout_gravity="center_horizontal"
-                                    android:padding="5dp"
-                                    />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:textSize="10sp"
-                                    android:text="ভাতা"
-                                    android:textStyle="bold"
-                                    android:textColor="#000000"
-                                    android:layout_marginTop="1dp"
-                                    android:layout_gravity="center_vertical"
-                                    />
-                            </LinearLayout>
-
-
-
+                                android:textSize="8sp"
+                                android:text="আইনজীবী"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:layout_marginTop="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="serif"
+                                />
 
                         </LinearLayout>
-
                     </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/decumentWritter"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:backgroundTint="#ffffff"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="8dp"
+                        android:layout_margin="1dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="4dp"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/doctor"
+                                android:layout_gravity="center_horizontal"
+                                android:padding="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="8sp"
+                                android:text="দলীল লেখক"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:layout_marginTop="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="serif"
+                                />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
 
 
                 </LinearLayout>

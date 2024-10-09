@@ -53,8 +53,7 @@ public class HospitalMenu extends AppCompatActivity {
         doctorSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent = new Intent(HospitalMenu.this, HospitalNameActivity.class);
+                Intent intent = new Intent(HospitalMenu.this, HospitalName.class);
                 startActivity(intent);
 
             }

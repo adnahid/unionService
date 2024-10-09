@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="HealthPackage.HospitalNameActivity"
-    android:background="#2F4F4F"
+    android:background="#AE000000"
     >
 
 
@@ -16,8 +16,8 @@
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
         app:title="Hospital Name"
-        app:titleTextColor="@color/white"
-        android:background="#009688"
+        app:titleTextColor="#FFFFFF"
+        android:background="#2F4F4F"
         >
     </androidx.appcompat.widget.Toolbar>
 

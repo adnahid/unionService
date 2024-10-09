@@ -23,6 +23,48 @@
         android:theme="@style/Theme.UnionService"
         tools:targetApi="31">
         <activity
+            android:name="HospitalNameList.YeaminDantel"
+            android:exported="false" />
+        <activity
+            android:name="HospitalNameList.BangladeshDiabatic"
+            android:exported="false" />
+        <activity
+            android:name="HospitalNameList.BusurHuttNursinHome"
+            android:exported="false" />
+        <activity
+            android:name="HospitalNameList.BusurHuttPrivate"
+            android:exported="false" />
+        <activity
+            android:name="HospitalNameList.NewIbnasina"
+            android:exported="false" />
+        <activity
+            android:name="HospitalNameList.NewSquer"
+            android:exported="false" />
+        <activity
+            android:name="HospitalNameList.CompanigongUnited"
+            android:exported="false" />
+        <activity
+            android:name="HospitalNameList.NewOposum"
+            android:exported="false" />
+        <activity
+            android:name="HospitalNameList.NewPopular"
+            android:exported="false" />
+        <activity
+            android:name="HospitalNameList.ApplelyHospital"
+            android:exported="false" />
+        <activity
+            android:name="HospitalNameList.BusurhuttDiagonosticcenter"
+            android:exported="false" />
+        <activity
+            android:name="HospitalNameList.BusurHuttCity"
+            android:exported="false" />
+        <activity
+            android:name="HospitalNameList.BusurHuttMaa"
+            android:exported="false" />
+        <activity
+            android:name="HealthPackage.HospitalName"
+            android:exported="false" />
+        <activity
             android:name="HealthPackage.HospitalNameActivity"
             android:exported="false" />
         <activity
@@ -120,9 +162,6 @@
             android:name=".EmergenceyService"
             android:exported="false"
             android:theme="@style/Theme.UnionService" />
-        <activity
-            android:name="HealthPackage.HospitalName"
-            android:exported="false" />
         <activity
             android:name="HealthPackage.DoctorList"
             android:exported="false"
