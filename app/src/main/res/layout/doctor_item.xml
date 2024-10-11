@@ -3,13 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:backgroundTint="#009688"
+    android:backgroundTint="#E44C77"
     android:foreground="?android:attr/selectableItemBackground"
     android:clickable="true"
     android:focusable="true"
-    app:cardCornerRadius="2dp"
     android:id="@+id/dcCardView"
-    android:layout_marginTop="1dp"
     >
 
 
@@ -18,24 +16,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
-
-
-        <TextView
-            android:id="@+id/hospitalName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="10sp"
-            android:text="Hospital Name"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:fontFamily="serif"
-            android:gravity="center_horizontal"
-            android:background="#6D000000"
-            android:padding="3dp"
-            />
-
-
-
 
 
     <LinearLayout
@@ -82,7 +62,7 @@
                 android:id="@+id/dcName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:text="Name"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
@@ -97,6 +77,7 @@
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:fontFamily="serif"
+                android:layout_marginTop="2dp"
                 />
 
             <TextView

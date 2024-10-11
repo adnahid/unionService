@@ -1,6 +1,8 @@
 package HealthPackage;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +23,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import ItemLayout.LRDWProfileActivity;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DoctorList extends AppCompatActivity {
@@ -83,7 +86,7 @@ public class DoctorList extends AppCompatActivity {
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             LayoutInflater layoutInflater = getLayoutInflater();
-            View view = layoutInflater.inflate(R.layout.hospital_name_item, parent, false);
+            View view = layoutInflater.inflate(R.layout.doctor_item, parent, false);
             return new readHolder(view);
         }
 
@@ -136,6 +139,8 @@ public class DoctorList extends AppCompatActivity {
                     DoctorProfile.DCED = dcEducation;
                     DoctorProfile.DCCHAMBER = dcChamber;
                     DoctorProfile.DCTIME = dcTime;
+                    Bitmap bitmap = ( (BitmapDrawable) readHolder.dcImage.getDrawable() ).getBitmap();
+                    LRDWProfileActivity.ImageBitmap = bitmap;
 
                     startActivity(intent);
 

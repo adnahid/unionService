@@ -14,10 +14,12 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.unionservice.R;
 
+import Blood.BloodSocialMedia;
+
 public class BloodDonet extends AppCompatActivity {
 
     Toolbar toolbar;
-    CardView donetSearch;
+    CardView donetSearch,socialMediaDonner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class BloodDonet extends AppCompatActivity {
         setContentView(R.layout.activity_blood_donet);
         toolbar = findViewById(R.id.toolbar);
         donetSearch = findViewById(R.id.donetSearch);
+        socialMediaDonner = findViewById(R.id.socialMediaDonner);
 
 
         toolbar.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +43,15 @@ public class BloodDonet extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BloodDonet.this,BloodGrouphList.class);
+                startActivity(intent);
+            }
+        });
+
+
+        socialMediaDonner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BloodDonet.this, BloodSocialMedia.class);
                 startActivity(intent);
             }
         });

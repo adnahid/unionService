@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Blood.BloodSocialMedia"
+    android:background="#009688"
+    android:layout_margin="1dp"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:title="Blood Media"
+        app:titleTextColor="@color/white"
+        android:background="#4958dc"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/top_bac"
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bloodImage"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:src="@drawable/blood"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="5dp"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/textLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/bloodImage"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Last Update 25 Feb 2024"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"
+                />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textLayout"
+            android:layout_marginTop="5dp"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/login"
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="12dp"
+                        android:elevation="5dp"
+                        android:backgroundTint="#FFFFFF"
+                        tools:context=".MainActivity"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:src="@drawable/doctor"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="Jibon Alo"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#9C27B0"
+                                android:layout_marginBottom="10dp"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Recycler"
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="12dp"
+                        android:elevation="5dp"
+                        android:backgroundTint="#FFFFFF"
+                        tools:context=".MainActivity"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="8dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:src="@drawable/doctor"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="Recycler View"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#9C27B0"
+                                android:layout_marginBottom="10dp"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/machine"
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="12dp"
+                        android:elevation="5dp"
+                        android:backgroundTint="#FFFFFF"
+                        tools:context=".MainActivity"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/doctor"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="Nagorik Sheba"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#9C27B0"
+                                android:layout_marginBottom="10dp"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="12dp"
+                        android:elevation="5dp"
+                        android:backgroundTint="#FFFFFF"
+                        tools:context=".MainActivity"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="8dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="97dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/doctor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="Requst"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#9C27B0"
+                                android:layout_marginBottom="10dp"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/api"
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="12dp"
+                        android:elevation="5dp"
+                        android:backgroundTint="#FFFFFF"
+                        tools:context=".MainActivity"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:src="@drawable/doctor"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="API Class"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#9C27B0"
+                                android:layout_marginBottom="10dp"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/massenger"
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="12dp"
+                        android:elevation="5dp"
+                        android:backgroundTint="#FFFFFF"
+                        tools:context=".MainActivity"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="8dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:src="@drawable/doctor"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="Massenger Ui"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#9C27B0"
+                                android:layout_marginBottom="10dp"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Adds Show"
+            android:background="@color/white"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

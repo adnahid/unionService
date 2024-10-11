@@ -6,8 +6,8 @@
         <shape>
 
             <corners
-                android:topRightRadius="10dp"
-                android:topLeftRadius="10dp"/>
+                android:bottomLeftRadius="15dp"
+                android:bottomRightRadius="15dp"/>
 
             <gradient
                 android:startColor="#4958dc"

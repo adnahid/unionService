@@ -194,6 +194,7 @@
                 >
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/socialMediaDonner"
                     android:layout_width="0dp"
                     android:layout_height="130dp"
                     android:backgroundTint="#ffffff"

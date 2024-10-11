@@ -254,7 +254,7 @@ public class EducationOfficer extends AppCompatActivity {
         hashMap.put("upName", "মোঃ জয়নাল আবেদিন");
         hashMap.put("upLevel", "উপজেলা শিক্ষা অফিসার");
         hashMap.put("upNumber", "০১৭১২৪৮৫০৭৯");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
+        hashMap.put("upImage", "https://i.postimg.cc/D07kWv8x/ed1.png");
         hashMap.put("upGmail", "ueocompanigonj@yahoo.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
         hashMap.put("upTime", "২৮ ফেব্রুয়ারী ২০২১");

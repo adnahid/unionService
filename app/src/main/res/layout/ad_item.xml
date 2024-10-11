@@ -82,41 +82,54 @@
                 />
 
 
-            <androidx.cardview.widget.CardView
+
+            <Button
                 android:id="@+id/detailsBtn"
                 android:layout_width="120dp"
                 android:layout_height="40dp"
-                android:backgroundTint="#FFDE59"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true"
-                app:cardCornerRadius="5dp"
+                android:textAlignment="center"
+                android:text="পরিচরণ"
+                android:backgroundTint="#FFEB3B"
+                android:textColor="#000FFF"
+                android:textStyle="bold"
                 android:layout_margin="8dp"
-                >
+                />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    android:gravity="center"
-                    android:background="@drawable/item_bag"
-                    >
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/detailsBtn"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:backgroundTint="#FFDE59"-->
+<!--                android:foreground="?android:attr/selectableItemBackground"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                app:cardCornerRadius="5dp"-->
+<!--                android:layout_margin="8dp"-->
+<!--                >-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/item_bag"-->
+<!--                    >-->
 
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="9sp"
-                        android:text="Details"
-                        android:textStyle="bold"
-                        android:textColor="#000FFF"
-                        android:layout_marginStart="3dp"
-                        />
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="9sp"-->
+<!--                        android:text="Details"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="#000FFF"-->
+<!--                        android:layout_marginStart="3dp"-->
+<!--                        />-->
 
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+<!--                </LinearLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
 
         </LinearLayout>
 
