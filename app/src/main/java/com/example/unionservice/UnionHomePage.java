@@ -370,7 +370,8 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         freedomFiter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PdfViewer.assetsName = "companyganj.pdf";
+                //PdfViewer.assetsName = "companyganj.pdf";
+                PdfViewer.pdfUrl = "https://drive.google.com/file/d/1H4zvG3T3brlwY6e9fTENX1hNEk8xrITH/view?usp=sharing";
                 Intent intent = new Intent(getActivity(), PdfViewer.class);
                 startActivity(intent);
             }
@@ -379,7 +380,8 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         pastTeam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PdfViewer.assetsName = "past.pdf";
+                //PdfViewer.assetsName = "past.pdf";
+                PdfViewer.pdfUrl = "https://drive.google.com/file/d/1IWpkcih2mvBlZyNF-kIAco5RGljMhw2t/view?usp=sharing";
                 Intent intent = new Intent(getActivity(), PdfViewer.class);
                 startActivity(intent);
             }
@@ -389,7 +391,8 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         postOffice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PdfViewer.assetsName = "post_office.pdf";
+                //PdfViewer.assetsName = "post_office.pdf";
+                PdfViewer.pdfUrl = "https://drive.google.com/file/d/1ZDav267ydhifRZELhuAoI-vpV4rX2UcF/view?usp=sharing";
                 Intent intent = new Intent(getActivity(), PdfViewer.class);
                 startActivity(intent);
             }

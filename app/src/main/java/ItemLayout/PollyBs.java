@@ -62,7 +62,8 @@ public class PollyBs extends AppCompatActivity {
         pollApplicationRules.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PdfViewer.assetsName = "pollyapplication.pdf";
+                //PdfViewer.assetsName = "pollyapplication.pdf";
+                PdfViewer.pdfUrl = "https://drive.google.com/file/d/1U-hZP5f7JhgiydBdfK9WqrJU48-2q1Cr/view?usp=sharing";
                 Intent intent = new Intent(PollyBs.this, PdfViewer.class);
                 startActivity(intent);
             }
@@ -73,7 +74,8 @@ public class PollyBs extends AppCompatActivity {
         pollInsdurstrialApplicationRules.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PdfViewer.assetsName = "indurstial.pdf";
+                //PdfViewer.assetsName = "indurstial.pdf";
+                PdfViewer.pdfUrl = "https://drive.google.com/file/d/1BHJ3XZldML1Bh8ouD5LjcV0iLeH-SrrY/view?usp=sharing";
                 Intent intent = new Intent(PollyBs.this, PdfViewer.class);
                 startActivity(intent);
             }

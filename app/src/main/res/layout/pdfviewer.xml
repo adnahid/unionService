@@ -32,6 +32,8 @@
         android:layout_above="@id/lastCard"
         >
 
+
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -58,11 +60,19 @@
                 android:visibility="visible"
                 />
 
-    <com.github.barteksc.pdfviewer.PDFView
-        android:id="@+id/pdfView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+
+
+            <WebView
+                android:id="@+id/pdfWebView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+<!--    <com.github.barteksc.pdfviewer.PDFView-->
+<!--        android:id="@+id/pdfView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        />-->
 
 
 
@@ -71,6 +81,8 @@
 
         </LinearLayout>
   </androidx.cardview.widget.CardView>
+
+
    </RelativeLayout>
 
 
