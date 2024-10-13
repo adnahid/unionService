@@ -37,7 +37,7 @@
         android:id="@+id/contentCardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp"
+        app:cardCornerRadius="5dp"
         android:elevation="5dp"
         android:backgroundTint="#E7DDFF"
         android:foreground="?android:attr/selectableItemBackground"
@@ -61,7 +61,6 @@
         android:layout_height="wrap_content"
         app:tabTextColor="#000"
         android:background="#E7DDFF"
-
         >
 
         <com.google.android.material.tabs.TabItem
@@ -82,14 +81,7 @@
             android:padding="8dp"
             />
 
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabsItem3rd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bangla"
-            android:icon="@drawable/exit"
-            android:padding="8dp"
-            />
+
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabsItem4th"

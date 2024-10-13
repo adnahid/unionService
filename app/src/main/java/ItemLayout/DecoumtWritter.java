@@ -1,11 +1,13 @@
 package ItemLayout;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -24,6 +26,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Random;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -68,7 +71,8 @@ public class DecoumtWritter extends AppCompatActivity {
         private class readHolder extends RecyclerView.ViewHolder{
             TextView advocateName,advocateDegree;
             CircleImageView advocateImage;
-            CardView advocateCardView,detailsBtn;
+            CardView advocateCardView;
+            Button detailsBtn;
 
 
             public readHolder(@NonNull View itemView) {
@@ -135,6 +139,10 @@ public class DecoumtWritter extends AppCompatActivity {
 
             readHolder.advocateName.setText(adName);
             readHolder.advocateDegree.setText(adTitle);
+
+            Random rnd = new Random();
+            int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+            readHolder.detailsBtn.setBackgroundColor(color);
 
 
 

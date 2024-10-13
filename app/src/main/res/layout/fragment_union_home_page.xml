@@ -33,6 +33,7 @@
         >
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/meassageItem"
             android:layout_width="0dp"
             android:layout_height="100dp"
             app:cardCornerRadius="8dp"
@@ -60,7 +61,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/exit"
+                    android:src="@drawable/doctor"
                     android:layout_gravity="center"
                     android:layout_margin="1dp"
                     />
@@ -69,7 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:text="স্বেচ্ছাসেবী সংগঠন"
+                    android:text="বার্তা"
                     android:layout_gravity="center_vertical"
                     android:textStyle="bold"
                     android:textColor="#9C27B0"
@@ -80,6 +81,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/mapItem"
             android:layout_width="0dp"
             android:layout_height="100dp"
             app:cardCornerRadius="8dp"
@@ -106,7 +108,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/exit"
+                    android:src="@drawable/doctor"
                     android:layout_gravity="center"
                     android:layout_margin="1dp"
                     />
@@ -114,8 +116,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:text="অভিযোগ/বার্তা"
+                    android:textSize="10sp"
+                    android:text="মানচিত্র-কোম্পানীগঞ্জ"
                     android:layout_gravity="center"
                     android:textStyle="bold"
                     android:textColor="#9C27B0"
@@ -542,7 +544,7 @@
                                 <ImageView
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
-                                    android:src="@drawable/gm"
+                                    android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="3dp"
                                     />
@@ -587,7 +589,7 @@
                                 <ImageView
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
-                                    android:src="@drawable/gm"
+                                    android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="3dp"
                                     />
@@ -632,7 +634,7 @@
                                 <ImageView
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
-                                    android:src="@drawable/gm"
+                                    android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="3dp"
                                     />
@@ -1534,7 +1536,7 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/exit"
+                            android:src="@drawable/doctor"
                             android:layout_marginStart="5dp"
                             />
 
@@ -1583,7 +1585,7 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/exit"
+                            android:src="@drawable/doctor"
                             android:layout_gravity="center"
                             android:layout_marginStart="5dp"
                             />
@@ -1858,6 +1860,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/vathaThalika"
                         android:layout_width="0dp"
                         android:layout_height="90dp"
                         android:backgroundTint="#ffffff"

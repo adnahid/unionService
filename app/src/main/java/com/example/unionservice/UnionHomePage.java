@@ -1,6 +1,8 @@
 package com.example.unionservice;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
@@ -13,6 +15,7 @@ import android.view.ViewGroup;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +26,7 @@ import HealthPackage.HospitalMenu;
 import ItemLayout.AdvocateActivity;
 import ItemLayout.DecoumtWritter;
 import ItemLayout.DetailsUnion;
+import ItemLayout.LRDWProfileActivity;
 import ItemLayout.PollyBs;
 import ItemLayout.ThanaPolicy;
 import NagorikSheba.EmergencyNumber;
@@ -35,6 +39,7 @@ import Upzila.FoodOfficer;
 import Upzila.FresherOfficer;
 import Upzila.SubRegisterActivity;
 import Upzila.VumiOfficer;
+import Vatha.VathaThalika;
 
 
 public class UnionHomePage extends Fragment {
@@ -43,7 +48,8 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         NewHoldding,BumihinSonod,BumiBavohar,EmarotBuldding,postOffice,
         ambulance,donet,hospital,emergencyNumber,police,upzilaNews,bdJobs,freedomFiter,
         poll,pastTeam,fireOfficer,educationOPfficer,animalOfficer,farmerOfficer,foodOfficer,
-        subRegister,electionOffice,fresherOfficer,vumiOfficer,advocate,decumentWritter;
+        subRegister,electionOffice,fresherOfficer,vumiOfficer,advocate,decumentWritter,vathaThalika,
+        meassageItem,mapItem;
 
 
 
@@ -62,6 +68,9 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         ImageSlider image_slider = view.findViewById(R.id.image_slider);
 
         //cardView
+
+        meassageItem = view.findViewById(R.id.meassageItem);
+        mapItem = view.findViewById(R.id.mapItem);
         hospital = view.findViewById(R.id.hospital);
         Oyaris = view.findViewById(R.id.Oyaris);
         FamilySonod = view.findViewById(R.id.FamilySonod);
@@ -96,6 +105,9 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         vumiOfficer = view.findViewById(R.id.vumiOfficer);
         advocate = view.findViewById(R.id.advocate);
         decumentWritter = view.findViewById(R.id.decumentWritter);
+        vathaThalika = view.findViewById(R.id.vathaThalika);
+
+
 
 
         //Image Slider
@@ -129,11 +141,30 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
 
 
 
-        DeadSonod.setOnClickListener(new View.OnClickListener() {
+
+
+
+
+        //Activity
+
+        meassageItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                webViewActivity.url= "https://bdris.gov.bd/dr/application";
-                Intent intent = new Intent(getActivity(),webViewActivity.class);
+
+                Intent intent = new Intent(getActivity(), DistricAdministrator.class);
+                DistricAdministrator.DetailsTv = "মাননীয় প্রধানমন্ত্রীর কার্যালয়ে বাসত্মবায়নাধীন সাপোর্ট টু ডিজিটাল বাংলাদেশ (এটুআই) প্রোগ্রাম কর্তৃক জাতীয় পোর্টাল ফ্রেমওয়ার্কের আওতায় জনগণের দোরগোড়ায় বিভিন্ন ই-সেবা নিশ্চিত করার লক্ষে কোম্পানীগঞ্জ উপজেলা ওয়েব পোর্টাল প্রস্ত্তত করা হয়েছে। দিন বদলের সনদ বাস্তবায়নে মাননীয় প্রধানমন্ত্রীর ডিজিটাল বাংলাদেশ গড়ার প্রত্যয়ে তথ্য প্রযুক্তির মাধ্যমে জনগণের দোরগোড়ায় সহজে সেবা ও তথ্য পৌঁছে দেয়ার নিমিত্ত প্রস্ত্ততকৃত কোম্পানীগঞ্জ উপজেলা ওয়েব পোর্টাল জনগণের প্রভূত কল্যান বয়ে আনবে মর্মে আমরা বিশ্বাস করি। কোম্পানীগঞ্জ উপজেলা ওয়েব পোর্টালকে আরো তথ্য বহুল করার লক্ষে সকলের সার্বিক সহযোগিতা কামনা করছি।";
+                DistricAdministrator.DetailsTv2 = "উপজেলা নির্বাহী অফিসার \n কোম্পানীগঞ্জ, নোয়াখালী।";
+                DistricAdministrator.url = "https://file-chittagong.portal.gov.bd/uploads/ad417e95-ec3f-4963-898b-2c409d9a631d//65e/56b/37c/65e56b37c87a3188449437.jpg";
+                startActivity(intent);
+
+            }
+        });
+
+
+        vathaThalika.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), VathaThalika.class);
                 startActivity(intent);
 
             }
@@ -224,6 +255,32 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         });
 
 
+        //urlActivity
+
+
+
+        mapItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                webViewActivity.url= "http://www.companiganj.noakhali.gov.bd/bn/site/page/7fZt-মানচিত্র-কোম্পানীগঞ্জ";
+                Intent intent = new Intent(getActivity(),webViewActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        DeadSonod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                webViewActivity.url= "https://bdris.gov.bd/dr/application";
+                Intent intent = new Intent(getActivity(),webViewActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
 
         Oyaris.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -300,6 +357,7 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
                 startActivity(intent);
             }
         });
+
 
 
 
