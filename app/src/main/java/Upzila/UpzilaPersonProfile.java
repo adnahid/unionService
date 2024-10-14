@@ -32,6 +32,7 @@ public class UpzilaPersonProfile extends AppCompatActivity {
     public static String UPJoinTime = "";
     public static String UPBscBatch = "";
     public static String UPBscBatchNo = "";
+
     public static Bitmap ImageBitmap = null;
     String body = "Hi there";
 

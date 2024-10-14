@@ -1,6 +1,8 @@
 package Upzila;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -139,6 +141,7 @@ public class FoodOfficer extends AppCompatActivity {
             readHolder.upName.setText(upName);
             readHolder.upBatchNo.setText(upTime);
             readHolder.upDegree.setText(upLevel);
+            readHolder.upGmail.setText(upGmail);
 
 
 
@@ -156,6 +159,10 @@ public class FoodOfficer extends AppCompatActivity {
                     UpzilaPersonProfile.UPJoinTime = upTime;
                     UpzilaPersonProfile.UPBscBatch = upBatch;
                     UpzilaPersonProfile.UPBscBatchNo = upBatchNo;
+
+                    Bitmap bitmap = ( (BitmapDrawable) readHolder.uPImage.getDrawable() ).getBitmap();
+                    UpzilaPersonProfile.ImageBitmap = bitmap;
+
 
                     startActivity(intent);
                 }
@@ -253,9 +260,9 @@ public class FoodOfficer extends AppCompatActivity {
 
         hashMap = new HashMap<>();
         hashMap.put("upName", "অরবিন্দু ভৌমিক");
-        hashMap.put("upLevel", "উপজেলা খাদ্য নিয়ন্ত্রক");
+        hashMap.put("upLevel", "উপজেলা খাদ্য নিয়ন্ত্রক প্রহরী");
         hashMap.put("upNumber", "০১৮৫১৬৪৯২৮১");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
+        hashMap.put("upImage", "https://i.postimg.cc/LXdRYkrm/khaddo-1.png");
         hashMap.put("upGmail", "ucf.compa.noa456@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
         hashMap.put("upTime", "২২ জানুয়ারি ২০১৩");
@@ -265,40 +272,143 @@ public class FoodOfficer extends AppCompatActivity {
 
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "অরবিন্দু ভৌমিক");
-        hashMap.put("upLevel", "উপজেলা খাদ্য নিয়ন্ত্রক");
-        hashMap.put("upNumber", "০১৮৫১৬৪৯২৮১");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "ucf.compa.noa456@gmail.com");
+        hashMap.put("upName", "মো:আবদুল্লাহ আল মামুন");
+        hashMap.put("upLevel", "নিরাপত্তা প্রহরী");
+        hashMap.put("upNumber", "০৩২২৩-৫৬৩৬০");
+        hashMap.put("upImage", "https://i.postimg.cc/ZYxZndjh/khaddo-2.jpg");
+        hashMap.put("upGmail", "এই মর্মে জানা যায়নি");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ জানুয়ারি ২০১৩");
+        hashMap.put("upTime", "এই মর্মে জানা যায়নি");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "অরবিন্দু ভৌমিক");
-        hashMap.put("upLevel", "উপজেলা খাদ্য নিয়ন্ত্রক");
-        hashMap.put("upNumber", "০১৮৫১৬৪৯২৮১");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "ucf.compa.noa456@gmail.com");
+        hashMap.put("upName", "শাহাদাত হোসেন পারভেজ");
+        hashMap.put("upLevel", "সাইলো অপারেটিভ");
+        hashMap.put("upNumber", "০৩২২৩-৫৬৩৬০");
+        hashMap.put("upImage", "https://i.postimg.cc/CLvgHpWP/khaddo-3.jpg");
+        hashMap.put("upGmail", "এই মর্মে জানা যায়নি");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ জানুয়ারি ২০১৩");
+        hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
+        hashMap.put("upName", "মো:ওবায়দুল হক");
+        hashMap.put("upLevel", "নিরাপত্তা প্রহরী");
+        hashMap.put("upNumber", "০৩২২৩-৫৬৩৬০");
+        hashMap.put("upImage", "https://i.postimg.cc/B6G9QSK6/khadddo-4.jpg");
+        hashMap.put("upGmail", "এই মর্মে জানা যায়নি");
+        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
+        hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
+        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
+        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("upName", "মো: আলমগীর হোসেন");
+        hashMap.put("upLevel", "নিরাপত্তা প্রহরী");
+        hashMap.put("upNumber", "০৩২২৩-৫৬৩৬০");
+        hashMap.put("upImage", "https://i.postimg.cc/50qcXhBm/khaddo-5.jpg");
+        hashMap.put("upGmail", "এই মর্মে জানা যায়নি");
+        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
+        hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
+        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
+        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("upName", "মুহাম্মদ জহিরুল ইসলাম");
+        hashMap.put("upLevel", "সহকারী উপখাদ্য পরিদর্শক");
         hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
+        hashMap.put("upImage", "https://i.postimg.cc/J01fZpKC/khaddo-6.jpg");
+        hashMap.put("upGmail", "এই মর্মে জানা যায়নি");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("upName", "উত্তম কুমার চক্রবর্ত্তী");
+        hashMap.put("upLevel", "খাদ্য পরিদর্শক ভারপ্রাত্ত কর্মকর্তা ");
+        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
+        hashMap.put("upImage", "https://i.postimg.cc/m2rxr6tQ/khaddo-7.jpg");
+        hashMap.put("upGmail", "এই মর্মে জানা যায়নি");
+        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
+        hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
+        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
+        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("upName", "আনিছুর রহমান");
+        hashMap.put("upLevel", "খাদ্য পরিদর্শক");
+        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
+        hashMap.put("upImage", "https://i.postimg.cc/nh6N0FTk/khaddo-8.jpg");
+        hashMap.put("upGmail", "এই মর্মে জানা যায়নি");
+        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
+        hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
+        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
+        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("upName", "নাহিদা সুলতানা");
+        hashMap.put("upLevel", "নিরাপত্তা প্রহরী");
+        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
+        hashMap.put("upImage", "https://i.postimg.cc/JnQgrb86/khaddo-9.jpg");
+        hashMap.put("upGmail", "এই মর্মে জানা যায়নি");
+        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
+        hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
+        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
+        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("upName", "মো: আবদুর রহিম");
+        hashMap.put("upLevel", "নিরাপত্তা প্রহরী");
+        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
+        hashMap.put("upImage", "https://i.postimg.cc/mZ8qKN8h/khaddo-10.jpg");
+        hashMap.put("upGmail", "এই মর্মে জানা যায়নি");
+        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
+        hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
+        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
+        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("upName", "পলাশ চন্দ্র মজুমদার");
+        hashMap.put("upLevel", "নিরাপত্তা প্রহরী");
+        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
+        hashMap.put("upImage", "https://i.postimg.cc/FHJBdtmJ/khaddo11.jpg");
+        hashMap.put("upGmail", "এই মর্মে জানা যায়নি");
+        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
+        hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
+        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
+        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("upName", "মো: আবু জাফর");
+        hashMap.put("upLevel", "নিরাপত্তা প্রহরী");
+        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
+        hashMap.put("upImage", "https://i.postimg.cc/ZRJ7MCNr/khaddo-12.jpg");
+        hashMap.put("upGmail", "এই মর্মে জানা যায়নি");
+        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
+        hashMap.put("upTime", "এই মর্মে জানা যায়নি");
+        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
+        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        arrayList.add(hashMap);
+
+
+
 
 
 

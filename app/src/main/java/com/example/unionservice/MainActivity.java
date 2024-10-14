@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
     TabItem tabsItem1st,tabsItem2nd;
     pageAdapter vpAdpter;
 
-    public static String gmail = "myselfabout432@gmail.com";
-    public static String phone = "+8801648529374";
+     String gmail = "myselfabout432@gmail.com";
+     String phone = "+8801648529374";
 
     public static final String Url = "https://play.google.com/store/apps/details?id=";
     @Override

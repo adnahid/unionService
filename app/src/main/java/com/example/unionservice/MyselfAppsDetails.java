@@ -23,6 +23,9 @@ public class MyselfAppsDetails extends AppCompatActivity {
 
     gmailClass gmailClass;
 
+    String Gmail = "myselfabout432@gmail.com";
+    String Phone = "+8801648529374";
+
     String fb = "https://www.facebook.com/profile.php?id=100052377380714";
 
     @Override
@@ -45,7 +48,7 @@ public class MyselfAppsDetails extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:"+MainActivity.phone));
+                intent.setData(Uri.parse("tel:"+Phone));
                 startActivity(intent);
 
             }
@@ -58,7 +61,7 @@ public class MyselfAppsDetails extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("message/rfc822");
                 intent.putExtra(Intent.EXTRA_TEXT, "Text you want to share");
-                startActivity(Intent.createChooser(intent, ""+MainActivity.gmail));
+                startActivity(Intent.createChooser(intent, ""+Gmail));
 
                 //gmailClass.gmailMethod();
 

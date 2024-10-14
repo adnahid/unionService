@@ -1,6 +1,8 @@
 package Upzila;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +28,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import HealthPackage.AmbulanceList;
+import ItemLayout.LRDWProfileActivity;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class EducationOfficer extends AppCompatActivity {
@@ -138,6 +141,7 @@ public class EducationOfficer extends AppCompatActivity {
             readHolder.upName.setText(upName);
             readHolder.upBatchNo.setText(upTime);
             readHolder.upDegree.setText(upLevel);
+            readHolder.upGmail.setText(upGmail);
 
 
 
@@ -155,6 +159,9 @@ public class EducationOfficer extends AppCompatActivity {
                     UpzilaPersonProfile.UPJoinTime = upTime;
                     UpzilaPersonProfile.UPBscBatch = upBatch;
                     UpzilaPersonProfile.UPBscBatchNo = upBatchNo;
+
+                    Bitmap bitmap = ( (BitmapDrawable) readHolder.uPImage.getDrawable() ).getBitmap();
+                    UpzilaPersonProfile.ImageBitmap = bitmap;
 
                     startActivity(intent);
                 }
@@ -264,69 +271,52 @@ public class EducationOfficer extends AppCompatActivity {
 
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
+        hashMap.put("upName", "এ বি এম নুরেজ্জমান");
+        hashMap.put("upLevel", "সহকারী উপজেলা শিক্ষা অফিসার");
+        hashMap.put("upNumber", "০১৭১৯২১০৪৫৭");
+        hashMap.put("upImage", "https://i.postimg.cc/50Xc4ZCr/Edu-2.png");
+        hashMap.put("upGmail", "abmnurejjaman@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "১৬ আগষ্ট ২০২০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
+        hashMap.put("upName", "মোহাম্মদ আবদুল মোতালেব");
+        hashMap.put("upLevel", "সহকারি উপজেলা শিক্ষা অফিসার");
+        hashMap.put("upNumber", "০১৮৪৬৯০৩১২৬");
+        hashMap.put("upImage", "https://i.postimg.cc/52ySRbdD/Edu-3.png");
+        hashMap.put("upGmail", "m.a.motaleb81@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "২৩ এপ্রিল ২০১৭");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
+        hashMap.put("upName", "মোঃ লুৎফুল হায়দার");
+        hashMap.put("upLevel", "অফিস সহায়ক");
+        hashMap.put("upNumber", "০১৮২১০৪৪৯১১");
+        hashMap.put("upImage", "https://i.postimg.cc/X7HwFmGL/Edu-4.png");
+        hashMap.put("upGmail", "ueocompanigonj@yahoo.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "১২ ফেব্রুয়ারী ২০০৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
+        hashMap.put("upName", "জনি আইচ");
+        hashMap.put("upLevel", "হিসাব সহকারি");
+        hashMap.put("upNumber", "০১৮২১৬৫১২৪০");
+        hashMap.put("upImage", "https://i.postimg.cc/Y9vS5Dqr/Edu-5.jpg");
+        hashMap.put("upGmail", "joneaich@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "২২ মে ২০১২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
-        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
-        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
-        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
-        arrayList.add(hashMap);
-
-
-
-
-
 
     }
 }

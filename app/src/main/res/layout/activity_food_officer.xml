@@ -16,8 +16,8 @@
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
         app:title="Sub Register Activity"
-        app:titleTextColor="#FFEB3B"
-        android:background="#009688"
+        app:titleTextColor="#ffffff"
+        android:background="#3A1B1B"
         >
 
     </androidx.appcompat.widget.Toolbar>
