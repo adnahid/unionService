@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
-        app:title="Institute Details"
+        app:title="Ambulance List"
         app:titleTextColor="@color/white"
         android:background="#009688"
         >

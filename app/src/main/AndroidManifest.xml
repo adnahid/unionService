@@ -23,6 +23,12 @@
         android:theme="@style/Theme.UnionService"
         tools:targetApi="31">
         <activity
+            android:name="NagorikSheba.Reporter"
+            android:exported="false" />
+        <activity
+            android:name="NagorikSheba.InternetProvider"
+            android:exported="false" />
+        <activity
             android:name=".DistricAdministrator"
             android:exported="false" />
         <activity

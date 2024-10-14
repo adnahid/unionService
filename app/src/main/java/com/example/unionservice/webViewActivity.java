@@ -8,11 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -24,6 +26,8 @@ import javaClass.dialog;
 
 public class webViewActivity extends AppCompatActivity {
 
+
+    public static String ToolBarText = "";
     WebView webView;
 
     LottieAnimationView Lottie;
@@ -32,6 +36,10 @@ public class webViewActivity extends AppCompatActivity {
     public static String url = "";
 
     //dialog dialog;
+
+    TextView toolbarText;
+
+    Toolbar toolbar;
 
 
 
@@ -46,16 +54,26 @@ public class webViewActivity extends AppCompatActivity {
         webView = findViewById(R.id.webView);
         progressBar = findViewById(R.id.progressBar);
         Lottie = findViewById(R.id.Lottie);
+        toolbar = findViewById(R.id.toolbar);
+        toolbarText = findViewById(R.id.toolbarText);
+
+
         progressBar.setVisibility(View.VISIBLE);
-
-
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(webViewActivity.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
-
 
         webView.setVisibility(View.GONE);
         Lottie.setVisibility(View.VISIBLE);
 
+        toolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+                finish();
+            }
+        });
+
+        toolbarText.setText(ToolBarText);
 
         if (networkInfo!=null && networkInfo.isConnected()){
             webView.setVisibility(View.VISIBLE);

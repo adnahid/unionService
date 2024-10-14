@@ -35,10 +35,10 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/meassageItem"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             app:cardCornerRadius="8dp"
             android:elevation="5dp"
-            android:backgroundTint="#D0DDED"
+            android:backgroundTint="#E8E8E8"
             tools:context=".MainActivity"
             android:layout_weight="1"
             android:foreground="?android:attr/selectableItemBackground"
@@ -69,7 +69,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
+                    android:textSize="15sp"
                     android:text="বার্তা"
                     android:layout_gravity="center_vertical"
                     android:textStyle="bold"
@@ -83,7 +83,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/mapItem"
             android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             app:cardCornerRadius="8dp"
             android:elevation="5dp"
             android:backgroundTint="#D0DDED"
@@ -1335,6 +1335,7 @@
 
 
                             <androidx.cardview.widget.CardView
+                                android:id="@+id/internet"
                                 android:layout_width="0dp"
                                 android:layout_height="80dp"
                                 android:backgroundTint="#4CE496"
@@ -1380,6 +1381,7 @@
 
 
                             <androidx.cardview.widget.CardView
+                                android:id="@+id/repoter"
                                 android:layout_width="0dp"
                                 android:layout_height="80dp"
                                 android:backgroundTint="#4CE496"

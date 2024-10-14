@@ -30,6 +30,8 @@ import ItemLayout.LRDWProfileActivity;
 import ItemLayout.PollyBs;
 import ItemLayout.ThanaPolicy;
 import NagorikSheba.EmergencyNumber;
+import NagorikSheba.InternetProvider;
+import NagorikSheba.Reporter;
 import Upzila.AminalOfficer;
 import Upzila.EducationOfficer;
 import Upzila.ElectionActivity;
@@ -49,7 +51,7 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         ambulance,donet,hospital,emergencyNumber,police,upzilaNews,bdJobs,freedomFiter,
         poll,pastTeam,fireOfficer,educationOPfficer,animalOfficer,farmerOfficer,foodOfficer,
         subRegister,electionOffice,fresherOfficer,vumiOfficer,advocate,decumentWritter,vathaThalika,
-        meassageItem,mapItem;
+        meassageItem,mapItem,repoter,internet;
 
 
 
@@ -93,6 +95,8 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         freedomFiter = view.findViewById(R.id.freedomFiter);
         poll = view.findViewById(R.id.poll);
         pastTeam = view.findViewById(R.id.pastTeam);
+        repoter = view.findViewById(R.id.repoter);
+        internet = view.findViewById(R.id.internet);
 
         fireOfficer = view.findViewById(R.id.fireOfficer);
         educationOPfficer = view.findViewById(R.id.educationOPfficer);
@@ -165,6 +169,24 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), VathaThalika.class);
+                startActivity(intent);
+
+            }
+        });
+
+        internet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), InternetProvider.class);
+                startActivity(intent);
+
+            }
+        });
+
+        repoter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Reporter.class);
                 startActivity(intent);
 
             }
@@ -262,6 +284,7 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         mapItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                webViewActivity.ToolBarText = "মানচিত্র-কোম্পানীগঞ্জ";
                 webViewActivity.url= "http://www.companiganj.noakhali.gov.bd/bn/site/page/7fZt-মানচিত্র-কোম্পানীগঞ্জ";
                 Intent intent = new Intent(getActivity(),webViewActivity.class);
                 startActivity(intent);
@@ -273,6 +296,7 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         DeadSonod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                webViewActivity.ToolBarText ="মৃত্যু সনদ";
                 webViewActivity.url= "https://bdris.gov.bd/dr/application";
                 Intent intent = new Intent(getActivity(),webViewActivity.class);
                 startActivity(intent);
@@ -285,11 +309,14 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         Oyaris.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                webViewActivity.url= "https://prottoyon.gov.bd/application/additional-information/create/PVHnLY8ctOL20170419110045";
+                webViewActivity.url= "https://www.savarup.com/successor_apps";
                 Intent intent = new Intent(getActivity(),webViewActivity.class);
                 startActivity(intent);
             }
         });
+
+
+
 
      hospital.setOnClickListener(new View.OnClickListener() {
       @Override

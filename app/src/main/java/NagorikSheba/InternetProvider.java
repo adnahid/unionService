@@ -1,4 +1,4 @@
-package HealthPackage;
+package NagorikSheba;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -28,9 +28,11 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class PharmecyList extends AppCompatActivity {
+import HealthPackage.PharmecyList;
 
-    RecyclerView pharmecyRecyclerView;
+public class InternetProvider extends AppCompatActivity {
+
+    RecyclerView internetRecyclerView;
     Toolbar toolbar;
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
@@ -40,9 +42,9 @@ public class PharmecyList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_pharmecy_list);
+        setContentView(R.layout.activity_internet_provider);
         toolbar = findViewById(R.id.toolbar);
-        pharmecyRecyclerView  = findViewById(R.id.pharmecyRecyclerView);
+        internetRecyclerView = findViewById(R.id.internetRecyclerView);
         DetailsTable();
 
         toolbar.setOnClickListener(new View.OnClickListener() {
@@ -55,14 +57,14 @@ public class PharmecyList extends AppCompatActivity {
 
 
 
-        PharmecyAdapter pharmecyAdapter = new PharmecyAdapter();
-        pharmecyRecyclerView.setAdapter(pharmecyAdapter);
-        pharmecyRecyclerView.setLayoutManager(new LinearLayoutManager(PharmecyList.this));
+        InternetAdapter internetAdapter = new InternetAdapter();
+        internetRecyclerView.setAdapter(internetAdapter);
+        internetRecyclerView.setLayoutManager(new LinearLayoutManager(InternetProvider.this));
 
 
     }
 
-    private class PharmecyAdapter extends RecyclerView.Adapter{
+    private class InternetAdapter extends RecyclerView.Adapter{
 
         int Native = 0;
         int Read = 1;
@@ -166,7 +168,7 @@ public class PharmecyList extends AppCompatActivity {
                     try{
                         startActivity(smsSIntent);
                     } catch (Exception ex) {
-                        Toast.makeText(PharmecyList.this, "Your sms has failed...",
+                        Toast.makeText(InternetProvider.this, "Your sms has failed...",
                                 Toast.LENGTH_LONG).show();
                         ex.printStackTrace();
                     }
@@ -287,6 +289,3 @@ public class PharmecyList extends AppCompatActivity {
 
     }
 }
-
-
-
