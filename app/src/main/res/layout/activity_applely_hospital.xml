@@ -6,16 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="HospitalNameList.ApplelyHospital"
-    android:background="@color/white"
+    android:background="#3A1B1B"
     >
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
-        app:title="ApplelyHospital"
+        app:title="অ্যাপোলো হসপিটাল"
         app:titleTextColor="@color/white"
-        android:background="#009688"
+        android:background="#3A1B1B"
         >
     </androidx.appcompat.widget.Toolbar>
 

@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
-        app:title="Hospital List"
+        app:title="হসপিটালের তালিকা সমূহ"
         app:titleTextColor="@color/white"
-        android:background="#009688"
+        android:background="#4958dc"
         >
     </androidx.appcompat.widget.Toolbar>
 
@@ -25,7 +25,6 @@
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="3dp"
         android:layout_below="@id/toolbar"
         >
 
@@ -43,7 +42,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="5dp"
 
             >
 
@@ -51,7 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="DOCTOR"
+                android:text="ডাক্তার"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:textSize="30sp"
@@ -62,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Hospital and Doctor List"
+                android:text="চিকিৎসা সেবাকেন্দ্র সমূহ"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:textSize="15sp"

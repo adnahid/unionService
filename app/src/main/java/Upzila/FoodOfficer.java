@@ -133,11 +133,12 @@ public class FoodOfficer extends AppCompatActivity {
             String upBatch = hashMap.get("upBatch");
             String upTimeTitle = hashMap.get("upTimeTitle");
             String upBatchNo = hashMap.get("upBatchNo");
+            String sectorName = hashMap.get("sectorName");
 
             readHolder.upItemCard.startAnimation(AnimationUtils.loadAnimation(readHolder.upItemCard.getContext(),R.anim.recycler_anim02));
-            Picasso.get().load(upImage).into(readHolder.uPImage);
+            Picasso.get().load(upImage).placeholder(R.drawable.person).into(readHolder.uPImage);
 
-
+            toolbar.setTitle(sectorName);
             readHolder.upName.setText(upName);
             readHolder.upBatchNo.setText(upTime);
             readHolder.upDegree.setText(upLevel);
@@ -159,6 +160,7 @@ public class FoodOfficer extends AppCompatActivity {
                     UpzilaPersonProfile.UPJoinTime = upTime;
                     UpzilaPersonProfile.UPBscBatch = upBatch;
                     UpzilaPersonProfile.UPBscBatchNo = upBatchNo;
+                    UpzilaPersonProfile.ToolTv = sectorName;
 
                     Bitmap bitmap = ( (BitmapDrawable) readHolder.uPImage.getDrawable() ).getBitmap();
                     UpzilaPersonProfile.ImageBitmap = bitmap;
@@ -268,6 +270,7 @@ public class FoodOfficer extends AppCompatActivity {
         hashMap.put("upTime", "২২ জানুয়ারি ২০১৩");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা খাদ্য");
         arrayList.add(hashMap);
 
 
@@ -281,6 +284,7 @@ public class FoodOfficer extends AppCompatActivity {
         hashMap.put("upTime", "এই মর্মে জানা যায়নি");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা খাদ্য");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -293,6 +297,7 @@ public class FoodOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা খাদ্য");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -305,6 +310,7 @@ public class FoodOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা খাদ্য");
         arrayList.add(hashMap);
 
 
@@ -318,6 +324,7 @@ public class FoodOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা খাদ্য");
         arrayList.add(hashMap);
 
 
@@ -331,6 +338,7 @@ public class FoodOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা খাদ্য");
         arrayList.add(hashMap);
 
 
@@ -344,6 +352,7 @@ public class FoodOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা খাদ্য");
         arrayList.add(hashMap);
 
 
@@ -357,6 +366,7 @@ public class FoodOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা খাদ্য");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -369,6 +379,7 @@ public class FoodOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা খাদ্য");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -381,6 +392,7 @@ public class FoodOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা খাদ্য");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -393,6 +405,7 @@ public class FoodOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০১ জানুয়ারি ১৯৭০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা খাদ্য");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -405,6 +418,7 @@ public class FoodOfficer extends AppCompatActivity {
         hashMap.put("upTime", "এই মর্মে জানা যায়নি");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা খাদ্য");
         arrayList.add(hashMap);
 
 

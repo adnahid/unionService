@@ -1,6 +1,8 @@
 package Upzila;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -131,12 +133,14 @@ public class VumiOfficer extends AppCompatActivity {
             String upBatchNo = hashMap.get("upBatchNo");
 
             readHolder.upItemCard.startAnimation(AnimationUtils.loadAnimation(readHolder.upItemCard.getContext(),R.anim.recycler_anim02));
-            Picasso.get().load(upImage).into(readHolder.uPImage);
+            Picasso.get().load(upImage).placeholder(R.drawable.person).into(readHolder.uPImage);
+
 
 
             readHolder.upName.setText(upName);
             readHolder.upBatchNo.setText(upBatch);
             readHolder.upDegree.setText(upLevel);
+            readHolder.upGmail.setText(upGmail);
 
 
 
@@ -154,6 +158,9 @@ public class VumiOfficer extends AppCompatActivity {
                     UpzilaPersonProfile.UPJoinTime = upTime;
                     UpzilaPersonProfile.UPBscBatch = upBatch;
                     UpzilaPersonProfile.UPBscBatchNo = upBatchNo;
+
+                    Bitmap bitmap = ( (BitmapDrawable) readHolder.uPImage.getDrawable() ).getBitmap();
+                    UpzilaPersonProfile.ImageBitmap = bitmap;
 
                     startActivity(intent);
                 }

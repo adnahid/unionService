@@ -49,6 +49,7 @@ public class ApplelyHospital extends AppCompatActivity {
         ApplelyHospitalRecyclerView  = findViewById(R.id.ApplelyHospitalRecyclerView);
         toolbar  = findViewById(R.id.toolbar);
 
+
         toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,7 +108,7 @@ public class ApplelyHospital extends AppCompatActivity {
             String dcChamber = hashMap.get("dcChamber");
 
 
-
+            toolbar.setTitle(dcChamber);
             Picasso.get().load(dcImage).placeholder(R.drawable.doctor).into(readHolder.dcImage);
             readHolder.dcCardView.startAnimation(AnimationUtils.loadAnimation(readHolder.dcCardView.getContext(),R.anim.recycler_anim03));
 
@@ -142,6 +143,7 @@ public class ApplelyHospital extends AppCompatActivity {
                     DoctorProfile.DCED = dcEducation;
                     DoctorProfile.DCCHAMBER = dcChamber;
                     DoctorProfile.DCTIME = dcTime;
+                    DoctorProfile.ToolText = dcChamber;
                     Bitmap bitmap = ( (BitmapDrawable) readHolder.dcImage.getDrawable() ).getBitmap();
                     DoctorProfile.ImageBitmap = bitmap;
 
@@ -183,57 +185,80 @@ public class ApplelyHospital extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
         hashMap = new HashMap<>();
-        hashMap.put("name","সহঃ অধ্যাপক ডাঃ শ্যামল চন্দ্র বণিক");
+        hashMap.put("name","ডাঃ মোঃ জাকির হোসেন");
         hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/2785/2785482.png");
         hashMap.put("dcNumber","01834565606");
-        hashMap.put("dcSp","মেডিসিন, বাত-ব্যথা, ডায়াবেটিস রোগ বিশেষজ্ঞ");
-        hashMap.put("dcTitle","এফসিজিপি (মেডিসিন) এফসিপিএস");
-        hashMap.put("dcEducation","এমবিবিএস (ঢাকা); এফসিজিপি (মেডিসিন) এফসিপিএস মেডিসিন এম.ফিল (বিএসএমএমইউ)। সিসিডি (ডায়াবেটিস) বারডেম সিসিসিডি (ন্যাশনাল হার্ট ফাউন্ডেশন)");
-        hashMap.put("dcChamber","বসুরহাট সিটি হসপিটালেন");
-        hashMap.put("hospitalName","বসুরহাট সিটি হসপিটাল");
-        hashMap.put("dcTime","প্রতি শুক্রবার\n" +
-                "সকাল ১০টা-দুপুর ২টা");
+        hashMap.put("dcSp","মেডিসিন,বাত-ব্যথা ও প্যারালাইসিস রোগ বিশেষজ্ঞ");
+        hashMap.put("dcTitle","বিএসএমএমইউ");
+        hashMap.put("dcEducation","বিএসএমএমইউ (পিজি হাসপাতাল)");
+        hashMap.put("dcChamber","অ্যাপোলো হসপিটাল");
+        hashMap.put("hospitalName","অ্যাপোলো হসপিটাল");
+        hashMap.put("dcTime","শুক্রবার বিকেল থেকে রাত ৮টা পর্যন্ত।");
         arrayList.add(hashMap);
 
 
 
         hashMap = new HashMap<>();
-        hashMap.put("name","সহঃ অধ্যাপক ডাঃ শ্যামল চন্দ্র বণিক");
+        hashMap.put("name","ডাঃ মুহাম্মদ সাখাওয়াত হোসাইন");
         hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/2785/2785482.png");
         hashMap.put("dcNumber","01834565606");
-        hashMap.put("dcSp","মেডিসিন, বাত-ব্যথা, ডায়াবেটিস ও অ্যাজমা রোগ বিশেষজ্ঞ");
-        hashMap.put("dcTitle","এফসিজিপি (মেডিসিন) এফসিপিএস");
+        hashMap.put("dcSp","মেডিসিন, এলার্জি, যক্ষা ও বক্ষব্যাধি বিশেষজ্ঞ");
+        hashMap.put("dcTitle","এবিসি, সিভিএব (স্বাস্থা)");
         hashMap.put("dcEducation","এমবিবিএস (ঢাকা); এফসিজিপি (মেডিসিন) এফসিপিএস মেডিসিন এম.ফিল (বিএসএমএমইউ)। সিসিডি (ডায়াবেটিস) বারডেম সিসিসিডি (ন্যাশনাল হার্ট ফাউন্ডেশন)");
-        hashMap.put("dcChamber","বসুরহাট সিটি হসপিটালেন");
-        hashMap.put("hospitalName","বসুরহাট সিটি হসপিটাল");
-        hashMap.put("dcTime","প্রতি শুক্রবার\n" +
-                "সকাল ১০টা-দুপুর ২টা");
-        arrayList.add(hashMap);
-
-
-        hashMap = new HashMap<>();
-        hashMap.put("name","সহঃ অধ্যাপক ডাঃ শ্যামল চন্দ্র বণিক");
-        hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/2785/2785482.png");
-        hashMap.put("dcNumber","01834565606");
-        hashMap.put("dcSp","মেডিসিন, বাত-ব্যথা, ডায়াবেটিস ও অ্যাজমা রোগ বিশেষজ্ঞ");
-        hashMap.put("dcTitle","এফসিজিপি (মেডিসিন) এফসিপিএস");
-        hashMap.put("dcEducation","এমবিবিএস (ঢাকা); এফসিজিপি (মেডিসিন) এফসিপিএস মেডিসিন এম.ফিল (বিএসএমএমইউ)। সিসিডি (ডায়াবেটিস) বারডেম সিসিসিডি (ন্যাশনাল হার্ট ফাউন্ডেশন)");
-        hashMap.put("dcChamber","বসুরহাট সিটি হসপিটালেন");
-        hashMap.put("hospitalName","বসুরহাট সিটি হসপিটাল");
+        hashMap.put("dcChamber","অ্যাপোলো হসপিটাল");
+        hashMap.put("hospitalName","অ্যাপোলো হসপিটাল");
         hashMap.put("dcTime","প্রতি শুক্রবার সকাল ১০টা-দুপুর ২টা");
         arrayList.add(hashMap);
 
+
         hashMap = new HashMap<>();
-        hashMap.put("name","সহঃ অধ্যাপক ডাঃ শ্যামল চন্দ্র বণিক");
+        hashMap.put("name","ডাঃ মোঃ মনির খান");
         hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/2785/2785482.png");
         hashMap.put("dcNumber","01834565606");
-        hashMap.put("dcSp","মেডিসিন, বাত-ব্যথা, ডায়াবেটিস ও অ্যাজমা রোগ বিশেষজ্ঞ");
+        hashMap.put("dcSp","নাক, কান, গলা রোগ অভিজ্ঞ ও হেডনেক সার্জন");
         hashMap.put("dcTitle","এফসিজিপি (মেডিসিন) এফসিপিএস");
         hashMap.put("dcEducation","এমবিবিএস (ঢাকা); এফসিজিপি (মেডিসিন) এফসিপিএস মেডিসিন এম.ফিল (বিএসএমএমইউ)। সিসিডি (ডায়াবেটিস) বারডেম সিসিসিডি (ন্যাশনাল হার্ট ফাউন্ডেশন)");
-        hashMap.put("dcChamber","বসুরহাট সিটি হসপিটালেন");
-        hashMap.put("hospitalName","বসুরহাট সিটি হসপিটাল");
-        hashMap.put("dcTime","প্রতি শুক্রবার\n" +
-                "সকাল ১০টা-দুপুর ২টা");
+        hashMap.put("dcChamber","অ্যাপোলো হসপিটাল");
+        hashMap.put("hospitalName","অ্যাপোলো হসপিটাল");
+        hashMap.put("dcTime","প্রতি শুক্রবার সকাল ৯ টা থেকে দুপুর ১টা পর্যন্ত।");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","সহকারী অধ্যাপক ডাঃ মোঃ সফিকুল ইসলাম");
+        hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/2785/2785482.png");
+        hashMap.put("dcNumber","01834565606");
+        hashMap.put("dcSp","চর্ম, এলার্জী ও যৌন রোগ বিশেষজ্ঞ");
+        hashMap.put("dcTitle","এফসিজিপি (মেডিসিন) এফসিপিএস");
+        hashMap.put("dcEducation","এমবিবিএস (ঢাকা); এফসিজিপি (মেডিসিন) এফসিপিএস মেডিসিন এম.ফিল (বিএসএমএমইউ)। সিসিডি (ডায়াবেটিস) বারডেম সিসিসিডি (ন্যাশনাল হার্ট ফাউন্ডেশন)");
+        hashMap.put("dcChamber","অ্যাপোলো হসপিটাল");
+        hashMap.put("hospitalName","অ্যাপোলো হসপিটাল");
+        hashMap.put("dcTime","প্রতি শুক্রবার সকাল ১০টা-দুপুর ২টা");
+        arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","ডাঃ ইসরাত জাহান");
+        hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/9439/9439276.png");
+        hashMap.put("dcNumber","01834565606");
+        hashMap.put("dcSp","গাইনী, প্রসূতি, বন্ধ্যাত্ব ও স্ত্রী রোগ চিকিৎসক");
+        hashMap.put("dcTitle","গাইনী প্রসূতি, বন্ধ্যাত্ব স্ত্রী রোগের চিকিৎসক ও সার্জন");
+        hashMap.put("dcEducation","এই মর্মে কোন প্রকার তথ্য পাওয়া যায়নি");
+        hashMap.put("dcChamber","অ্যাপোলো হসপিটাল");
+        hashMap.put("hospitalName","অ্যাপোলো হসপিটাল");
+        hashMap.put("dcTime","রোগী দেখার সময় প্রতি মঙ্গলবার বিকাল ২:০০টা দেখে সন্ধ্যা ৬টা পর্যন্ত।");
+        arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","ডাঃ প্রিয়া কুন্ডু");
+        hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/9439/9439276.png");
+        hashMap.put("dcNumber","01834565606");
+        hashMap.put("dcSp","গাইনী, প্রসূতি, বন্ধ্যাত্ব ও স্ত্রী রোগ চিকিৎসক");
+        hashMap.put("dcTitle","গাইনী, প্রসূতি, বন্ধ্যাত্ব ও স্ত্রী রোগ চিকিৎসক");
+        hashMap.put("dcEducation","এই মর্মে কোন প্রকার তথ্য পাওয়া যায়নি");
+        hashMap.put("dcChamber","অ্যাপোলো হসপিটাল");
+        hashMap.put("hospitalName","অ্যাপোলো হসপিটাল");
+        hashMap.put("dcTime","রোগী দেখার সময়। প্রতিদিন সকাল ১০টা থেকে বিকাল ৪টা পর্যন্ত");
         arrayList.add(hashMap);
 
     }

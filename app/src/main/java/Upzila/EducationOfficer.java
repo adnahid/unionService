@@ -133,11 +133,13 @@ public class EducationOfficer extends AppCompatActivity {
             String upBatch = hashMap.get("upBatch");
             String upTimeTitle = hashMap.get("upTimeTitle");
             String upBatchNo = hashMap.get("upBatchNo");
+            String sectorName = hashMap.get("sectorName");
 
             readHolder.upItemCard.startAnimation(AnimationUtils.loadAnimation(readHolder.upItemCard.getContext(),R.anim.recycler_anim01));
-            Picasso.get().load(upImage).into(readHolder.uPImage);
+            Picasso.get().load(upImage).placeholder(R.drawable.person).into(readHolder.uPImage);
 
 
+            toolbar.setTitle(sectorName);
             readHolder.upName.setText(upName);
             readHolder.upBatchNo.setText(upTime);
             readHolder.upDegree.setText(upLevel);
@@ -159,6 +161,7 @@ public class EducationOfficer extends AppCompatActivity {
                     UpzilaPersonProfile.UPJoinTime = upTime;
                     UpzilaPersonProfile.UPBscBatch = upBatch;
                     UpzilaPersonProfile.UPBscBatchNo = upBatchNo;
+                    UpzilaPersonProfile.ToolTv = sectorName;
 
                     Bitmap bitmap = ( (BitmapDrawable) readHolder.uPImage.getDrawable() ).getBitmap();
                     UpzilaPersonProfile.ImageBitmap = bitmap;
@@ -267,6 +270,7 @@ public class EducationOfficer extends AppCompatActivity {
         hashMap.put("upTime", "২৮ ফেব্রুয়ারী ২০২১");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা শিক্ষা অফিসার");
         arrayList.add(hashMap);
 
 
@@ -280,6 +284,7 @@ public class EducationOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১৬ আগষ্ট ২০২০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা শিক্ষা অফিসার");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -292,6 +297,7 @@ public class EducationOfficer extends AppCompatActivity {
         hashMap.put("upTime", "২৩ এপ্রিল ২০১৭");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা শিক্ষা অফিসার");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -304,6 +310,7 @@ public class EducationOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১২ ফেব্রুয়ারী ২০০৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা শিক্ষা অফিসার");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -316,6 +323,7 @@ public class EducationOfficer extends AppCompatActivity {
         hashMap.put("upTime", "২২ মে ২০১২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা শিক্ষা অফিসার");
         arrayList.add(hashMap);
 
     }

@@ -134,7 +134,8 @@ public class InternetProvider extends AppCompatActivity {
 
 
             readHolder.pharmacyCardView.startAnimation(AnimationUtils.loadAnimation(readHolder.pharmacyCardView.getContext(),R.anim.recycler_anim03));
-            Picasso.get().load(pharmacyImage).placeholder(R.drawable.doctor).into(readHolder.pharmacyImage);
+            Picasso.get().load(pharmacyImage).placeholder(R.drawable.person).into(readHolder.pharmacyImage);
+
 
             readHolder.pharmacyTitle.setText(pharmacyTitle);
             readHolder.pharmacyName.setText(pharmacyName);

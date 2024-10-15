@@ -140,8 +140,7 @@ public class AdvocateActivity extends AppCompatActivity {
             String adChTex2ndDes = hashMap.get("adChTex2ndDes");
 
             readHolder.advocateCardView.startAnimation(AnimationUtils.loadAnimation(readHolder.advocateCardView.getContext(),R.anim.recycler_anim04));
-            Picasso.get().load(AdImage).into(readHolder.advocateImage);
-
+            Picasso.get().load(AdImage).placeholder(R.drawable.person).into(readHolder.advocateImage);
 
             readHolder.advocateName.setText(adName);
             readHolder.advocateDegree.setText(adTitle);

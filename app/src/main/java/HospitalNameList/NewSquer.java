@@ -107,6 +107,9 @@ public class NewSquer extends AppCompatActivity {
 
 
 
+
+            toolbar.setTitle(dcChamber);
+
             Picasso.get().load(dcImage).placeholder(R.drawable.doctor).into(readHolder.dcImage);
             readHolder.dcCardView.startAnimation(AnimationUtils.loadAnimation(readHolder.dcCardView.getContext(),R.anim.recycler_anim03));
 
@@ -141,6 +144,7 @@ public class NewSquer extends AppCompatActivity {
                     DoctorProfile.DCED = dcEducation;
                     DoctorProfile.DCCHAMBER = dcChamber;
                     DoctorProfile.DCTIME = dcTime;
+                    DoctorProfile.ToolText = dcNumber;
                     Bitmap bitmap = ( (BitmapDrawable) readHolder.dcImage.getDrawable() ).getBitmap();
                     DoctorProfile.ImageBitmap = bitmap;
 
@@ -182,57 +186,54 @@ public class NewSquer extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
         hashMap = new HashMap<>();
-        hashMap.put("name","সহঃ অধ্যাপক ডাঃ শ্যামল চন্দ্র বণিক");
+        hashMap.put("name","ডাঃ মাকসুদা সুলতানা (সুরভী)");
         hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/2785/2785482.png");
         hashMap.put("dcNumber","01834565606");
-        hashMap.put("dcSp","মেডিসিন, বাত-ব্যথা, ডায়াবেটিস রোগ বিশেষজ্ঞ");
-        hashMap.put("dcTitle","এফসিজিপি (মেডিসিন) এফসিপিএস");
-        hashMap.put("dcEducation","এমবিবিএস (ঢাকা); এফসিজিপি (মেডিসিন) এফসিপিএস মেডিসিন এম.ফিল (বিএসএমএমইউ)। সিসিডি (ডায়াবেটিস) বারডেম সিসিসিডি (ন্যাশনাল হার্ট ফাউন্ডেশন)");
-        hashMap.put("dcChamber","বসুরহাট সিটি হসপিটালেন");
-        hashMap.put("hospitalName","বসুরহাট সিটি হসপিটাল");
-        hashMap.put("dcTime","প্রতি শুক্রবার\n" +
-                "সকাল ১০টা-দুপুর ২টা");
+        hashMap.put("dcSp","আল্ট্রাসনোগ্রাফী ও ইমেজিং বিশেষজ্ঞ মেডিসিন, বন্ধ্যাত্ব, গাইনী, চর্ম ও মহিলা রোগ অভিজ্ঞ");
+        hashMap.put("dcTitle","এম.বি.বি.এস; এম.এস.সি ");
+        hashMap.put("dcEducation","T.V.S. Anomly Scan, Thyroid, Breast, 3D-4D Color Doppler, Mak এম.বি.বি.এস; এম.এস.সি (ডায়াগনষ্টিক আল্ট্রাসনোগ্রাফী এন্ড মেডিকেল ইমেজিং) সি.ই.সি (ইকোকার্ডিওগ্রাফী");
+        hashMap.put("dcChamber","নিউ স্কয়ার ডায়াগনস্টিক সেন্টার");
+        hashMap.put("hospitalName","নিউ স্কয়ার ডায়াগনস্টিক সেন্টার");
+        hashMap.put("dcTime","সার্বক্ষনিক (সরকারী অফিস সূচী ব্যতিত)");
         arrayList.add(hashMap);
 
 
 
         hashMap = new HashMap<>();
-        hashMap.put("name","সহঃ অধ্যাপক ডাঃ শ্যামল চন্দ্র বণিক");
+        hashMap.put("name","ডাঃ সলিম উল্যাহ");
         hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/2785/2785482.png");
         hashMap.put("dcNumber","01834565606");
-        hashMap.put("dcSp","মেডিসিন, বাত-ব্যথা, ডায়াবেটিস ও অ্যাজমা রোগ বিশেষজ্ঞ");
-        hashMap.put("dcTitle","এফসিজিপি (মেডিসিন) এফসিপিএস");
+        hashMap.put("dcSp","মেডিসিন, বাত ব্যথা, রোগ অভিজ্ঞ ও সনোলজিস্ট বিশেষজ্ঞ");
+        hashMap.put("dcTitle","এম.বি.বি.এস; বিসিএস (স্বাস্থ্য) সিএমইউ (আল্ট্রাসনোগ্রাফী)");
         hashMap.put("dcEducation","এমবিবিএস (ঢাকা); এফসিজিপি (মেডিসিন) এফসিপিএস মেডিসিন এম.ফিল (বিএসএমএমইউ)। সিসিডি (ডায়াবেটিস) বারডেম সিসিসিডি (ন্যাশনাল হার্ট ফাউন্ডেশন)");
-        hashMap.put("dcChamber","বসুরহাট সিটি হসপিটালেন");
-        hashMap.put("hospitalName","বসুরহাট সিটি হসপিটাল");
-        hashMap.put("dcTime","প্রতি শুক্রবার\n" +
-                "সকাল ১০টা-দুপুর ২টা");
+        hashMap.put("dcChamber","নিউ স্কয়ার ডায়াগনস্টিক সেন্টার");
+        hashMap.put("hospitalName","নিউ স্কয়ার ডায়াগনস্টিক সেন্টার");
+        hashMap.put("dcTime","সার্বক্ষনিক (সরকারী অফিস সূচী ব্যতিত)");
         arrayList.add(hashMap);
 
 
         hashMap = new HashMap<>();
-        hashMap.put("name","সহঃ অধ্যাপক ডাঃ শ্যামল চন্দ্র বণিক");
+        hashMap.put("name","ডাঃ প্রিয়া কুণ্ডু");
         hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/2785/2785482.png");
         hashMap.put("dcNumber","01834565606");
-        hashMap.put("dcSp","মেডিসিন, বাত-ব্যথা, ডায়াবেটিস ও অ্যাজমা রোগ বিশেষজ্ঞ");
-        hashMap.put("dcTitle","এফসিজিপি (মেডিসিন) এফসিপিএস");
-        hashMap.put("dcEducation","এমবিবিএস (ঢাকা); এফসিজিপি (মেডিসিন) এফসিপিএস মেডিসিন এম.ফিল (বিএসএমএমইউ)। সিসিডি (ডায়াবেটিস) বারডেম সিসিসিডি (ন্যাশনাল হার্ট ফাউন্ডেশন)");
-        hashMap.put("dcChamber","বসুরহাট সিটি হসপিটালেন");
-        hashMap.put("hospitalName","বসুরহাট সিটি হসপিটাল");
-        hashMap.put("dcTime","প্রতি শুক্রবার সকাল ১০টা-দুপুর ২টা");
+        hashMap.put("dcSp","গাইনী, প্রসূতি ও স্ত্রী রোগ চিকিৎসক বিশেষজ্ঞ");
+        hashMap.put("dcTitle","এম.বি.বি.এস; পি.জি.টি গাইনী) গা");
+        hashMap.put("dcEducation","এম.বি.বি.এস; পি.জি.টি গাইনী) গাইনী এন্ড অবস্ ( সিএমইউ (আল্ট্রা) ঢাকা।)");
+        hashMap.put("dcChamber","নিউ স্কয়ার ডায়াগনস্টিক সেন্টার");
+        hashMap.put("hospitalName","নিউ স্কয়ার ডায়াগনস্টিক সেন্টার");
+        hashMap.put("dcTime","সার্বক্ষনিক অনকল");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","সহঃ অধ্যাপক ডাঃ শ্যামল চন্দ্র বণিক");
+        hashMap.put("name","ডাঃ মোহাম্মদ মেহেদী হাসান");
         hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/2785/2785482.png");
         hashMap.put("dcNumber","01834565606");
-        hashMap.put("dcSp","মেডিসিন, বাত-ব্যথা, ডায়াবেটিস ও অ্যাজমা রোগ বিশেষজ্ঞ");
-        hashMap.put("dcTitle","এফসিজিপি (মেডিসিন) এফসিপিএস");
-        hashMap.put("dcEducation","এমবিবিএস (ঢাকা); এফসিজিপি (মেডিসিন) এফসিপিএস মেডিসিন এম.ফিল (বিএসএমএমইউ)। সিসিডি (ডায়াবেটিস) বারডেম সিসিসিডি (ন্যাশনাল হার্ট ফাউন্ডেশন)");
-        hashMap.put("dcChamber","বসুরহাট সিটি হসপিটালেন");
-        hashMap.put("hospitalName","বসুরহাট সিটি হসপিটাল");
-        hashMap.put("dcTime","প্রতি শুক্রবার\n" +
-                "সকাল ১০টা-দুপুর ২টা");
+        hashMap.put("dcSp","মেডিসিন, ডায়াবেটিস, বাত ব্যথা, হরমোন, থাইরয়েড রোগ চিকিৎসক");
+        hashMap.put("dcTitle","এম.বি.বি.এস; (সি.ইউ) বিসিএস (স্বাস্থ্য) ডিইএম ");
+        hashMap.put("dcEducation","এম.বি.বি.এস; (সি.ইউ) বিসিএস (স্বাস্থ্য) ডিইএম (হরমোন রোগ, বিএসএমএমইউ-সি) পিজিটি (মেডিসিন-ময়মনসিংহ মেডিকেল কলেজ))");
+        hashMap.put("dcChamber","নিউ স্কয়ার ডায়াগনস্টিক সেন্টার");
+        hashMap.put("hospitalName","নিউ স্কয়ার ডায়াগনস্টিক সেন্টার");
+        hashMap.put("dcTime","সার্বক্ষনিক (সরকারী অফিস সূচী ব্যতিত)");
         arrayList.add(hashMap);
 
     }

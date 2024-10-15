@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -32,6 +33,7 @@ public class UpzilaPersonProfile extends AppCompatActivity {
     public static String UPJoinTime = "";
     public static String UPBscBatch = "";
     public static String UPBscBatchNo = "";
+    public static String ToolTv = "";
 
     public static Bitmap ImageBitmap = null;
     String body = "Hi there";
@@ -40,6 +42,8 @@ public class UpzilaPersonProfile extends AppCompatActivity {
     CardView gmCardUp,callCardUp,meassagesUp;
     CircleImageView imageUp;
 
+
+    Toolbar toolbar;
 
 
     @Override
@@ -57,6 +61,7 @@ public class UpzilaPersonProfile extends AppCompatActivity {
         callCardUp = findViewById(R.id.callCardUp);
         meassagesUp = findViewById(R.id.meassagesUp);
         imageUp = findViewById(R.id.imageUp);
+        toolbar = findViewById(R.id.toolbar);
 
 
         nameUp.setText(UPName);
@@ -65,6 +70,16 @@ public class UpzilaPersonProfile extends AppCompatActivity {
         textTvHeadLine2nd.setText(UPJoinTime);
         textTvHeadLine3rd.setText(UPBscBatchNo);
         textTvHeadLine4th.setText(UPBscBatch);
+        toolbar.setTitle(ToolTv);
+
+        toolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+                finish();
+            }
+        });
+
 
         callCardUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +89,7 @@ public class UpzilaPersonProfile extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
         meassagesUp.setOnClickListener(new View.OnClickListener() {
             @Override

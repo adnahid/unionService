@@ -130,11 +130,14 @@ public class AminalOfficer extends AppCompatActivity {
             String upBatch = hashMap.get("upBatch");
             String upTimeTitle = hashMap.get("upTimeTitle");
             String upBatchNo = hashMap.get("upBatchNo");
+            String sectorName = hashMap.get("sectorName");
 
             readHolder.upItemCard.startAnimation(AnimationUtils.loadAnimation(readHolder.upItemCard.getContext(),R.anim.recycler_anim04));
-            Picasso.get().load(upImage).into(readHolder.uPImage);
+            Picasso.get().load(upImage).placeholder(R.drawable.person).into(readHolder.uPImage);
 
 
+
+            toolbar.setTitle(sectorName);
             readHolder.upName.setText(upName);
             readHolder.upBatchNo.setText(upBatch);
             readHolder.upDegree.setText(upLevel);
@@ -156,6 +159,8 @@ public class AminalOfficer extends AppCompatActivity {
                     UpzilaPersonProfile.UPJoinTime = upTime;
                     UpzilaPersonProfile.UPBscBatch = upBatch;
                     UpzilaPersonProfile.UPBscBatchNo = upBatchNo;
+                    UpzilaPersonProfile.ToolTv = sectorName;
+
 
                     Bitmap bitmap = ( (BitmapDrawable) readHolder.uPImage.getDrawable() ).getBitmap();
                     UpzilaPersonProfile.ImageBitmap = bitmap;
@@ -264,6 +269,7 @@ public class AminalOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০১ ফেব্রুয়ারী ২০২২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "ব্যাচ (বিসিএস) : ৩১");
+        hashMap.put("sectorName", "উপজেলা প্রাণিসম্পদ");
         arrayList.add(hashMap);
 
 
@@ -277,6 +283,7 @@ public class AminalOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১১ ডিসেম্বর ২০২২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "ব্যাচ (বিসিএস) : ৪০");
+        hashMap.put("sectorName", "উপজেলা প্রাণিসম্পদ");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -289,6 +296,7 @@ public class AminalOfficer extends AppCompatActivity {
         hashMap.put("upTime", "এই মর্মে জানা যায়নি");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা প্রাণিসম্পদ");
         arrayList.add(hashMap);
 
 
@@ -302,6 +310,7 @@ public class AminalOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১৭ ডিসেম্বর ২০১২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা প্রাণিসম্পদ");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -314,6 +323,7 @@ public class AminalOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১৩ এপ্রিল ২০১৭");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা প্রাণিসম্পদ");
         arrayList.add(hashMap);
 
 
@@ -327,6 +337,7 @@ public class AminalOfficer extends AppCompatActivity {
         hashMap.put("upTime", "২৮ আগষ্ট ২০২২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা প্রাণিসম্পদ");
         arrayList.add(hashMap);
 
 
@@ -340,6 +351,7 @@ public class AminalOfficer extends AppCompatActivity {
         hashMap.put("upTime", "২৯ আগষ্ট ২০২২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা প্রাণিসম্পদ");
         arrayList.add(hashMap);
 
 
@@ -354,6 +366,7 @@ public class AminalOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১১ অক্টোবর ২০২২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা প্রাণিসম্পদ");
         arrayList.add(hashMap);
 
 
@@ -367,6 +380,7 @@ public class AminalOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১৯ অক্টোবর ২০২০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা প্রাণিসম্পদ");
         arrayList.add(hashMap);
 
 

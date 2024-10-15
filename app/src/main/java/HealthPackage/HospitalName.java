@@ -326,7 +326,7 @@ public class HospitalName extends AppCompatActivity {
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("hsName","কোম্পানীগঞ্জ ইউনাইটেড হসপিটাল ইউনিট");
+        hashMap.put("hsName","কোম্পানীগঞ্জ ইউনাইটেড হসপিটাল");
         hashMap.put("hsImage","https://cdn-icons-png.flaticon.com/128/11404/11404937.png");
         arrayList.add(hashMap);
 

@@ -106,7 +106,7 @@ public class NewOposum extends AppCompatActivity {
             String dcChamber = hashMap.get("dcChamber");
 
 
-
+            toolbar.setTitle(dcChamber);
             Picasso.get().load(dcImage).placeholder(R.drawable.doctor).into(readHolder.dcImage);
             readHolder.dcCardView.startAnimation(AnimationUtils.loadAnimation(readHolder.dcCardView.getContext(),R.anim.recycler_anim03));
 
@@ -141,6 +141,7 @@ public class NewOposum extends AppCompatActivity {
                     DoctorProfile.DCED = dcEducation;
                     DoctorProfile.DCCHAMBER = dcChamber;
                     DoctorProfile.DCTIME = dcTime;
+                    DoctorProfile.ToolText = dcChamber;
                     Bitmap bitmap = ( (BitmapDrawable) readHolder.dcImage.getDrawable() ).getBitmap();
                     DoctorProfile.ImageBitmap = bitmap;
 
@@ -182,16 +183,15 @@ public class NewOposum extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
         hashMap = new HashMap<>();
-        hashMap.put("name","সহঃ অধ্যাপক ডাঃ শ্যামল চন্দ্র বণিক");
-        hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/2785/2785482.png");
-        hashMap.put("dcNumber","01834565606");
-        hashMap.put("dcSp","মেডিসিন, বাত-ব্যথা, ডায়াবেটিস রোগ বিশেষজ্ঞ");
-        hashMap.put("dcTitle","এফসিজিপি (মেডিসিন) এফসিপিএস");
+        hashMap.put("name","ডাঃ সানজিদা হক'");
+        hashMap.put("dcImage","https://cdn-icons-png.flaticon.com/128/9439/9439276.png");
+        hashMap.put("dcNumber","01712-283891");
+        hashMap.put("dcSp","গাইনী, প্রসূতী, স্ত্রীরোগ বিশেষজ্ঞ ও সনোলজিষ্ট");
+        hashMap.put("dcTitle","গাইনী, প্রসূতী, স্ত্রীরোগ বিশেষজ্ঞ ও সনোলজিষ্ট");
         hashMap.put("dcEducation","এমবিবিএস (ঢাকা); এফসিজিপি (মেডিসিন) এফসিপিএস মেডিসিন এম.ফিল (বিএসএমএমইউ)। সিসিডি (ডায়াবেটিস) বারডেম সিসিসিডি (ন্যাশনাল হার্ট ফাউন্ডেশন)");
-        hashMap.put("dcChamber","বসুরহাট সিটি হসপিটালেন");
-        hashMap.put("hospitalName","বসুরহাট সিটি হসপিটাল");
-        hashMap.put("dcTime","প্রতি শুক্রবার\n" +
-                "সকাল ১০টা-দুপুর ২টা");
+        hashMap.put("dcChamber","নিউ উপশম ক্লিনিক এন্ড হাসপাতাল ");
+        hashMap.put("hospitalName","নিউ উপশম ক্লিনিক এন্ড হাসপাতাল ");
+        hashMap.put("dcTime","প্রতিদিন সকাল ৮টা থেকে দুপুর ১টা এবং বিকাল ৪টা থেকে রাত ৮টা পর্যন্ত");
         arrayList.add(hashMap);
 
 
@@ -205,8 +205,7 @@ public class NewOposum extends AppCompatActivity {
         hashMap.put("dcEducation","এমবিবিএস (ঢাকা); এফসিজিপি (মেডিসিন) এফসিপিএস মেডিসিন এম.ফিল (বিএসএমএমইউ)। সিসিডি (ডায়াবেটিস) বারডেম সিসিসিডি (ন্যাশনাল হার্ট ফাউন্ডেশন)");
         hashMap.put("dcChamber","বসুরহাট সিটি হসপিটালেন");
         hashMap.put("hospitalName","বসুরহাট সিটি হসপিটাল");
-        hashMap.put("dcTime","প্রতি শুক্রবার\n" +
-                "সকাল ১০টা-দুপুর ২টা");
+        hashMap.put("dcTime","প্রতি শুক্রবার সকাল ১০টা-দুপুর ২টা");
         arrayList.add(hashMap);
 
 
@@ -231,8 +230,7 @@ public class NewOposum extends AppCompatActivity {
         hashMap.put("dcEducation","এমবিবিএস (ঢাকা); এফসিজিপি (মেডিসিন) এফসিপিএস মেডিসিন এম.ফিল (বিএসএমএমইউ)। সিসিডি (ডায়াবেটিস) বারডেম সিসিসিডি (ন্যাশনাল হার্ট ফাউন্ডেশন)");
         hashMap.put("dcChamber","বসুরহাট সিটি হসপিটালেন");
         hashMap.put("hospitalName","বসুরহাট সিটি হসপিটাল");
-        hashMap.put("dcTime","প্রতি শুক্রবার\n" +
-                "সকাল ১০টা-দুপুর ২টা");
+        hashMap.put("dcTime","প্রতি শুক্রবার সকাল ১০টা-দুপুর ২টা");
         arrayList.add(hashMap);
 
     }

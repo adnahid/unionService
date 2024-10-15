@@ -6,20 +6,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="HealthPackage.DoctorProfile"
-    android:background="#ffffff"
+    android:background="#3A1B1B"
+    android:layout_margin="2dp"
     >
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:navigationIcon="@drawable/baseline_arrow_back_24"
-        app:title="Doctor Profile"
-        app:titleTextColor="#000000"
-        android:background="#009688"
-        >
 
-    </androidx.appcompat.widget.Toolbar>
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:title="Doctor Profile"
+            app:titleTextColor="#ffffff"
+            android:background="#3A1B1B"
+            >
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -36,6 +49,20 @@
             android:orientation="vertical"
             >
 
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#3A1B1B"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                >
+
+
+
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/doctorImage"
                 android:layout_width="90dp"
@@ -43,7 +70,6 @@
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/doctor"
                 app:civ_border_color="#DFD6F6"
-                app:civ_border_width="2dp"
                 android:padding="5dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="2dp"
@@ -56,7 +82,7 @@
                 android:textSize="15sp"
                 android:text="Doctor Name"
                 android:textStyle="bold"
-                android:textColor="#000000"
+                android:textColor="#fff"
                 android:layout_marginTop="1dp"
                 android:layout_gravity="center_horizontal"
                 />
@@ -68,7 +94,7 @@
                 android:textSize="9sp"
                 android:text="Doctor Degree"
                 android:textStyle="bold"
-                android:textColor="#000000"
+                android:textColor="#ffffff"
                 android:layout_marginTop="1dp"
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="serif"
@@ -115,15 +141,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="15sp"
-                        android:text="Call Now"
+                        android:text="কল করুন"
                         android:textStyle="bold"
                         android:textColor="#000000"
                         android:fontFamily="serif"
+                        android:padding="5dp"
                         />
 
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
 
 
 
@@ -167,7 +196,8 @@
                             android:textSize="15sp"
                             android:text="বিশেষজ্ঞঃ"
                             android:textStyle="bold"
-                            android:textColor="#F44336"
+                            android:textColor="#3F51B5"
+                            android:layout_marginTop="5dp"
                             />
 
 
@@ -219,7 +249,8 @@
                             android:textSize="15sp"
                             android:text="চেম্বার সমূহঃ"
                             android:textStyle="bold"
-                            android:textColor="#F44336"
+                            android:textColor="#3F51B5"
+                            android:layout_marginTop="5dp"
                             />
 
 
@@ -286,7 +317,8 @@
                             android:textSize="15sp"
                             android:text="শিক্ষাগত যোগ্যতাঃ"
                             android:textStyle="bold"
-                            android:textColor="#F44336"
+                            android:textColor="#673AB7"
+                            android:layout_marginTop="5dp"
                             />
 
 
@@ -300,7 +332,6 @@
                             android:textStyle="bold"
                             android:textColor="#000000"
                             android:fontFamily="sans-serif"
-                            android:textAlignment="center"
                             />
 
                     </LinearLayout>

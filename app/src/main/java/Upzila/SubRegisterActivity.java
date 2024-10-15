@@ -129,14 +129,19 @@ public class SubRegisterActivity extends AppCompatActivity {
             String upBatch = hashMap.get("upBatch");
             String upTimeTitle = hashMap.get("upTimeTitle");
             String upBatchNo = hashMap.get("upBatchNo");
+            String  sectorName = hashMap.get("sectorName");
 
+            toolbar.setTitle(sectorName);
             readHolder.upItemCard.startAnimation(AnimationUtils.loadAnimation(readHolder.upItemCard.getContext(),R.anim.recycler_anim02));
-            Picasso.get().load(upImage).into(readHolder.uPImage);
+            Picasso.get().load(upImage).placeholder(R.drawable.person).into(readHolder.uPImage);
+
 
 
             readHolder.upName.setText(upName);
             readHolder.upBatchNo.setText(upTime);
             readHolder.upDegree.setText(upLevel);
+            readHolder.upGmail.setText(upGmail);
+
 
 
 
@@ -154,7 +159,7 @@ public class SubRegisterActivity extends AppCompatActivity {
                     UpzilaPersonProfile.UPJoinTime = upTime;
                     UpzilaPersonProfile.UPBscBatch = upBatch;
                     UpzilaPersonProfile.UPBscBatchNo = upBatchNo;
-
+                    UpzilaPersonProfile.ToolTv = sectorName;
                     startActivity(intent);
                 }
             });
@@ -259,6 +264,7 @@ public class SubRegisterActivity extends AppCompatActivity {
         hashMap.put("upTime", "২২ মার্চ ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "রেজিস্ট্রার");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -271,6 +277,7 @@ public class SubRegisterActivity extends AppCompatActivity {
         hashMap.put("upTime", "২২ মার্চ ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "রেজিস্ট্রার");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -283,6 +290,7 @@ public class SubRegisterActivity extends AppCompatActivity {
         hashMap.put("upTime", "২২ মার্চ ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "রেজিস্ট্রার");
         arrayList.add(hashMap);
 
 
@@ -297,6 +305,7 @@ public class SubRegisterActivity extends AppCompatActivity {
         hashMap.put("upTime", "২২ মার্চ ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "রেজিস্ট্রার");
         arrayList.add(hashMap);
 
 

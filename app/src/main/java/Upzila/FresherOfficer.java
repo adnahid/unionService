@@ -130,14 +130,18 @@ public class FresherOfficer extends AppCompatActivity {
             String upBatch = hashMap.get("upBatch");
             String upTimeTitle = hashMap.get("upTimeTitle");
             String upBatchNo = hashMap.get("upBatchNo");
+            String sectorName = hashMap.get("sectorName");
 
             readHolder.upItemCard.startAnimation(AnimationUtils.loadAnimation(readHolder.upItemCard.getContext(),R.anim.recycler_anim02));
-            Picasso.get().load(upImage).into(readHolder.uPImage);
+            Picasso.get().load(upImage).placeholder(R.drawable.person).into(readHolder.uPImage);
 
 
+
+            toolbar.setTitle(sectorName);
             readHolder.upName.setText(upName);
             readHolder.upBatchNo.setText(upBatch);
             readHolder.upDegree.setText(upLevel);
+            readHolder.upGmail.setText(upGmail);
 
 
 
@@ -155,6 +159,7 @@ public class FresherOfficer extends AppCompatActivity {
                     UpzilaPersonProfile.UPJoinTime = upTime;
                     UpzilaPersonProfile.UPBscBatch = upBatch;
                     UpzilaPersonProfile.UPBscBatchNo = upBatchNo;
+                    UpzilaPersonProfile.ToolTv = sectorName;
 
                     startActivity(intent);
                 }
@@ -250,80 +255,62 @@ public class FresherOfficer extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
 
-        hashMap = new HashMap<>();
-        hashMap.put("upName", "মোঃ আশরাফুল ইসলাম সরকার");
-        hashMap.put("upLevel", "উপজেলা মৎস্য কর্মকর্তা");
-        hashMap.put("upNumber", "০১৭৬৯-৪৫৯৩১২");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "ashrafulislamdof@gmail.com");
-        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "০৯ অক্টোবর ২০২৩");
-        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
-        hashMap.put("upBatch", "ব্যাচ (বিসিএস) : ৪০");
-        arrayList.add(hashMap);
+
+
+
 
 
         hashMap = new HashMap<>();
         hashMap.put("upName", "মোঃ আশরাফুল ইসলাম সরকার");
         hashMap.put("upLevel", "উপজেলা মৎস্য কর্মকর্তা");
         hashMap.put("upNumber", "০১৭৬৯-৪৫৯৩১২");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
+        hashMap.put("upImage", "https://i.postimg.cc/J0xQvLJt/Fish-1.jpg");
         hashMap.put("upGmail", "ashrafulislamdof@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
         hashMap.put("upTime", "০৯ অক্টোবর ২০২৩");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "ব্যাচ (বিসিএস) : ৪০");
+        hashMap.put("sectorName", "উপজেলা মৎস্য কর্মকর্তা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "মোঃ আশরাফুল ইসলাম সরকার");
-        hashMap.put("upLevel", "উপজেলা মৎস্য কর্মকর্তা");
-        hashMap.put("upNumber", "০১৭৬৯-৪৫৯৩১২");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "ashrafulislamdof@gmail.com");
+        hashMap.put("upName", "মো: মনিরুল হক");
+        hashMap.put("upLevel", "ক্ষেত্র সহকারী");
+        hashMap.put("upNumber", "০১৫৩৫৭৬৫৫৮৬");
+        hashMap.put("upImage", "https://cdn-icons-png.flaticon.com/128/6171/6171579.png");
+        hashMap.put("upGmail", "hmonirul2022@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "০৯ অক্টোবর ২০২৩");
+        hashMap.put("upTime", "১০ মার্চ ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
-        hashMap.put("upBatch", "ব্যাচ (বিসিএস) : ৪০");
+        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা মৎস্য কর্মকর্তা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "মোঃ আশরাফুল ইসলাম সরকার");
-        hashMap.put("upLevel", "উপজেলা মৎস্য কর্মকর্তা");
-        hashMap.put("upNumber", "০১৭৬৯-৪৫৯৩১২");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "ashrafulislamdof@gmail.com");
+        hashMap.put("upName", "জাহাঙ্গীর আলম");
+        hashMap.put("upLevel", "অফিস সহকারী কাম কম্পিউটার অপারেটর");
+        hashMap.put("upNumber", "০১৭২১৭৩১৭৫৯");
+        hashMap.put("upImage", "https://i.postimg.cc/TPbJGmmz/Fish-3.png");
+        hashMap.put("upGmail", "jahangiralam75alvi@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "০৯ অক্টোবর ২০২৩");
+        hashMap.put("upTime", "০৪ জানুয়ারি ২০২১");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
-        hashMap.put("upBatch", "ব্যাচ (বিসিএস) : ৪০");
+        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা মৎস্য কর্মকর্তা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "মোঃ আশরাফুল ইসলাম সরকার");
-        hashMap.put("upLevel", "উপজেলা মৎস্য কর্মকর্তা");
-        hashMap.put("upNumber", "০১৭৬৯-৪৫৯৩১২");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "ashrafulislamdof@gmail.com");
+        hashMap.put("upName", "শুভ রায়");
+        hashMap.put("upLevel", "ক্ষেত্র সহকারী");
+        hashMap.put("upNumber", "০১৬৮৫৬৮৬১৪৮");
+        hashMap.put("upImage", "https://i.postimg.cc/VvfqjVTw/Fish-4.jpg");
+        hashMap.put("upGmail", "shuvoroys1998@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "০৯ অক্টোবর ২০২৩");
+        hashMap.put("upTime", "১১ মে ২০২২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
-        hashMap.put("upBatch", "ব্যাচ (বিসিএস) : ৪০");
+        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা মৎস্য কর্মকর্তা");
         arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("upName", "মোঃ আশরাফুল ইসলাম সরকার");
-        hashMap.put("upLevel", "উপজেলা মৎস্য কর্মকর্তা");
-        hashMap.put("upNumber", "০১৭৬৯-৪৫৯৩১২");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "ashrafulislamdof@gmail.com");
-        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "০৯ অক্টোবর ২০২৩");
-        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
-        hashMap.put("upBatch", "ব্যাচ (বিসিএস) : ৪০");
-        arrayList.add(hashMap);
-
-
 
 
 

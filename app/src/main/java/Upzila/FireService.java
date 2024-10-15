@@ -1,6 +1,8 @@
 package Upzila;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -131,14 +133,17 @@ public class FireService extends AppCompatActivity {
             String upBatch = hashMap.get("upBatch");
             String upTimeTitle = hashMap.get("upTimeTitle");
             String upBatchNo = hashMap.get("upBatchNo");
+            String sectorName = hashMap.get("sectorName");
 
+            UpzilaPersonProfile.ToolTv = sectorName;
             readHolder.upItemCard.startAnimation(AnimationUtils.loadAnimation(readHolder.upItemCard.getContext(),R.anim.recycler_anim02));
-            Picasso.get().load(upImage).into(readHolder.uPImage);
+            Picasso.get().load(upImage).placeholder(R.drawable.person).into(readHolder.uPImage);
 
 
             readHolder.upName.setText(upName);
             readHolder.upBatchNo.setText(upTime);
             readHolder.upDegree.setText(upLevel);
+            readHolder.upGmail.setText(upGmail);
 
 
 
@@ -156,6 +161,10 @@ public class FireService extends AppCompatActivity {
                     UpzilaPersonProfile.UPJoinTime = upTime;
                     UpzilaPersonProfile.UPBscBatch = upBatch;
                     UpzilaPersonProfile.UPBscBatchNo = upBatchNo;
+                    UpzilaPersonProfile.ToolTv = sectorName;
+
+                    Bitmap bitmap = ( (BitmapDrawable) readHolder.uPImage.getDrawable() ).getBitmap();
+                    UpzilaPersonProfile.ImageBitmap = bitmap;
 
                     startActivity(intent);
                 }
@@ -254,74 +263,28 @@ public class FireService extends AppCompatActivity {
         hashMap = new HashMap<>();
         hashMap.put("upName", "জামিন মিয়া");
         hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
+        hashMap.put("upNumber", "০১৬২২১৬৫১২৮,০১৮১৫১৮২১০৪");
+        hashMap.put("upImage", "https://cdn-icons-png.flaticon.com/128/9576/9576261.png");
         hashMap.put("upGmail", "jamimmiah120@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
         hashMap.put("upTime", "২২ মার্চ ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "ফায়ার সার্ভিস");
         arrayList.add(hashMap);
 
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
+        hashMap.put("upName", "মো: সেলিম");
+        hashMap.put("upLevel", "সাব-অফিসার");
+        hashMap.put("upNumber", "০১৮১৫১৮২১০৪, ০১৮৫৬৬৭৭৫৯৩");
+        hashMap.put("upImage", "https://cdn-icons-png.flaticon.com/128/9576/9576261.png");
+        hashMap.put("upGmail", "faruqhasan4231@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "১৮ আগষ্ট ২০১৬");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
-        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
-        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
-        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
-        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
-        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
-        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
-        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
-        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
-        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
-        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
-        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
-        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "ফায়ার সার্ভিস");
         arrayList.add(hashMap);
 
 

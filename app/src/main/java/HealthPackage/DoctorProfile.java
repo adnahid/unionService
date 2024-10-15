@@ -23,6 +23,7 @@ public class DoctorProfile extends AppCompatActivity {
 //    TabItem bloodAPos,bloodANeg,bloodBPos,bloodBNeg,bloodOPos,bloodONeg,bloodAbPos,bloodAbNeg;
 //    BloodPage bloodPage;
 
+    public static String ToolText = "";
     public static String DCNAME = "";
     public static String DCTITLE = "";
     public static String DCSP = "";
@@ -31,6 +32,8 @@ public class DoctorProfile extends AppCompatActivity {
     public static String DCTIME = "";
     public static String DCNUMBRE = "";
     public static Bitmap ImageBitmap = null;
+
+
     CircleImageView doctorImage;
     CardView dcDail;
     TextView doctorName,dcTitle,dcSp,dcEd,dcChamber,doctorTime;
@@ -80,6 +83,7 @@ public class DoctorProfile extends AppCompatActivity {
         dcChamber.setText(DCCHAMBER);
         doctorTime.setText(DCTIME);
         dcEd.setText(DCED);
+        toolbar.setTitle(ToolText);
 
         dcDail.setOnClickListener(new View.OnClickListener() {
             @Override
