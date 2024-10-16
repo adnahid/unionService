@@ -116,35 +116,28 @@ public class SirajPurVatha extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (position==0){
-                        PdfViewer.assetsName = "companyganj.pdf";
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1IEoRC18EIR-mYtXx76RIcxAuRQRCWbvp/view?usp=sharing";
                         Intent intent = new Intent(SirajPurVatha.this, PdfViewer.class);
                         startActivity(intent);
                         Toast.makeText(SirajPurVatha.this, ""+dName, Toast.LENGTH_SHORT).show();
                     }
                     else if (position==1) {
-                        PdfViewer.assetsName = "companyganj.pdf";
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1HTCg_TNRUNzSSs5PoSrOl0BFehTuAMfu/view?usp=sharing";
                         Intent intent = new Intent(SirajPurVatha.this, PdfViewer.class);
                         startActivity(intent);
                         Toast.makeText(SirajPurVatha.this, ""+dName, Toast.LENGTH_SHORT).show();
-
                     }
                     else if (position==2) {
-                        PdfViewer.assetsName = "companyganj.pdf";
+
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1sECY9YhhTA3fqj2w2uQvOPZS2y71kes5/view?usp=sharing";
                         Intent intent = new Intent(SirajPurVatha.this, PdfViewer.class);
                         startActivity(intent);
                         Toast.makeText(SirajPurVatha.this, ""+dName, Toast.LENGTH_SHORT).show();
 
                     }
-
                     else if (position==3) {
-                        PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(SirajPurVatha.this, PdfViewer.class);
-                        startActivity(intent);
-                        Toast.makeText(SirajPurVatha.this, ""+dName, Toast.LENGTH_SHORT).show();
-                    }
 
-                    else if (position==4) {
-                        PdfViewer.assetsName = "companyganj.pdf";
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1a_TcF77G1ip0KPiF2Y_akLX5jHLZ1RP_/view?usp=sharing\n";
                         Intent intent = new Intent(SirajPurVatha.this, PdfViewer.class);
                         startActivity(intent);
                         Toast.makeText(SirajPurVatha.this, ""+dName, Toast.LENGTH_SHORT).show();
@@ -196,24 +189,21 @@ public class SirajPurVatha extends AppCompatActivity {
     public void DetailsTable(){
 
         arrayList = new ArrayList<>();
-        hashMap = new HashMap<>();
-        hashMap.put("name","বয়স্ক ভাতা তালিকা");
-        arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","বিধবা ভাতা তালিকা");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("name","মুক্তিযোদ্ধা ভাতা তালিকা");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("name","প্রতিবন্ধী ভাতা তালিকা");
+        hashMap.put("name","প্রতিবন্ধী ভাতাভোগীদের তালিকা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
         hashMap.put("name","প্রবাসীদের তালিকা");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","বয়স্ক ভাতা");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","বিধবা ভাতা");
         arrayList.add(hashMap);
 
 

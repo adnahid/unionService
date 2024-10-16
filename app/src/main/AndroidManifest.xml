@@ -23,6 +23,9 @@
         android:theme="@style/Theme.UnionService"
         tools:targetApi="31">
         <activity
+            android:name="Vatha.Rampur"
+            android:exported="false" />
+        <activity
             android:name="NagorikSheba.Reporter"
             android:exported="false" />
         <activity
@@ -32,16 +35,16 @@
             android:name=".DistricAdministrator"
             android:exported="false" />
         <activity
-            android:name="Vatha.CorerHuttVatha"
+            android:name="Vatha.Muchapur"
             android:exported="false" />
         <activity
-            android:name="Vatha.HumayenPurVatha"
+            android:name="Vatha.Corpokirha"
             android:exported="false" />
         <activity
-            android:name="Vatha.MohonPurVathaList"
+            android:name="Vatha.Corcakdha"
             android:exported="false" />
         <activity
-            android:name="Vatha.AmtholiVathaList"
+            android:name="Vatha.CorParborthe"
             android:exported="false" />
         <activity
             android:name="Vatha.AmtoliUpVathaList"

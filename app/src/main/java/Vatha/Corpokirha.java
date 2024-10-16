@@ -10,14 +10,10 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -28,7 +24,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-public class HumayenPurVatha extends AppCompatActivity {
+public class Corpokirha extends AppCompatActivity {
 
     RecyclerView HumayenPurVathaRecyclerView;
     Toolbar toolbar;
@@ -55,7 +51,7 @@ public class HumayenPurVatha extends AppCompatActivity {
         DetailsTable();
         HumayenPurVathaAdapter humayenPurVathaAdapter = new HumayenPurVathaAdapter();
         HumayenPurVathaRecyclerView.setAdapter(humayenPurVathaAdapter);
-        HumayenPurVathaRecyclerView.setLayoutManager(new LinearLayoutManager(HumayenPurVatha.this));
+        HumayenPurVathaRecyclerView.setLayoutManager(new LinearLayoutManager(Corpokirha.this));
 
 
     }
@@ -103,37 +99,37 @@ public class HumayenPurVatha extends AppCompatActivity {
                 public void onClick(View v) {
                     if (position==0){
                         PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(HumayenPurVatha.this, PdfViewer.class);
+                        Intent intent = new Intent(Corpokirha.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(HumayenPurVatha.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Corpokirha.this, ""+dName, Toast.LENGTH_SHORT).show();
                     }
                     else if (position==1) {
                         PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(HumayenPurVatha.this, PdfViewer.class);
+                        Intent intent = new Intent(Corpokirha.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(HumayenPurVatha.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Corpokirha.this, ""+dName, Toast.LENGTH_SHORT).show();
 
                     }
                     else if (position==2) {
                         PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(HumayenPurVatha.this, PdfViewer.class);
+                        Intent intent = new Intent(Corpokirha.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(HumayenPurVatha.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Corpokirha.this, ""+dName, Toast.LENGTH_SHORT).show();
 
                     }
 
                     else if (position==3) {
                         PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(HumayenPurVatha.this, PdfViewer.class);
+                        Intent intent = new Intent(Corpokirha.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(HumayenPurVatha.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Corpokirha.this, ""+dName, Toast.LENGTH_SHORT).show();
                     }
 
                     else if (position==4) {
                         PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(HumayenPurVatha.this, PdfViewer.class);
+                        Intent intent = new Intent(Corpokirha.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(HumayenPurVatha.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Corpokirha.this, ""+dName, Toast.LENGTH_SHORT).show();
                     }
 
                 }

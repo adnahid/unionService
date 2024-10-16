@@ -10,14 +10,10 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -28,7 +24,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-public class AmtholiVathaList extends AppCompatActivity {
+public class CorParborthe extends AppCompatActivity {
     RecyclerView AmtholiVathaRecyclerView;
     Toolbar toolbar;
 
@@ -54,7 +50,7 @@ public class AmtholiVathaList extends AppCompatActivity {
         DetailsTable();
         AmtholiVathaAdapter amtholiVathaAdapter  = new AmtholiVathaAdapter();
         AmtholiVathaRecyclerView.setAdapter(amtholiVathaAdapter);
-        AmtholiVathaRecyclerView.setLayoutManager(new LinearLayoutManager(AmtholiVathaList.this));
+        AmtholiVathaRecyclerView.setLayoutManager(new LinearLayoutManager(CorParborthe.this));
 
 
     }
@@ -101,38 +97,37 @@ public class AmtholiVathaList extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (position==0){
-                        PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(AmtholiVathaList.this, PdfViewer.class);
+
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1uwZ1hi8CKaKDwOe1H0NfL28cYXnysAgS/view?usp=sharing\n";
+                        Intent intent = new Intent(CorParborthe.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(AmtholiVathaList.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CorParborthe.this, ""+dName, Toast.LENGTH_SHORT).show();
+
                     }
                     else if (position==1) {
-                        PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(AmtholiVathaList.this, PdfViewer.class);
+
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/158ij8RA_-dBALzpwVQ6M6u13N1gW7WHB/view?usp=sharing";
+                        Intent intent = new Intent(CorParborthe.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(AmtholiVathaList.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CorParborthe.this, ""+dName, Toast.LENGTH_SHORT).show();
+
 
                     }
                     else if (position==2) {
-                        PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(AmtholiVathaList.this, PdfViewer.class);
+
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1U-4_6IONmabARg20wrDA8t5HaPEvN8UZ/view?usp=sharing\n";
+                        Intent intent = new Intent(CorParborthe.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(AmtholiVathaList.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CorParborthe.this, ""+dName, Toast.LENGTH_SHORT).show();
 
                     }
 
                     else if (position==3) {
-                        PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(AmtholiVathaList.this, PdfViewer.class);
-                        startActivity(intent);
-                        Toast.makeText(AmtholiVathaList.this, ""+dName, Toast.LENGTH_SHORT).show();
-                    }
 
-                    else if (position==4) {
-                        PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(AmtholiVathaList.this, PdfViewer.class);
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1w6bBgJIFY4ECdYDNyAeVN9_oP7TrwDaw/view?usp=sharing";
+                        Intent intent = new Intent(CorParborthe.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(AmtholiVathaList.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CorParborthe.this, ""+dName, Toast.LENGTH_SHORT).show();
                     }
 
                 }
@@ -182,24 +177,22 @@ public class AmtholiVathaList extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
         hashMap = new HashMap<>();
-        hashMap.put("name","বয়স্ক ভাতা তালিকা");
+        hashMap.put("name","চর পার্বতী প্রবাসী");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","বিধবা ভাতা তালিকা");
+        hashMap.put("name","চর পার্বতী বিধবা ভাতা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","মুক্তিযোদ্ধা ভাতা তালিকা");
+        hashMap.put("name","চর পার্বতী বয়স্ক ভাতা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","প্রতিবন্ধী ভাতা তালিকা");
+        hashMap.put("name","চর পার্বতী প্রতিবন্ধী ভাতা");
         arrayList.add(hashMap);
 
-        hashMap = new HashMap<>();
-        hashMap.put("name","প্রবাসীদের তালিকা");
-        arrayList.add(hashMap);
+
 
 
 

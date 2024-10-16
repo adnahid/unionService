@@ -4,20 +4,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.unionservice.R;
 
 public class VathaThalika extends AppCompatActivity {
 
-    CardView vathaSirajpur,vathaAmtholi,vathaMohonpur,
-            vathaHuymiyenPur,vathaCoderHutt;
+    CardView vathaSirajpur,cotParboti,corCakdtha,corPokirha,muchaPur,
+            corElihe,rumpur;
 
     Toolbar toolbar;
 
@@ -27,10 +23,12 @@ public class VathaThalika extends AppCompatActivity {
         //EdgeToEdge.enable(this);
         setContentView(R.layout.activity_vatha_thalika);
         vathaSirajpur = findViewById(R.id.vathaSirajpur);
-        vathaAmtholi = findViewById(R.id.vathaAmtholi);
-        vathaMohonpur = findViewById(R.id.vathaMohonpur);
-        vathaHuymiyenPur = findViewById(R.id.vathaHuymiyenPur);
-        vathaCoderHutt = findViewById(R.id.vathaCoderHutt);
+        cotParboti = findViewById(R.id.cotParboti);
+        corCakdtha = findViewById(R.id.corCakdtha);
+        corPokirha = findViewById(R.id.corPokirha);
+        muchaPur = findViewById(R.id.muchaPur);
+        corElihe = findViewById(R.id.corElihe);
+        rumpur = findViewById(R.id.rumpur);
         toolbar = findViewById(R.id.toolbar);
 
 
@@ -51,43 +49,62 @@ public class VathaThalika extends AppCompatActivity {
             }
         });
 
-        vathaAmtholi.setOnClickListener(new View.OnClickListener() {
+        cotParboti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VathaThalika.this,AmtholiVathaList.class);
+                Intent intent = new Intent(VathaThalika.this, CorParborthe.class);
                 startActivity(intent);
             }
         });
 
 
 
-        vathaMohonpur.setOnClickListener(new View.OnClickListener() {
+        corCakdtha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VathaThalika.this,MohonPurVathaList.class);
+                Intent intent = new Intent(VathaThalika.this, Corcakdha.class);
                 startActivity(intent);
             }
         });
 
 
 
-        vathaHuymiyenPur.setOnClickListener(new View.OnClickListener() {
+        corPokirha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VathaThalika.this,HumayenPurVatha.class);
+                Intent intent = new Intent(VathaThalika.this, Corpokirha.class);
                 startActivity(intent);
             }
         });
 
 
 
-        vathaCoderHutt.setOnClickListener(new View.OnClickListener() {
+        muchaPur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VathaThalika.this,CorerHuttVatha.class);
+                Intent intent = new Intent(VathaThalika.this, Muchapur.class);
                 startActivity(intent);
             }
         });
+
+
+        corElihe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(VathaThalika.this, CorElia.class);
+                startActivity(intent);
+            }
+        });
+
+
+        rumpur.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(VathaThalika.this, Rampur.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 
