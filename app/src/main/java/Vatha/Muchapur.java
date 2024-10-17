@@ -97,20 +97,28 @@ public class Muchapur extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (position==0){
-                        PdfViewer.assetsName = "companyganj.pdf";
+                        //PdfViewer.assetsName = "companyganj.pdf";
+
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1t5X3RODRQYHG9NGwfDfrBE2hY1nLgpJC/view?usp=sharing";
                         Intent intent = new Intent(Muchapur.this, PdfViewer.class);
                         startActivity(intent);
                         Toast.makeText(Muchapur.this, ""+dName, Toast.LENGTH_SHORT).show();
+
                     }
                     else if (position==1) {
-                        PdfViewer.assetsName = "companyganj.pdf";
+
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1dt1VKjiOcktxOkrshuhjuG8z-EL6yoy4/view?usp=sharing";
                         Intent intent = new Intent(Muchapur.this, PdfViewer.class);
                         startActivity(intent);
                         Toast.makeText(Muchapur.this, ""+dName, Toast.LENGTH_SHORT).show();
 
                     }
                     else if (position==2) {
-                        PdfViewer.assetsName = "companyganj.pdf";
+
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/13zqjspXOP3PFFSEbi2mqRZt_R4J1fXGR/view?usp=sharing";
                         Intent intent = new Intent(Muchapur.this, PdfViewer.class);
                         startActivity(intent);
                         Toast.makeText(Muchapur.this, ""+dName, Toast.LENGTH_SHORT).show();
@@ -118,18 +126,15 @@ public class Muchapur extends AppCompatActivity {
                     }
 
                     else if (position==3) {
-                        PdfViewer.assetsName = "companyganj.pdf";
+
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1DMIdeV_KpjFzJtpAKpazBghodePE01Rc/view?usp=sharing";
                         Intent intent = new Intent(Muchapur.this, PdfViewer.class);
                         startActivity(intent);
                         Toast.makeText(Muchapur.this, ""+dName, Toast.LENGTH_SHORT).show();
                     }
 
-                    else if (position==4) {
-                        PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(Muchapur.this, PdfViewer.class);
-                        startActivity(intent);
-                        Toast.makeText(Muchapur.this, ""+dName, Toast.LENGTH_SHORT).show();
-                    }
+
 
                 }
             });
@@ -178,26 +183,20 @@ public class Muchapur extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
         hashMap = new HashMap<>();
-        hashMap.put("name","বয়স্ক ভাতা তালিকা");
+        hashMap.put("name","মুছাপুর ইউনিয়ন প্রতিবন্ধী ভাতা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","বিধবা ভাতা তালিকা");
+        hashMap.put("name","মুছাপুর ইউনিয়ন প্রবাসীদের তালিকা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","মুক্তিযোদ্ধা ভাতা তালিকা");
+        hashMap.put("name","মুছাপুর ইউনিয়ন বয়স্ক ভাতা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","প্রতিবন্ধী ভাতা তালিকা");
+        hashMap.put("name","মুছাপুর ইউনিয়ন বিধবা ভাতা");
         arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("name","প্রবাসীদের তালিকা");
-        arrayList.add(hashMap);
-
-
 
 
     }

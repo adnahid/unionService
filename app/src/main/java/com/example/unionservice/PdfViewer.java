@@ -40,6 +40,7 @@ public class PdfViewer extends AppCompatActivity {
     Toolbar toolbar;
     public static String pdfUrl = "";
 
+    public static String ToolText = "";
     public static String assetsName = "";
     LottieAnimationView myLottie;
 
@@ -69,6 +70,7 @@ public class PdfViewer extends AppCompatActivity {
             }
         });
 
+        toolbar.setTitle(ToolText);
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(webViewActivity.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 

@@ -94,29 +94,61 @@
 
 
 
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/bloodCall"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/doctor"
-                app:civ_border_color="#DFD6F6"
-                android:padding="5dp"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bloodPhoneCard"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#742324"
+                app:cardCornerRadius="3dp"
+                android:elevation="2dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_alignParentEnd="true"
-                />
+                android:layout_margin="3dp"
+                >
 
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/bloodCall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/phone"
+                    app:civ_border_color="#DFD6F6"
+                    android:padding="5dp"
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/bloodMessage"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/doctor"
-                app:civ_border_color="#DFD6F6"
-                android:padding="5dp"
-                android:layout_below="@id/bloodCall"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#742324"
+                app:cardCornerRadius="3dp"
+                android:elevation="2dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_alignParentEnd="true"
+                android:layout_below="@id/bloodPhoneCard"
+                android:layout_margin="3dp"
+                >
 
-                />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/bloodMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gm"
+                    app:civ_border_color="#DFD6F6"
+                    android:padding="5dp"
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
         </RelativeLayout>
 
 

@@ -47,6 +47,7 @@ public class CorParborthe extends AppCompatActivity {
             }
         });
 
+
         DetailsTable();
         AmtholiVathaAdapter amtholiVathaAdapter  = new AmtholiVathaAdapter();
         AmtholiVathaRecyclerView.setAdapter(amtholiVathaAdapter);
@@ -98,6 +99,7 @@ public class CorParborthe extends AppCompatActivity {
                 public void onClick(View v) {
                     if (position==0){
 
+                        PdfViewer.ToolText= dName;
                         PdfViewer.pdfUrl = "https://drive.google.com/file/d/1uwZ1hi8CKaKDwOe1H0NfL28cYXnysAgS/view?usp=sharing\n";
                         Intent intent = new Intent(CorParborthe.this, PdfViewer.class);
                         startActivity(intent);
@@ -106,6 +108,7 @@ public class CorParborthe extends AppCompatActivity {
                     }
                     else if (position==1) {
 
+                        PdfViewer.ToolText= dName;
                         PdfViewer.pdfUrl = "https://drive.google.com/file/d/158ij8RA_-dBALzpwVQ6M6u13N1gW7WHB/view?usp=sharing";
                         Intent intent = new Intent(CorParborthe.this, PdfViewer.class);
                         startActivity(intent);
@@ -115,6 +118,7 @@ public class CorParborthe extends AppCompatActivity {
                     }
                     else if (position==2) {
 
+                        PdfViewer.ToolText= dName;
                         PdfViewer.pdfUrl = "https://drive.google.com/file/d/1U-4_6IONmabARg20wrDA8t5HaPEvN8UZ/view?usp=sharing\n";
                         Intent intent = new Intent(CorParborthe.this, PdfViewer.class);
                         startActivity(intent);
@@ -124,6 +128,7 @@ public class CorParborthe extends AppCompatActivity {
 
                     else if (position==3) {
 
+                        PdfViewer.ToolText= dName;
                         PdfViewer.pdfUrl = "https://drive.google.com/file/d/1w6bBgJIFY4ECdYDNyAeVN9_oP7TrwDaw/view?usp=sharing";
                         Intent intent = new Intent(CorParborthe.this, PdfViewer.class);
                         startActivity(intent);

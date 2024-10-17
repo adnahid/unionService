@@ -13,7 +13,7 @@ import com.example.unionservice.R;
 public class VathaThalika extends AppCompatActivity {
 
     CardView vathaSirajpur,cotParboti,corCakdtha,corPokirha,muchaPur,
-            corElihe,rumpur;
+            corElihe,rumpur,hazari;
 
     Toolbar toolbar;
 
@@ -29,6 +29,7 @@ public class VathaThalika extends AppCompatActivity {
         muchaPur = findViewById(R.id.muchaPur);
         corElihe = findViewById(R.id.corElihe);
         rumpur = findViewById(R.id.rumpur);
+        hazari = findViewById(R.id.hazari);
         toolbar = findViewById(R.id.toolbar);
 
 
@@ -91,7 +92,7 @@ public class VathaThalika extends AppCompatActivity {
         corElihe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VathaThalika.this, CorElia.class);
+                Intent intent = new Intent(VathaThalika.this, EliaerCor.class);
                 startActivity(intent);
             }
         });
@@ -101,6 +102,14 @@ public class VathaThalika extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(VathaThalika.this, Rampur.class);
+                startActivity(intent);
+            }
+        });
+
+        hazari.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(VathaThalika.this, Hazari.class);
                 startActivity(intent);
             }
         });

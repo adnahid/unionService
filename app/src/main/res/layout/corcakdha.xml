@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Vatha.CorParborthe"
+    tools:context="Vatha.Corcakdha"
     android:background="#ffffff"
     >
 
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
-        app:title="চর পার্বতী ভাতা তালিকা"
+        app:title="MohonPur Vatha"
         app:titleTextColor="@color/white"
         android:background="#3A1B1B"
         >
@@ -22,7 +22,7 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/AmtholiVathaRecyclerView"
+        android:id="@+id/MohonPurVathaRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"

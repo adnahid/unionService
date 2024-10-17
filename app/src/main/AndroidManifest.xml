@@ -23,6 +23,16 @@
         android:theme="@style/Theme.UnionService"
         tools:targetApi="31">
         <activity
+            android:name="Vatha.Hazari"
+            android:exported="false" />
+        <activity
+            android:name="Vatha.CorHazari"
+            android:exported="false"
+            android:theme="@style/Theme.UnionService" />
+        <activity
+            android:name="Vatha.EliaerCor"
+            android:exported="false" />
+        <activity
             android:name="Vatha.Rampur"
             android:exported="false" />
         <activity

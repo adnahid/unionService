@@ -10,10 +10,14 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,19 +28,21 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-public class Corcakdha extends AppCompatActivity {
-    RecyclerView MohonPurVathaRecyclerView;
+public class EliaerCor extends AppCompatActivity {
+
+    RecyclerView EliaerCorRecyclerView;
     Toolbar toolbar;
 
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //EdgeToEdge.enable(this);
-        setContentView(R.layout.corcakdha);
-        MohonPurVathaRecyclerView = findViewById(R.id.MohonPurVathaRecyclerView);
+        setContentView(R.layout.activity_eliaer_cor);
+        EliaerCorRecyclerView = findViewById(R.id.EliaerCorRecyclerView);
         toolbar = findViewById(R.id.toolbar);
 
         toolbar.setOnClickListener(new View.OnClickListener() {
@@ -46,15 +52,15 @@ public class Corcakdha extends AppCompatActivity {
                 finish();
             }
         });
-        toolbar.setTitle("চর কাকড়া ইউনিয়ন ভাতা তালিকা");
-        DetailsTable();
-        MohonPurVathaAdapter mohonPurVathaAdapter  = new MohonPurVathaAdapter();
-        MohonPurVathaRecyclerView.setAdapter(mohonPurVathaAdapter);
-        MohonPurVathaRecyclerView.setLayoutManager(new LinearLayoutManager(Corcakdha.this));
 
+        DetailsTable();
+        ElierCorAdapter elierCorAdapter = new ElierCorAdapter();
+        EliaerCorRecyclerView.setAdapter(elierCorAdapter);
+        EliaerCorRecyclerView.setLayoutManager(new LinearLayoutManager(EliaerCor.this));
 
     }
-    private class MohonPurVathaAdapter extends RecyclerView.Adapter{
+
+    private class ElierCorAdapter extends RecyclerView.Adapter{
         private class readHolder extends RecyclerView.ViewHolder{
             Button vathaName;
             CardView vathaCard;
@@ -96,31 +102,34 @@ public class Corcakdha extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (position==0){
-                        //PdfViewer.assetsName = "companyganj.pdf";
+                        // PdfViewer.assetsName = "companyganj.pdf";
 
-                        PdfViewer.ToolText = dName;
-                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1fRo0QiWhxxPZoXioopv8e1C7w1jOGmvN/view?usp=sharing";
-                        Intent intent = new Intent(Corcakdha.this, PdfViewer.class);
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1XrVizG3UHH0HVub8ueDip2SF9QBWDZPb/view?usp=sharing";
+                        Intent intent = new Intent(EliaerCor.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(Corcakdha.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(EliaerCor.this, ""+dName, Toast.LENGTH_SHORT).show();
 
                     }
                     else if (position==1) {
 
-                        PdfViewer.ToolText = dName;
-                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1oLVt4H3SOl1oAkwoXPmJRm8g11Q9sT44/view?usp=sharing";
-                        Intent intent = new Intent(Corcakdha.this, PdfViewer.class);
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1YIrjPeZXCmdX0PlhlJ2ajN8HxmPnsouw/view?usp=sharing";
+                        Intent intent = new Intent(EliaerCor.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(Corcakdha.this, ""+dName, Toast.LENGTH_SHORT).show();
-                    }
-                    else if (position==2) {
-                        PdfViewer.ToolText = dName;
-                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1jaaLD56a8NREnrA3njwjo1VhVPrZRYsA/view?usp=sharing";
-                        Intent intent = new Intent(Corcakdha.this, PdfViewer.class);
-                        startActivity(intent);
-                        Toast.makeText(Corcakdha.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(EliaerCor.this, ""+dName, Toast.LENGTH_SHORT).show();
 
                     }
+                    else if (position==2) {
+
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1FBnBa3t21rbNd_FAq-Dq_YpV0cez308W/view?usp=sharing";
+                        Intent intent = new Intent(EliaerCor.this, PdfViewer.class);
+                        startActivity(intent);
+                        Toast.makeText(EliaerCor.this, ""+dName, Toast.LENGTH_SHORT).show();
+
+                    }
+
 
                 }
             });
@@ -169,16 +178,19 @@ public class Corcakdha extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
         hashMap = new HashMap<>();
-        hashMap.put("name","চর ফকিরা ইউনিয়ন প্রতিবন্ধী ভাতা");
+        hashMap.put("name","চর এলাহি ইউনিয়ন প্রবাসীদের তালিকা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","চর ফকিরা ইউনিয়ন বয়স্ক ভাতা");
+        hashMap.put("name","চর এলাহী ইউনিয়ন প্রতিবন্ধী ভাতা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","চর ফকিরা ইউনিয়ন বিধবা ভাতা");
+        hashMap.put("name","চর এলাহী ইউনিয়ন বিধবা ভাতা");
         arrayList.add(hashMap);
+
+
+
 
 
     }

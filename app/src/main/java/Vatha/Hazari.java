@@ -10,10 +10,14 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,19 +28,21 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-public class Corcakdha extends AppCompatActivity {
-    RecyclerView MohonPurVathaRecyclerView;
+public class Hazari extends AppCompatActivity {
+
+    RecyclerView HazariCorRecyclerView;
     Toolbar toolbar;
 
     ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
     HashMap<String,String> hashMap = new HashMap<>();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //EdgeToEdge.enable(this);
-        setContentView(R.layout.corcakdha);
-        MohonPurVathaRecyclerView = findViewById(R.id.MohonPurVathaRecyclerView);
+        setContentView(R.layout.activity_hazari);
+        HazariCorRecyclerView = findViewById(R.id.HazariCorRecyclerView);
         toolbar = findViewById(R.id.toolbar);
 
         toolbar.setOnClickListener(new View.OnClickListener() {
@@ -46,15 +52,15 @@ public class Corcakdha extends AppCompatActivity {
                 finish();
             }
         });
-        toolbar.setTitle("চর কাকড়া ইউনিয়ন ভাতা তালিকা");
-        DetailsTable();
-        MohonPurVathaAdapter mohonPurVathaAdapter  = new MohonPurVathaAdapter();
-        MohonPurVathaRecyclerView.setAdapter(mohonPurVathaAdapter);
-        MohonPurVathaRecyclerView.setLayoutManager(new LinearLayoutManager(Corcakdha.this));
 
+        DetailsTable();
+        HazariCorAdapter hazariCorAdapter = new HazariCorAdapter();
+        HazariCorRecyclerView.setAdapter(hazariCorAdapter);
+        HazariCorRecyclerView.setLayoutManager(new LinearLayoutManager(Hazari.this));
 
     }
-    private class MohonPurVathaAdapter extends RecyclerView.Adapter{
+
+    private class HazariCorAdapter extends RecyclerView.Adapter{
         private class readHolder extends RecyclerView.ViewHolder{
             Button vathaName;
             CardView vathaCard;
@@ -96,31 +102,44 @@ public class Corcakdha extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (position==0){
-                        //PdfViewer.assetsName = "companyganj.pdf";
+                        // PdfViewer.assetsName = "companyganj.pdf";
 
-                        PdfViewer.ToolText = dName;
-                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1fRo0QiWhxxPZoXioopv8e1C7w1jOGmvN/view?usp=sharing";
-                        Intent intent = new Intent(Corcakdha.this, PdfViewer.class);
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1a4m4VT8t6tTAEVlBAlx_sBJd4YRWHvBi/view?usp=sharing";
+                        Intent intent = new Intent(Hazari.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(Corcakdha.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Hazari.this, ""+dName, Toast.LENGTH_SHORT).show();
 
                     }
                     else if (position==1) {
 
-                        PdfViewer.ToolText = dName;
-                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1oLVt4H3SOl1oAkwoXPmJRm8g11Q9sT44/view?usp=sharing";
-                        Intent intent = new Intent(Corcakdha.this, PdfViewer.class);
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/14BORw3f8RouUSmjNfdU12l94OTT_3bEl/view?usp=sharing";
+                        Intent intent = new Intent(Hazari.this, PdfViewer.class);
                         startActivity(intent);
-                        Toast.makeText(Corcakdha.this, ""+dName, Toast.LENGTH_SHORT).show();
-                    }
-                    else if (position==2) {
-                        PdfViewer.ToolText = dName;
-                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1jaaLD56a8NREnrA3njwjo1VhVPrZRYsA/view?usp=sharing";
-                        Intent intent = new Intent(Corcakdha.this, PdfViewer.class);
-                        startActivity(intent);
-                        Toast.makeText(Corcakdha.this, ""+dName, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Hazari.this, ""+dName, Toast.LENGTH_SHORT).show();
 
                     }
+                    else if (position==2) {
+
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1dbINhXMFWKKNrSYaj1uiI5WcnJFw211m/view?usp=sharing";
+                        Intent intent = new Intent(Hazari.this, PdfViewer.class);
+                        startActivity(intent);
+                        Toast.makeText(Hazari.this, ""+dName, Toast.LENGTH_SHORT).show();
+
+                    }
+
+                    else if (position==3) {
+
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1V-RbrJwNnX2oUVp68Y4go7O_ux-U1vlV/view?usp=sharing";
+                        Intent intent = new Intent(Hazari.this, PdfViewer.class);
+                        startActivity(intent);
+                        Toast.makeText(Hazari.this, ""+dName, Toast.LENGTH_SHORT).show();
+
+                    }
+
 
                 }
             });
@@ -169,16 +188,22 @@ public class Corcakdha extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
         hashMap = new HashMap<>();
-        hashMap.put("name","চর ফকিরা ইউনিয়ন প্রতিবন্ধী ভাতা");
+        hashMap.put("name","চরহাজারি ইউনিয়ন বিধবা ভাতা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","চর ফকিরা ইউনিয়ন বয়স্ক ভাতা");
+        hashMap.put("name","চরহাজারী ইউনিয়ন প্রতিবন্ধী ভাতা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","চর ফকিরা ইউনিয়ন বিধবা ভাতা");
+        hashMap.put("name","চরহাজারী ইউনিয়ন বয়স্ক ভাতা");
         arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","চরহাজারী ইউনিয়ন মুক্তিযোদ্ধা ভাতা");
+        arrayList.add(hashMap);
+
+
 
 
     }

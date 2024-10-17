@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
-        app:title="Sirajpur Vatha"
+        app:title="সিরাজপুর ইউনিয়ন ভাতা তালিকা"
         app:titleTextColor="@color/white"
-        android:background="#009688"
+        android:background="#3A1B1B"
         >
     </androidx.appcompat.widget.Toolbar>
 

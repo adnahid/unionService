@@ -64,7 +64,7 @@
                         android:id="@+id/vathaSirajpur"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="5dp"
                         app:cardCornerRadius="12dp"
                         android:elevation="5dp"
                         android:backgroundTint="#5C4CE4"
@@ -73,7 +73,7 @@
                         android:foreground="?android:attr/selectableItemBackground"
                         android:clickable="true"
                         android:focusable="true"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
                         >
 
@@ -172,7 +172,7 @@
                         android:id="@+id/corCakdtha"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="5dp"
                         app:cardCornerRadius="12dp"
                         android:elevation="5dp"
                         android:backgroundTint="#5C4CE4"
@@ -181,7 +181,7 @@
                         android:foreground="?android:attr/selectableItemBackground"
                         android:clickable="true"
                         android:focusable="true"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
                         >
 
@@ -277,7 +277,7 @@
                         android:id="@+id/muchaPur"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="5dp"
                         app:cardCornerRadius="12dp"
                         android:elevation="5dp"
                         android:backgroundTint="#5C4CE4"
@@ -286,7 +286,7 @@
                         android:foreground="?android:attr/selectableItemBackground"
                         android:clickable="true"
                         android:focusable="true"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
                         >
 
@@ -375,14 +375,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="1"
+                    android:weightSum="2"
                     >
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/rumpur"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="5dp"
                         app:cardCornerRadius="12dp"
                         android:elevation="5dp"
                         android:backgroundTint="#5C4CE4"
@@ -391,7 +391,7 @@
                         android:foreground="?android:attr/selectableItemBackground"
                         android:clickable="true"
                         android:focusable="true"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
                         >
 
@@ -416,6 +416,54 @@
                                 android:layout_height="wrap_content"
                                 android:textSize="15sp"
                                 android:text="রামপুর ইউনিয়ন"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:layout_marginBottom="10dp"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hazari"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        app:cardCornerRadius="12dp"
+                        android:elevation="5dp"
+                        android:backgroundTint="#5C4CE4"
+                        tools:context=".MainActivity"
+                        android:layout_weight="1"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_vertical"
+                            >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/doctor"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="চর হাজারি ইউনিয়ন"
                                 android:layout_gravity="center"
                                 android:textStyle="bold"
                                 android:textColor="#FFFFFF"

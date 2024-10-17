@@ -37,8 +37,6 @@ public class webViewActivity extends AppCompatActivity {
 
     //dialog dialog;
 
-    TextView toolbarText;
-
     Toolbar toolbar;
 
 
@@ -55,7 +53,6 @@ public class webViewActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         Lottie = findViewById(R.id.Lottie);
         toolbar = findViewById(R.id.toolbar);
-        toolbarText = findViewById(R.id.toolbarText);
 
 
         progressBar.setVisibility(View.VISIBLE);
@@ -73,7 +70,7 @@ public class webViewActivity extends AppCompatActivity {
             }
         });
 
-        toolbarText.setText(ToolBarText);
+        toolbar.setTitle(ToolBarText);
 
         if (networkInfo!=null && networkInfo.isConnected()){
             webView.setVisibility(View.VISIBLE);

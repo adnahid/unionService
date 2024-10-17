@@ -36,7 +36,7 @@ public class Corpokirha extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_humayen_pur_vatha);
+        setContentView(R.layout.corpokirha);
         HumayenPurVathaRecyclerView = findViewById(R.id.HumayenPurVathaRecyclerView);
         toolbar = findViewById(R.id.toolbar);
 
@@ -98,39 +98,34 @@ public class Corpokirha extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (position==0){
-                        PdfViewer.assetsName = "companyganj.pdf";
+                       // PdfViewer.assetsName = "companyganj.pdf";
+
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1fRo0QiWhxxPZoXioopv8e1C7w1jOGmvN/view?usp=sharing";
                         Intent intent = new Intent(Corpokirha.this, PdfViewer.class);
                         startActivity(intent);
                         Toast.makeText(Corpokirha.this, ""+dName, Toast.LENGTH_SHORT).show();
+
                     }
                     else if (position==1) {
-                        PdfViewer.assetsName = "companyganj.pdf";
+
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1oLVt4H3SOl1oAkwoXPmJRm8g11Q9sT44/view?usp=sharing";
                         Intent intent = new Intent(Corpokirha.this, PdfViewer.class);
                         startActivity(intent);
                         Toast.makeText(Corpokirha.this, ""+dName, Toast.LENGTH_SHORT).show();
 
                     }
                     else if (position==2) {
-                        PdfViewer.assetsName = "companyganj.pdf";
+
+                        PdfViewer.ToolText= dName;
+                        PdfViewer.pdfUrl = "https://drive.google.com/file/d/1jaaLD56a8NREnrA3njwjo1VhVPrZRYsA/view?usp=sharing";
                         Intent intent = new Intent(Corpokirha.this, PdfViewer.class);
                         startActivity(intent);
                         Toast.makeText(Corpokirha.this, ""+dName, Toast.LENGTH_SHORT).show();
 
                     }
 
-                    else if (position==3) {
-                        PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(Corpokirha.this, PdfViewer.class);
-                        startActivity(intent);
-                        Toast.makeText(Corpokirha.this, ""+dName, Toast.LENGTH_SHORT).show();
-                    }
-
-                    else if (position==4) {
-                        PdfViewer.assetsName = "companyganj.pdf";
-                        Intent intent = new Intent(Corpokirha.this, PdfViewer.class);
-                        startActivity(intent);
-                        Toast.makeText(Corpokirha.this, ""+dName, Toast.LENGTH_SHORT).show();
-                    }
 
                 }
             });
@@ -179,24 +174,17 @@ public class Corpokirha extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
         hashMap = new HashMap<>();
-        hashMap.put("name","বয়স্ক ভাতা তালিকা");
+        hashMap.put("name","চর ফকিরা ইউনিয়ন প্রতিবন্ধী ভাতা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","বিধবা ভাতা তালিকা");
+        hashMap.put("name","বচর ফকিরা ইউনিয়ন বয়স্ক ভাতা");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","মুক্তিযোদ্ধা ভাতা তালিকা");
+        hashMap.put("name","চর ফকিরা ইউনিয়ন বিধবা ভাতা");
         arrayList.add(hashMap);
 
-        hashMap = new HashMap<>();
-        hashMap.put("name","প্রতিবন্ধী ভাতা তালিকা");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("name","প্রবাসীদের তালিকা");
-        arrayList.add(hashMap);
 
 
 
