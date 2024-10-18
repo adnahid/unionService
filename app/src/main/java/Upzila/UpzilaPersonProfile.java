@@ -38,11 +38,9 @@ public class UpzilaPersonProfile extends AppCompatActivity {
     public static Bitmap ImageBitmap = null;
     String body = "Hi there";
 
-    TextView nameUp,titleUp,textTvHeadLine1st,textTvHeadLine2nd,textTvHeadLine3rd,textTvHeadLine4th;
+    TextView nameUp,titleUp,textTvHeadLine1st,textTvHeadLine2nd,textTvHeadLine3rd,textTvHeadLine4th,upGmail;
     CardView gmCardUp,callCardUp,meassagesUp;
     CircleImageView imageUp;
-
-
     Toolbar toolbar;
 
 
@@ -61,6 +59,7 @@ public class UpzilaPersonProfile extends AppCompatActivity {
         callCardUp = findViewById(R.id.callCardUp);
         meassagesUp = findViewById(R.id.meassagesUp);
         imageUp = findViewById(R.id.imageUp);
+        upGmail = findViewById(R.id.upGmail);
         toolbar = findViewById(R.id.toolbar);
 
 
@@ -71,6 +70,7 @@ public class UpzilaPersonProfile extends AppCompatActivity {
         textTvHeadLine3rd.setText(UPBscBatchNo);
         textTvHeadLine4th.setText(UPBscBatch);
         toolbar.setTitle(ToolTv);
+        upGmail.setText(UPGmail);
 
         toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,17 +110,17 @@ public class UpzilaPersonProfile extends AppCompatActivity {
 
 
 
-        gmCardUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("message/rfc822");
-                intent.putExtra(Intent.EXTRA_TEXT, "Text you want to share");
-                startActivity(Intent.createChooser(intent, ""+UPGmail));
-
-            }
-        });
+//        gmCardUp.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Intent intent = new Intent(Intent.ACTION_SEND);
+//                intent.setType("message/rfc822");
+//                intent.putExtra(Intent.EXTRA_TEXT, "Text you want to share");
+//                startActivity(Intent.createChooser(intent, ""+UPGmail));
+//
+//            }
+//        });
 
 
 

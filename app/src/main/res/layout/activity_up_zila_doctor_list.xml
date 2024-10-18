@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="HealthPackage.UpZilaDoctorList"
-    android:background="@color/white"
+    android:background="#3A1B1B"
     >
 
     <androidx.appcompat.widget.Toolbar
@@ -15,8 +15,8 @@
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
         app:title="Institute Details"
-        app:titleTextColor="#9C27B0"
-        android:background="@color/white"
+        app:titleTextColor="#ffffff"
+        android:background="#3A1B1B"
         >
     </androidx.appcompat.widget.Toolbar>
 
