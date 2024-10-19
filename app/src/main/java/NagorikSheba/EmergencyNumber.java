@@ -215,94 +215,158 @@ public class EmergencyNumber extends AppCompatActivity {
         arrayList = new ArrayList<>();
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brtc");
-        hashMap.put("number","013874-45114");
+        hashMap.put("numberName","ইউনিয়ন পরিষদ হট লাইন");
+        hashMap.put("number","16256");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brack");
+        hashMap.put("numberName","ডিজিএম (ডেসকো)");
+        hashMap.put("number","১৬১২০");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","বিদ্যুৎ উন্নয়ন বোর্ড (পিডিবি)");
+        hashMap.put("number","১৬২০০");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","পাসপোর্ট সেবা");
+        hashMap.put("number","০২৯২৩১৯৬৭");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","বিমানবন্দর তথ্য কেন্দ্র");
+        hashMap.put("number","০২৮৯০১৫০০");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","রেলওয়ে স্টেশন (কমলাপুর)");
+        hashMap.put("number","১৩১");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","ইউনিয়ন পরিষদ হট লাইন");
+        hashMap.put("number","16256");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","ডেসকো");
+        hashMap.put("number","16120");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","বিটিসিএল");
         hashMap.put("number","0103874-45114");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brtc");
-        hashMap.put("number","0103874-45114");
+        hashMap.put("numberName","বিটিসিএল");
+        hashMap.put("number","16402");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brtc");
-        hashMap.put("number","0103874-45114");
+        hashMap.put("numberName","জাতীয় পরিচয় পত্র");
+        hashMap.put("number","105");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","nrvrf");
-        hashMap.put("number","0103874-5474");
+        hashMap.put("numberName","দুদক");
+        hashMap.put("number","106");
+        arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","স্বাস্থ্য সেবা");
+        hashMap.put("number","16430");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brtc");
-        hashMap.put("number","0103874-45114");
+        hashMap.put("numberName","সরকারি আইন সহায়তা");
+        hashMap.put("number","16123");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brtc");
-        hashMap.put("number","013874-45114");
+        hashMap.put("numberName","কৃষি কল সেন্টার");
+        hashMap.put("number","16123");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brack");
-        hashMap.put("number","0103874-45114");
+        hashMap.put("numberName","তিতাস গ্যাস");
+        hashMap.put("number","১৬৪৯৬");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brtc");
-        hashMap.put("number","0103874-45114");
+        hashMap.put("numberName","দুর্যোগ ব্যবস্থাপনা");
+        hashMap.put("number","১০৯০");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brtc");
-        hashMap.put("number","0103874-45114");
+        hashMap.put("numberName","পানি ও পয়ঃনিষ্কাশন");
+        hashMap.put("number","১৬১৬২");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","nrvrf");
-        hashMap.put("number","0103874-5474");
+        hashMap.put("numberName","বন ও পরিবেশ অধিদপ্তর");
+        hashMap.put("number","০১৭১৩৩৭৩৩৩৭");
+        arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","র\u200D্যাব");
+        hashMap.put("number","101");
+        arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","এম্বুলেন্স সেবা");
+        hashMap.put("number","199");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brtc");
-        hashMap.put("number","0103874-45114");
+        hashMap.put("numberName","জাতীয় হেলথ কেয়ার সেন্টার");
+        hashMap.put("number","16263");
+        arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","জাতীয় মানসিক স্বাস্থ্য সহায়তা");
+        hashMap.put("number","16363");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brtc");
-        hashMap.put("number","013874-45114");
+        hashMap.put("numberName","আইইডিসিআর");
+        hashMap.put("number","10655");
+        arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","বেসামরিক বিমান চলাচল");
+        hashMap.put("number","13606");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brack");
-        hashMap.put("number","0103874-45114");
+        hashMap.put("numberName","বিআরটিএ");
+        hashMap.put("number","9555555");
+        arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("numberName","গ্যাস অভিযোগ");
+        hashMap.put("number","16512");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brtc");
-        hashMap.put("number","0103874-45114");
+        hashMap.put("numberName","ডিবি (ডিটেকটিভ ব্রাঞ্চ)");
+        hashMap.put("number","01713-398412");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("numberName","brtc");
-        hashMap.put("number","0103874-45114");
+        hashMap.put("numberName","পুলিশ কন্ট্রোল রুম");
+        hashMap.put("number","01713-398311");
         arrayList.add(hashMap);
 
-        hashMap = new HashMap<>();
-        hashMap.put("numberName","nrvrf");
-        hashMap.put("number","0103874-5474");
-        arrayList.add(hashMap);
 
-        hashMap = new HashMap<>();
-        hashMap.put("numberName","brtc");
-        hashMap.put("number","0103874-45114");
-        arrayList.add(hashMap);
+
 
 
 

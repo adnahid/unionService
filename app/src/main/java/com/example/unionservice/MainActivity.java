@@ -1,7 +1,12 @@
 package com.example.unionservice;
 
+import static com.example.unionservice.R.id.home;
+
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -26,6 +31,8 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 import Upzila.UpzilaPersonProfile;
 import javaClass.pageAdapter;
@@ -61,6 +68,20 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager);
         tabsItem1st = findViewById(R.id.tabsItem1st);
         tabsItem2nd = findViewById(R.id.tabsItem2nd);
+
+        String homeIcon = "https://cdn-icons-png.flaticon.com/128/1946/1946436.png";
+        String developerIcon = "https://cdn-icons-png.flaticon.com/128/1946/1946436.png";
+        String appsDetailsIcon = "https://cdn-icons-png.flaticon.com/128/1946/1946436.png";
+        String shareIcon = "https://cdn-icons-png.flaticon.com/128/1946/1946436.png";
+        String reviewIcon = "https://cdn-icons-png.flaticon.com/128/1946/1946436.png";
+        String emailIcon = "https://cdn-icons-png.flaticon.com/128/1946/1946436.png";
+        String enssetailIcon = "https://cdn-icons-png.flaticon.com/128/1946/1946436.png";
+        String addsIcon = "https://cdn-icons-png.flaticon.com/128/1946/1946436.png";
+        String policeIcon = "https://cdn-icons-png.flaticon.com/128/1946/1946436.png";
+        String updateCheckIcon = "https://cdn-icons-png.flaticon.com/128/1946/1946436.png";
+
+
+
 
         /*
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -111,8 +132,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                if (item.getItemId()==R.id.home){
+                // Define the menu item to update
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                if (item.getItemId()== home){
+                    //MenuItem menuItem = navigationView.getMenu().findItem(R.id.home);
+                   // Picasso.get().load(homeIcon).placeholder(R.color.white).into();
                     Toast.makeText(MainActivity.this, "হোম", Toast.LENGTH_SHORT).show();
                     drawerLayout.closeDrawer(GravityCompat.START);
 

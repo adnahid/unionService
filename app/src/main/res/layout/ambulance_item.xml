@@ -9,15 +9,11 @@
         android:id="@+id/ambCardview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        android:backgroundTint="#E7DDFF"
+        android:backgroundTint="#2F4F4F"
         android:elevation="3dp"
         android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginTop="2dp"
         >
 
         <LinearLayout
@@ -26,14 +22,8 @@
             android:orientation="vertical"
             >
 
-
-
-
-
-
-
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
@@ -45,110 +35,202 @@
                 android:src="@drawable/doctor"
                 app:civ_border_color="#DFD6F6"
                 android:padding="5dp"
-                android:layout_marginEnd="5dp"
                 android:layout_marginTop="4dp"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="1dp"
                 />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/amDiverName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:text="সালাউদ্দিন সিয়াম"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        />
+
+                    <TextView
+                        android:id="@+id/amDiverNicName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="প্রোপ্রাইটর"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:fontFamily="sans-serif"
+                        android:layout_gravity="end"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="end"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/amDiverPhone"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:backgroundTint="#FFEB3B"
+                            app:cardCornerRadius="5dp"
+                            style="@style/Base.Theme.Neumorph"
+                            android:layout_marginEnd="10dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            >
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:src="@drawable/phone"
+                                app:civ_border_color="#36F3E8E8"
+                                app:civ_border_width="3dp"
+                                android:scaleType="centerCrop"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/amDiverMessage"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:backgroundTint="#FFEB3B"
+                            app:cardCornerRadius="5dp"
+                            style="@style/Base.Theme.Neumorph"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            >
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:src="@drawable/gm"
+                                app:civ_border_color="#36F3E8E8"
+                                app:civ_border_width="3dp"
+                                android:scaleType="centerCrop"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
                 >
 
+
+
                 <TextView
-                    android:id="@+id/dTitle"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/amItemTitle1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
-                    android:text="Title Name"
+                    android:text="উপকূল এ্যাম্বুলেন্স সার্ভিস"
                     android:textStyle="bold"
-                    android:textColor="#000000"
+                    android:textColor="#FFEB3B"
+                    android:gravity="center"
                     />
 
                 <TextView
-                    android:id="@+id/dName"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/amItemTitle2"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
-                    android:text="Diver Name"
+                    android:textSize="13sp"
+                    android:text="স্বল্প সময়ে দেশের যেকোন প্রান্তে রোগী ও লাশ বহন করা হয়।"
                     android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:fontFamily="sans-serif"
-
+                    android:textColor="#FFEB3B"
+                    android:gravity="center_horizontal"
                     />
 
-
-                <TextView
-                    android:id="@+id/shortDetails"
-                    android:layout_width="wrap_content"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
-                    android:text="Short Detalis"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:fontFamily="sans-serif"
-                    />
+                    android:backgroundTint="#FFDE59"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/item_bag"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/amItemTitle3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="২৪ ঘন্টা অক্সিজেনের ব্যবস্থা রয়েছে।"
+                            android:textStyle="bold"
+                            android:textColor="#673AB7"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            />
+            </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
             </LinearLayout>
 
-
-
-        </LinearLayout>
-
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:text="Title Name"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:gravity="center_horizontal"
-            android:padding="4dp"
-            />
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/amPlaceAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:text="যোগাযোগ: লোহারপুল, কোম্পানীগঞ্জ, নোয়াখালী।"
+                android:textStyle="bold"
+                android:textColor="#FFEB3B"
+                android:gravity="center"
+                android:background="#673AB7"
                 android:padding="5dp"
-                android:background="#5F000000"
-                >
-
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/AmbmeassageImage"
-                    android:layout_width="60dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/doctor"
-                    app:civ_border_color="#DFD6F6"
-                    android:padding="5dp"
-                    android:layout_marginEnd="5dp"
-                    />
-
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/AmbCallImage"
-                    android:layout_width="60dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/phone"
-                    app:civ_border_color="#DFD6F6"
-                    android:padding="5dp"
-                    android:layout_marginStart="5dp"
-                    />
-
-
-
-            </LinearLayout>
-
+                android:layout_marginTop="2dp"
+                />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+
+
 
 
 

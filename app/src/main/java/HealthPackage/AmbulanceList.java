@@ -33,6 +33,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
+import ItemLayout.LRDWProfileActivity;
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class AmbulanceList extends AppCompatActivity {
 
     RecyclerView AmbulanceRecyclerView;
@@ -76,19 +79,22 @@ public class AmbulanceList extends AppCompatActivity {
 
 
         private class readHolder extends RecyclerView.ViewHolder{
-            TextView dTitle,dName,shortDetails;
-            ImageView diverImage,AmbmeassageImage,AmbCallImage;
-            CardView ambCardview;
+            TextView amDiverName,amDiverNicName,amItemTitle1,amItemTitle2,amItemTitle3,amPlaceAddress;
+            CircleImageView diverImage;
+            CardView ambCardview,amDiverPhone,amDiverMessage;
 
             public readHolder(@NonNull View itemView) {
                 super(itemView);
-                dTitle = itemView.findViewById(R.id.dTitle);
-                dName = itemView.findViewById(R.id.dName);
-                shortDetails = itemView.findViewById(R.id.shortDetails);
-                AmbmeassageImage = itemView.findViewById(R.id.AmbmeassageImage);
-                AmbCallImage = itemView.findViewById(R.id.AmbCallImage);
+                amDiverName = itemView.findViewById(R.id.amDiverName);
+                amDiverNicName = itemView.findViewById(R.id.amDiverNicName);
+                amItemTitle1 = itemView.findViewById(R.id.amItemTitle1);
+                amItemTitle2 = itemView.findViewById(R.id.amItemTitle2);
+                amItemTitle3 = itemView.findViewById(R.id.amItemTitle3);
+                amPlaceAddress = itemView.findViewById(R.id.amPlaceAddress);
                 diverImage = itemView.findViewById(R.id.diverImage);
                 ambCardview = itemView.findViewById(R.id.ambCardview);
+                amDiverPhone = itemView.findViewById(R.id.amDiverPhone);
+                amDiverMessage = itemView.findViewById(R.id.amDiverMessage);
 
 
             }
@@ -129,49 +135,57 @@ public class AmbulanceList extends AppCompatActivity {
                 readHolder readHolder = (readHolder) holder;
                 hashMap = arrayList.get(position);
                 //hashMap = finalArrayList.get(position);
-                String titleTv  = hashMap.get("title");
-                String diver_name = hashMap.get("name");
-                String shortTitleTv  = hashMap.get("shortTitle");
-                String phoneNumber = hashMap.get("phone");
+                String name  = hashMap.get("name");
+                String nicName = hashMap.get("nicName");
+                String image  = hashMap.get("image");
+                String phone = hashMap.get("phone");
+                String title1  = hashMap.get("title1");
+                String title2 = hashMap.get("title2");
+                String title3  = hashMap.get("title3");
+                String address = hashMap.get("address");
+
+
 
             readHolder.ambCardview.startAnimation(AnimationUtils.loadAnimation(readHolder.ambCardview.getContext(),R.anim.recycler_anim02));
 
-                readHolder.dTitle.setText(titleTv);
-                readHolder.dName.setText(diver_name);
-                readHolder.shortDetails.setText(shortTitleTv);
-                //Picasso.get().load("").into(readHolder.diverImage);
-                readHolder.AmbCallImage.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Intent.ACTION_DIAL);
-                        intent.setData(Uri.parse("tel:"+phoneNumber));
-                        startActivity(intent);
+                readHolder.amDiverName.setText(name);
+                readHolder.amDiverNicName.setText(nicName);
+                readHolder.amItemTitle1.setText(title1);
+                readHolder.amItemTitle2.setText(title2);
+                readHolder.amItemTitle3.setText(title3);
+                readHolder.amPlaceAddress.setText(address);
+
+            Picasso.get().load(image).placeholder(R.drawable.person).into(readHolder.diverImage);
+
+
+            readHolder.amDiverPhone.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse("tel:"+phone));
+                    startActivity(intent);
+
+                }
+            });
+
+
+            readHolder.amDiverMessage.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Uri uri = Uri.parse("smsto:" +phone);
+                    Intent smsSIntent = new Intent(Intent.ACTION_SENDTO, uri);
+                    smsSIntent.putExtra("sms_body", body);
+                    try{
+                        startActivity(smsSIntent);
+                    } catch (Exception ex) {
+                        Toast.makeText(AmbulanceList.this, "Your sms has failed...",
+                                Toast.LENGTH_LONG).show();
+                        ex.printStackTrace();
                     }
-                });
 
-                readHolder.AmbmeassageImage.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-//                        Intent intent = new Intent(Intent.ACTION_SEND);
-//                        intent = Intent.createChooser(intent,"sms:"+phoneNumber);
-//                        startActivity(intent);
+                }
+            });
 
-                        Uri uri = Uri.parse("smsto:" + phoneNumber);
-
-                        Intent smsSIntent = new Intent(Intent.ACTION_SENDTO, uri);
-                        // add the message at the sms_body extra field
-                        smsSIntent.putExtra("sms_body", body);
-                        try{
-                            startActivity(smsSIntent);
-                        } catch (Exception ex) {
-                            Toast.makeText(AmbulanceList.this, "Your sms has failed...",
-                                    Toast.LENGTH_LONG).show();
-                            ex.printStackTrace();
-                        }
-
-
-                    }
-                });
 
 
 
@@ -239,44 +253,66 @@ public class AmbulanceList extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
         hashMap = new HashMap<>();
-        hashMap.put("title","Dr.Alli Hasan\nMbbs bsc dhaka Medical");
-        hashMap.put("name","Dr.Alli Hasan Mbbs bsc dhaka Medical Mbbs bsc dhaka Medical");
-        hashMap.put("shortTitle",  "batRog,jor etc");
-        hashMap.put("image",  "https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
-        hashMap.put("phone",  "01632-243524");
+        hashMap.put("name","সালাউদ্দিন সিয়াম");
+        hashMap.put("nicName"," প্রোপ্রাইটর");
+        hashMap.put("image","https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
+        hashMap.put("phone"," 01810-306787,01616-481492");
+        hashMap.put("title1","উপকূল এ্যাম্বুলেন্স সার্ভিস");
+        hashMap.put("title2","স্বল্প সময়ে দেশের যেকোন প্রান্তে রোগী ও লাশ বহন করা হয়।");
+        hashMap.put("title3","২৪ ঘন্টা অক্সিজেনের ব্যবস্থা রয়েছে।");
+        hashMap.put("address","যোগাযোগ: লোহারপুল, কোম্পানীগঞ্জ, নোয়াখালী।");
         arrayList.add(hashMap);
 
-        hashMap = new HashMap<>();
-        hashMap.put("title","Dr.Alli Hasan\nMbbs bsc dhaka Medical");
-        hashMap.put("name","Dr.Alli Hasan Mbbs bsc dhaka Medical Mbbs bsc dhaka Medical");
-        hashMap.put("shortTitle",  "batRog,jor etc");
-        hashMap.put("image",  "https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
-        hashMap.put("phone",  "01632-243524");
-        arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("title","Dr.Alli Hasan\nMbbs bsc dhaka Medical");
-        hashMap.put("name","Dr.Alli Hasan Mbbs bsc dhaka Medical Mbbs bsc dhaka Medical");
-        hashMap.put("shortTitle",  "batRog,jor etc");
-        hashMap.put("image",  "https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
-        hashMap.put("phone",  "01632-243524");
+        hashMap.put("name","সালাউদ্দিন সিয়াম");
+        hashMap.put("nicName"," প্রোপ্রাইটর");
+        hashMap.put("image","https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
+        hashMap.put("phone"," 01810-306787,01616-481492");
+        hashMap.put("title1","উপকূল এ্যাম্বুলেন্স সার্ভিস");
+        hashMap.put("title2","স্বল্প সময়ে দেশের যেকোন প্রান্তে রোগী ও লাশ বহন করা হয়।");
+        hashMap.put("title3","২৪ ঘন্টা অক্সিজেনের ব্যবস্থা রয়েছে।");
+        hashMap.put("address","যোগাযোগ: লোহারপুল, কোম্পানীগঞ্জ, নোয়াখালী।");
         arrayList.add(hashMap);
 
-        hashMap = new HashMap<>();
-        hashMap.put("title","Dr.Alli Hasan\nMbbs bsc dhaka Medical");
-        hashMap.put("name","Dr.Alli Hasan Mbbs bsc dhaka Medical Mbbs bsc dhaka Medical");
-        hashMap.put("shortTitle",  "batRog,jor etc");
-        hashMap.put("image",  "https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
-        hashMap.put("phone",  "01632-243524");
-        arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("title","Dr.Alli Hasan\nMbbs bsc dhaka Medical");
-        hashMap.put("name","Dr.Alli Hasan Mbbs bsc dhaka Medical Mbbs bsc dhaka Medical");
-        hashMap.put("shortTitle",  "batRog,jor etc");
-        hashMap.put("image",  "https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
-        hashMap.put("phone",  "01632-243524");
+        hashMap.put("name","সালাউদ্দিন সিয়াম");
+        hashMap.put("nicName"," প্রোপ্রাইটর");
+        hashMap.put("image","https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
+        hashMap.put("phone"," 01810-306787,01616-481492");
+        hashMap.put("title1","উপকূল এ্যাম্বুলেন্স সার্ভিস");
+        hashMap.put("title2","স্বল্প সময়ে দেশের যেকোন প্রান্তে রোগী ও লাশ বহন করা হয়।");
+        hashMap.put("title3","২৪ ঘন্টা অক্সিজেনের ব্যবস্থা রয়েছে।");
+        hashMap.put("address","যোগাযোগ: লোহারপুল, কোম্পানীগঞ্জ, নোয়াখালী।");
         arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","সালাউদ্দিন সিয়াম");
+        hashMap.put("nicName"," প্রোপ্রাইটর");
+        hashMap.put("image","https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
+        hashMap.put("phone"," 01810-306787,01616-481492");
+        hashMap.put("title1","উপকূল এ্যাম্বুলেন্স সার্ভিস");
+        hashMap.put("title2","স্বল্প সময়ে দেশের যেকোন প্রান্তে রোগী ও লাশ বহন করা হয়।");
+        hashMap.put("title3","২৪ ঘন্টা অক্সিজেনের ব্যবস্থা রয়েছে।");
+        hashMap.put("address","যোগাযোগ: লোহারপুল, কোম্পানীগঞ্জ, নোয়াখালী।");
+        arrayList.add(hashMap);
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","সালাউদ্দিন সিয়াম");
+        hashMap.put("nicName"," প্রোপ্রাইটর");
+        hashMap.put("image","https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
+        hashMap.put("phone"," 01810-306787,01616-481492");
+        hashMap.put("title1","উপকূল এ্যাম্বুলেন্স সার্ভিস");
+        hashMap.put("title2","স্বল্প সময়ে দেশের যেকোন প্রান্তে রোগী ও লাশ বহন করা হয়।");
+        hashMap.put("title3","২৪ ঘন্টা অক্সিজেনের ব্যবস্থা রয়েছে।");
+        hashMap.put("address","যোগাযোগ: লোহারপুল, কোম্পানীগঞ্জ, নোয়াখালী।");
+        arrayList.add(hashMap);
+
+
+
 
     }
 

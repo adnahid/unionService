@@ -156,6 +156,8 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
             public void onClick(View v) {
 
                 Intent intent = new Intent(getActivity(), DistricAdministrator.class);
+                DistricAdministrator.adph = "01678478335";
+                DistricAdministrator.adgm = "mdkarim@gmail.com";
                 DistricAdministrator.DetailsTv = "মাননীয় প্রধানমন্ত্রীর কার্যালয়ে বাসত্মবায়নাধীন সাপোর্ট টু ডিজিটাল বাংলাদেশ (এটুআই) প্রোগ্রাম কর্তৃক জাতীয় পোর্টাল ফ্রেমওয়ার্কের আওতায় জনগণের দোরগোড়ায় বিভিন্ন ই-সেবা নিশ্চিত করার লক্ষে কোম্পানীগঞ্জ উপজেলা ওয়েব পোর্টাল প্রস্ত্তত করা হয়েছে। দিন বদলের সনদ বাস্তবায়নে মাননীয় প্রধানমন্ত্রীর ডিজিটাল বাংলাদেশ গড়ার প্রত্যয়ে তথ্য প্রযুক্তির মাধ্যমে জনগণের দোরগোড়ায় সহজে সেবা ও তথ্য পৌঁছে দেয়ার নিমিত্ত প্রস্ত্ততকৃত কোম্পানীগঞ্জ উপজেলা ওয়েব পোর্টাল জনগণের প্রভূত কল্যান বয়ে আনবে মর্মে আমরা বিশ্বাস করি। কোম্পানীগঞ্জ উপজেলা ওয়েব পোর্টালকে আরো তথ্য বহুল করার লক্ষে সকলের সার্বিক সহযোগিতা কামনা করছি।";
                 DistricAdministrator.DetailsTv2 = "উপজেলা নির্বাহী অফিসার \n কোম্পানীগঞ্জ, নোয়াখালী।";
                 DistricAdministrator.url = "https://file-chittagong.portal.gov.bd/uploads/ad417e95-ec3f-4963-898b-2c409d9a631d//65e/56b/37c/65e56b37c87a3188449437.jpg";
