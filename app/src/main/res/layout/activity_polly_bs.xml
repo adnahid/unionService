@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ItemLayout.PollyBs"
-    android:background="@color/white"
+    android:background="#009688"
     >
 
     <androidx.appcompat.widget.Toolbar
@@ -39,7 +39,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#DCDBE0"
+                android:backgroundTint="#009688"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:focusable="true"
@@ -47,11 +47,16 @@
                 android:layout_margin="5dp"
                 >
 
-                <ImageView
+
+                <com.airbnb.lottie.LottieAnimationView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@color/black"
+                    app:lottie_rawRes="@raw/elec"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
                     />
+
+
 
             </androidx.cardview.widget.CardView>
         </RelativeLayout>
@@ -100,7 +105,7 @@
                         android:textSize="15sp"
                         android:text="জরুরী পল্লী বিদ্যুৎ সমূহ"
                         android:textStyle="bold"
-                        android:textColor="#000000"
+                        android:textColor="#ffffff"
                         android:fontFamily="sans-serif"
                         android:gravity="center_horizontal"
                         android:background="#34000000"

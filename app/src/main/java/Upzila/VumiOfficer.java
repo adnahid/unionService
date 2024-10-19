@@ -131,6 +131,7 @@ public class VumiOfficer extends AppCompatActivity {
             String upBatch = hashMap.get("upBatch");
             String upTimeTitle = hashMap.get("upTimeTitle");
             String upBatchNo = hashMap.get("upBatchNo");
+            String sectorName = hashMap.get("sectorName");
 
             readHolder.upItemCard.startAnimation(AnimationUtils.loadAnimation(readHolder.upItemCard.getContext(),R.anim.recycler_anim02));
             Picasso.get().load(upImage).placeholder(R.drawable.person).into(readHolder.uPImage);
@@ -158,6 +159,7 @@ public class VumiOfficer extends AppCompatActivity {
                     UpzilaPersonProfile.UPJoinTime = upTime;
                     UpzilaPersonProfile.UPBscBatch = upBatch;
                     UpzilaPersonProfile.UPBscBatchNo = upBatchNo;
+                    UpzilaPersonProfile.ToolTv = sectorName;
 
                     Bitmap bitmap = ( (BitmapDrawable) readHolder.uPImage.getDrawable() ).getBitmap();
                     UpzilaPersonProfile.ImageBitmap = bitmap;
@@ -266,6 +268,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "২৩ মে ২০২৪");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "ব্যাচ (বিসিএস) : ৩৮");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -279,6 +282,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০১ জুন ২০২০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -291,6 +295,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১২ সেপ্টেম্বর ২০২২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -304,6 +309,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১২ সেপ্টেম্বর ২০২২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -316,6 +322,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১২ সেপ্টেম্বর ২০২২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -330,6 +337,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১২ সেপ্টেম্বর ২০২২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -344,7 +352,9 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "২২ মার্চ ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
+
 
 
 
@@ -358,6 +368,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০১ অক্টোবর ২০২০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -372,6 +383,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০৯ সেপ্টেম্বর ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -386,6 +398,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০৯ সেপ্টেম্বর ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -400,6 +413,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০৯ সেপ্টেম্বর ২০২০");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -413,6 +427,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "এই মর্মে জানা যায়নি");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -426,6 +441,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "এই মর্মে জানা যায়নি");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -440,6 +456,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "২০ জুলাই ২০১৮");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -453,6 +470,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "০৫ এপ্রিল ২০১৫");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -468,6 +486,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "২৭ নভেম্বর ২০২২");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -481,6 +500,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১৫ নভেম্বর ২০২৩");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -495,6 +515,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "১৫ নভেম্বর ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -509,6 +530,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "২২ মার্চ ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 
@@ -523,6 +545,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "এই মর্মে জানা যায়নি");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -535,6 +558,7 @@ public class VumiOfficer extends AppCompatActivity {
         hashMap.put("upTime", "এই মর্মে জানা যায়নি");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "উপজেলা ভূমি অফিস");
         arrayList.add(hashMap);
 
 

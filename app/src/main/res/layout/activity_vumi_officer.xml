@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="Upzila.VumiOfficer"
-    android:background="@color/white"
+    android:background="#3A1B1B"
     >
 
     <androidx.appcompat.widget.Toolbar
@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
-        app:title="Vumi Office Activity"
-        app:titleTextColor="#FFEB3B"
-        android:background="#009688"
+        app:title="উপজেলা ভূমি অফিস"
+        app:titleTextColor="#ffffff"
+        android:background="#3A1B1B"
         >
 
     </androidx.appcompat.widget.Toolbar>

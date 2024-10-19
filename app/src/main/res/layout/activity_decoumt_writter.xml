@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ItemLayout.DecoumtWritter"
-    android:background="@color/white"
+    android:background="#3A1B1B"
     >
 
     <androidx.appcompat.widget.Toolbar
@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
-        app:title="Decoument"
+        app:title="দলিল লেখক সমূহ"
         app:titleTextColor="@color/white"
-        android:background="#009688"
+        android:background="#3A1B1B"
         >
     </androidx.appcompat.widget.Toolbar>
 

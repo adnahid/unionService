@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="Vatha.SirajPurVatha"
-    android:background="@color/white"
+    android:background="#3A1B1B"
     >
 
     <androidx.appcompat.widget.Toolbar

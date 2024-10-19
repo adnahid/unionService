@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -32,6 +33,7 @@ public class LRDWProfileActivity extends AppCompatActivity {
     public static String AdCh02Des = "";
     public static String AdPh = "";
     public static String AdGm = "";
+    public static String Tooltv = "";
 
     public static Bitmap ImageBitmap = null;
 
@@ -39,6 +41,8 @@ public class LRDWProfileActivity extends AppCompatActivity {
     ImageView advocateImage;
     TextView advocateName,advocateTitle,advocateCh01,advocateCh01des,advocateCh02,advocateCh02des;
     CardView advocatePhone,advocateGmail,advocateMessage;
+
+    Toolbar toolbar;
 
 
     @Override
@@ -56,6 +60,7 @@ public class LRDWProfileActivity extends AppCompatActivity {
         advocatePhone = findViewById(R.id.advocatePhone);
         advocateGmail = findViewById(R.id.advocateGmail);
         advocateMessage = findViewById(R.id.advocateMessage);
+        toolbar = findViewById(R.id.toolbar);
 
         advocateName.setText(AdName);
         advocateTitle.setText(AdTitle);
@@ -63,6 +68,7 @@ public class LRDWProfileActivity extends AppCompatActivity {
         advocateCh01des.setText(AdCh01Des);
         advocateCh02.setText(AdCh02);
         advocateCh02des.setText(AdCh02Des);
+        toolbar.setTitle(Tooltv);
 
         advocatePhone.setOnClickListener(new View.OnClickListener() {
             @Override

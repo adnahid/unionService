@@ -138,6 +138,7 @@ public class AdvocateActivity extends AppCompatActivity {
             String adChTex1stDes = hashMap.get("adChTex1stDes");
             String adChTex2nd = hashMap.get("adChTex2nd");
             String adChTex2ndDes = hashMap.get("adChTex2ndDes");
+            String sectorName = hashMap.get("sectorName");
 
             readHolder.advocateCardView.startAnimation(AnimationUtils.loadAnimation(readHolder.advocateCardView.getContext(),R.anim.recycler_anim04));
             Picasso.get().load(AdImage).placeholder(R.drawable.person).into(readHolder.advocateImage);
@@ -167,6 +168,7 @@ public class AdvocateActivity extends AppCompatActivity {
                     LRDWProfileActivity.AdCh01Des = adChTex1stDes;
                     LRDWProfileActivity.AdCh02 = adChTex2nd;
                     LRDWProfileActivity.AdCh02Des = adChTex2ndDes;
+                    LRDWProfileActivity.Tooltv = sectorName;
 
                     Bitmap bitmap = ( (BitmapDrawable) readHolder.advocateImage.getDrawable() ).getBitmap();
                     LRDWProfileActivity.ImageBitmap = bitmap;
@@ -267,16 +269,15 @@ public class AdvocateActivity extends AppCompatActivity {
 
         hashMap = new HashMap<>();
         hashMap.put("adName", "মোঃ হেফজুল বাহার");
-        hashMap.put("adTitle", "এল.এল.বি (অনার্স), এল.এল.এম\n" +
-                "এডভোকেট দেওয়ানী ও ফৌজদারী আদালত জজ কোর্ট, নোয়াখালী।");
+        hashMap.put("adTitle", "এল.এল.বি (অনার্স), এল.এল.এম এডভোকেট দেওয়ানী ও ফৌজদারী আদালত জজ কোর্ট, নোয়াখালী।");
         hashMap.put("adPhone", "01815-156552");
         hashMap.put("AdImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
         hashMap.put("adGmail", "mhbahar6552@gmail.com");
         hashMap.put("adChTex1st", "বসুরহাট চেম্বার।");
         hashMap.put("adChTex1stDes", "রৌশন আরা মার্কেট, কবিরহাট রোড, বসুরহাট, কোম্পানীগঞ্জ, নোয়াখালী।");
         hashMap.put("adChTex2nd", "কোর্ট চেম্বার।");
-        hashMap.put("adChTex2ndDes", "শাহাদাত এন্ড এসোসিয়েটস রুম নং-৯৮, জজ কোর্ট, নোয়াখালী।\n" +
-                "নোয়াখালী");
+        hashMap.put("adChTex2ndDes", "শাহাদাত এন্ড এসোসিয়েটস রুম নং-৯৮, জজ কোর্ট, নোয়াখালী। নোয়াখালী");
+        hashMap.put("sectorName", "আইনজীবী");
         arrayList.add(hashMap);
 
 
@@ -292,6 +293,7 @@ public class AdvocateActivity extends AppCompatActivity {
         hashMap.put("adChTex2nd", "কোর্ট চেম্বার।");
         hashMap.put("adChTex2ndDes", "শাহাদাত এন্ড এসোসিয়েটস রুম নং-৯৮, জজ কোর্ট, নোয়াখালী।\n" +
                 "নোয়াখালী");
+        hashMap.put("sectorName", "আইনজীবী");
         arrayList.add(hashMap);
 
 
@@ -307,6 +309,7 @@ public class AdvocateActivity extends AppCompatActivity {
         hashMap.put("adChTex2nd", "কোর্ট চেম্বার।");
         hashMap.put("adChTex2ndDes", "শাহাদাত এন্ড এসোসিয়েটস রুম নং-৯৮, জজ কোর্ট, নোয়াখালী।\n" +
                 "নোয়াখালী");
+        hashMap.put("sectorName", "আইনজীবী");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -321,6 +324,7 @@ public class AdvocateActivity extends AppCompatActivity {
         hashMap.put("adChTex2nd", "কোর্ট চেম্বার।");
         hashMap.put("adChTex2ndDes", "শাহাদাত এন্ড এসোসিয়েটস রুম নং-৯৮, জজ কোর্ট, নোয়াখালী।\n" +
                 "নোয়াখালী");
+        hashMap.put("sectorName", "আইনজীবী");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -335,6 +339,7 @@ public class AdvocateActivity extends AppCompatActivity {
         hashMap.put("adChTex2nd", "কোর্ট চেম্বার।");
         hashMap.put("adChTex2ndDes", "শাহাদাত এন্ড এসোসিয়েটস রুম নং-৯৮, জজ কোর্ট, নোয়াখালী।\n" +
                 "নোয়াখালী");
+        hashMap.put("sectorName", "আইনজীবী");
         arrayList.add(hashMap);
 
 

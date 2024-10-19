@@ -132,6 +132,7 @@ public class DecoumtWritter extends AppCompatActivity {
             String adChTex1stDes = hashMap.get("adChTex1stDes");
             String adChTex2nd = hashMap.get("adChTex2nd");
             String adChTex2ndDes = hashMap.get("adChTex2ndDes");
+            String sectorName = hashMap.get("sectorName");
 
             readHolder.advocateCardView.startAnimation(AnimationUtils.loadAnimation(readHolder.advocateCardView.getContext(),R.anim.recycler_anim04));
             Picasso.get().load(AdImage).placeholder(R.drawable.person).into(readHolder.advocateImage);
@@ -163,6 +164,7 @@ public class DecoumtWritter extends AppCompatActivity {
                     LRDWProfileActivity.AdCh01Des = adChTex1stDes;
                     LRDWProfileActivity.AdCh02 = adChTex2nd;
                     LRDWProfileActivity.AdCh02Des = adChTex2ndDes;
+                    LRDWProfileActivity.Tooltv = sectorName;
 
                     startActivity(intent);
                 }
@@ -270,6 +272,7 @@ public class DecoumtWritter extends AppCompatActivity {
         hashMap.put("adChTex2nd", "কোর্ট চেম্বার।");
         hashMap.put("adChTex2ndDes", "শাহাদাত এন্ড এসোসিয়েটস রুম নং-৯৮, জজ কোর্ট, নোয়াখালী।\n" +
                 "নোয়াখালী");
+        hashMap.put("sectorName", "দলিল লেখক");
         arrayList.add(hashMap);
 
 
@@ -285,6 +288,7 @@ public class DecoumtWritter extends AppCompatActivity {
         hashMap.put("adChTex2nd", "কোর্ট চেম্বার।");
         hashMap.put("adChTex2ndDes", "শাহাদাত এন্ড এসোসিয়েটস রুম নং-৯৮, জজ কোর্ট, নোয়াখালী।\n" +
                 "নোয়াখালী");
+        hashMap.put("sectorName", "দলিল লেখক");
         arrayList.add(hashMap);
 
 
@@ -300,6 +304,7 @@ public class DecoumtWritter extends AppCompatActivity {
         hashMap.put("adChTex2nd", "কোর্ট চেম্বার।");
         hashMap.put("adChTex2ndDes", "শাহাদাত এন্ড এসোসিয়েটস রুম নং-৯৮, জজ কোর্ট, নোয়াখালী।\n" +
                 "নোয়াখালী");
+        hashMap.put("sectorName", "দলিল লেখক");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -314,6 +319,7 @@ public class DecoumtWritter extends AppCompatActivity {
         hashMap.put("adChTex2nd", "কোর্ট চেম্বার।");
         hashMap.put("adChTex2ndDes", "শাহাদাত এন্ড এসোসিয়েটস রুম নং-৯৮, জজ কোর্ট, নোয়াখালী।\n" +
                 "নোয়াখালী");
+        hashMap.put("sectorName", "দলিল লেখক");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -328,6 +334,7 @@ public class DecoumtWritter extends AppCompatActivity {
         hashMap.put("adChTex2nd", "কোর্ট চেম্বার।");
         hashMap.put("adChTex2ndDes", "শাহাদাত এন্ড এসোসিয়েটস রুম নং-৯৮, জজ কোর্ট, নোয়াখালী।\n" +
                 "নোয়াখালী");
+        hashMap.put("sectorName", "দলিল লেখক");
         arrayList.add(hashMap);
 
 

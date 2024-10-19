@@ -116,12 +116,16 @@ public class SirajPurVatha extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (position==0){
+
+                        PdfViewer.ToolText= dName;
                         PdfViewer.pdfUrl = "https://drive.google.com/file/d/1IEoRC18EIR-mYtXx76RIcxAuRQRCWbvp/view?usp=sharing";
                         Intent intent = new Intent(SirajPurVatha.this, PdfViewer.class);
                         startActivity(intent);
                         Toast.makeText(SirajPurVatha.this, ""+dName, Toast.LENGTH_SHORT).show();
                     }
                     else if (position==1) {
+
+                        PdfViewer.ToolText= dName;
                         PdfViewer.pdfUrl = "https://drive.google.com/file/d/1HTCg_TNRUNzSSs5PoSrOl0BFehTuAMfu/view?usp=sharing";
                         Intent intent = new Intent(SirajPurVatha.this, PdfViewer.class);
                         startActivity(intent);
@@ -129,6 +133,7 @@ public class SirajPurVatha extends AppCompatActivity {
                     }
                     else if (position==2) {
 
+                        PdfViewer.ToolText= dName;
                         PdfViewer.pdfUrl = "https://drive.google.com/file/d/1sECY9YhhTA3fqj2w2uQvOPZS2y71kes5/view?usp=sharing";
                         Intent intent = new Intent(SirajPurVatha.this, PdfViewer.class);
                         startActivity(intent);
@@ -137,6 +142,7 @@ public class SirajPurVatha extends AppCompatActivity {
                     }
                     else if (position==3) {
 
+                        PdfViewer.ToolText= dName;
                         PdfViewer.pdfUrl = "https://drive.google.com/file/d/1a_TcF77G1ip0KPiF2Y_akLX5jHLZ1RP_/view?usp=sharing\n";
                         Intent intent = new Intent(SirajPurVatha.this, PdfViewer.class);
                         startActivity(intent);

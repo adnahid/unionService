@@ -71,7 +71,6 @@ public class webViewActivity extends AppCompatActivity {
         });
 
         toolbar.setTitle(ToolBarText);
-
         if (networkInfo!=null && networkInfo.isConnected()){
             webView.setVisibility(View.VISIBLE);
             Lottie.setVisibility(View.GONE);

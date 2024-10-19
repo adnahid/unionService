@@ -400,6 +400,7 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
             @Override
             public void onClick(View view) {
                 //PdfViewer.assetsName = "companyganj.pdf";
+                PdfViewer.ToolText = "বীর মুক্তিযোদ্ধা তালিকা";
                 PdfViewer.pdfUrl = "https://drive.google.com/file/d/1H4zvG3T3brlwY6e9fTENX1hNEk8xrITH/view?usp=sharing";
                 Intent intent = new Intent(getActivity(), PdfViewer.class);
                 startActivity(intent);
@@ -410,6 +411,7 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
             @Override
             public void onClick(View view) {
                 //PdfViewer.assetsName = "past.pdf";
+                PdfViewer.ToolText = "প্রাক্তন পরিষদ";
                 PdfViewer.pdfUrl = "https://drive.google.com/file/d/1IWpkcih2mvBlZyNF-kIAco5RGljMhw2t/view?usp=sharing";
                 Intent intent = new Intent(getActivity(), PdfViewer.class);
                 startActivity(intent);
@@ -421,6 +423,7 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
             @Override
             public void onClick(View view) {
                 //PdfViewer.assetsName = "post_office.pdf";
+                PdfViewer.ToolText = "পোস্ট অফিস সমূহ";
                 PdfViewer.pdfUrl = "https://drive.google.com/file/d/1ZDav267ydhifRZELhuAoI-vpV4rX2UcF/view?usp=sharing";
                 Intent intent = new Intent(getActivity(), PdfViewer.class);
                 startActivity(intent);
