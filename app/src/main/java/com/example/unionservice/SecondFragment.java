@@ -45,6 +45,7 @@ public class SecondFragment extends Fragment {
 
 
 
+
         jathioEmrService.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

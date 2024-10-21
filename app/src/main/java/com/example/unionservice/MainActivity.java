@@ -39,10 +39,10 @@ import javaClass.pageAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
+
     DrawerLayout drawerLayout;
     androidx.appcompat.widget.Toolbar Toolbar;
     NavigationView navigationView;
-
 
     TabLayout tabLayout;
     ViewPager viewPager;

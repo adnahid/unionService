@@ -148,13 +148,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="8sp"
+                                android:textSize="10sp"
                                 android:text="আবেদনের নিয়ম"
                                 android:textStyle="bold"
                                 android:textColor="#000000"
                                 android:layout_marginTop="1dp"
                                 android:layout_gravity="center_horizontal"
-                                android:fontFamily="serif"
+                                android:fontFamily="sans-serif"
                                 />
 
                             <LinearLayout
@@ -217,7 +217,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="7sp"
+                                android:textSize="9sp"
                                 android:text="নতুন সংযোগের জন্য আবেদন"
                                 android:textStyle="bold"
                                 android:textColor="#000000"
@@ -297,13 +297,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="6sp"
+                                android:textSize="8sp"
                                 android:text="শিল্প সংযোগ আবেদনের নিয়ম"
                                 android:textStyle="bold"
                                 android:textColor="#000000"
                                 android:layout_marginTop="1dp"
                                 android:layout_gravity="center_horizontal"
-                                android:fontFamily="serif"
+                                android:fontFamily="sans-serif"
                                 />
 
                             <LinearLayout
@@ -367,7 +367,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="7sp"
+                                android:textSize="10sp"
                                 android:text="শিল্প সংযোগের আবেদন"
                                 android:textStyle="bold"
                                 android:textColor="#000000"
@@ -439,7 +439,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="7sp"
+                                android:textSize="9sp"
                                 android:text="ফি পরিশোধ করণ"
                                 android:textStyle="bold"
                                 android:textColor="#000000"
@@ -523,7 +523,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="8sp"
+                                android:textSize="10sp"
                                 android:text="প্রি - পেইড মিটার"
                                 android:textStyle="bold"
                                 android:textColor="#000000"
@@ -593,7 +593,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="8sp"
+                                android:textSize="10sp"
                                 android:text="জোনাল অফিস"
                                 android:textStyle="bold"
                                 android:textColor="#000000"

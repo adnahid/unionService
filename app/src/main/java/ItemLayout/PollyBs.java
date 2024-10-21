@@ -53,6 +53,7 @@ public class PollyBs extends AppCompatActivity {
         pollApplication.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                webViewActivity.ToolBarText = "নতুন সংযোগের জন্য আবেদন";
                 webViewActivity.url = "http://www.rebpbs.com/";
                 Intent intent = new Intent(PollyBs.this, webViewActivity.class);
                 startActivity(intent);
@@ -63,6 +64,7 @@ public class PollyBs extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //PdfViewer.assetsName = "pollyapplication.pdf";
+                PdfViewer.ToolText = "আবেদনের নিয়ম";
                 PdfViewer.pdfUrl = "https://drive.google.com/file/d/1U-hZP5f7JhgiydBdfK9WqrJU48-2q1Cr/view?usp=sharing";
                 Intent intent = new Intent(PollyBs.this, PdfViewer.class);
                 startActivity(intent);
@@ -75,6 +77,7 @@ public class PollyBs extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //PdfViewer.assetsName = "indurstial.pdf";
+                PdfViewer.ToolText = "শিল্প সংযোগ আবেদনের নিয়ম";
                 PdfViewer.pdfUrl = "https://drive.google.com/file/d/1BHJ3XZldML1Bh8ouD5LjcV0iLeH-SrrY/view?usp=sharing";
                 Intent intent = new Intent(PollyBs.this, PdfViewer.class);
                 startActivity(intent);
@@ -84,15 +87,18 @@ public class PollyBs extends AppCompatActivity {
         pollInsdurstrialApplication.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                webViewActivity.ToolBarText = "শিল্প সংযোগের আবেদন";
                 webViewActivity.url = "http://industry.rebpbs.com/UI/App/frm_main_application.aspx";
                 Intent intent = new Intent(PollyBs.this, webViewActivity.class);
                 startActivity(intent);
             }
         });
 
-        pollApplication.setOnClickListener(new View.OnClickListener() {
+
+        pollFree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                webViewActivity.ToolBarText = "ফি পরিশোধ করণ";
                 webViewActivity.url = "http://www.rebpbs.com/UI/App/frm_main_application.aspx";
                 Intent intent = new Intent(PollyBs.this, webViewActivity.class);
                 startActivity(intent);
@@ -105,6 +111,7 @@ public class PollyBs extends AppCompatActivity {
         ovigok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                webViewActivity.ToolBarText = "অভিযোগ কেন্দ্র";
                 webViewActivity.url = "http://www.rebpbs.com/UI/frm_feedback.aspx";
                 Intent intent = new Intent(PollyBs.this, webViewActivity.class);
                 startActivity(intent);
@@ -115,6 +122,7 @@ public class PollyBs extends AppCompatActivity {
         pollFree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                webViewActivity.ToolBarText = "ফি পরিশোধ করণ";
                 webViewActivity.url = "http://industry.rebpbs.com/UI/frm_payment_gateway.aspx";
                 Intent intent = new Intent(PollyBs.this, webViewActivity.class);
                 startActivity(intent);
