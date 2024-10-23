@@ -270,7 +270,7 @@ public class FireService extends AppCompatActivity {
         hashMap.put("upTime", "২২ মার্চ ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
-        hashMap.put("sectorName", "ফায়ার সার্ভিস");
+        hashMap.put("sectorName", "ফায়ার সার্ভিস কর্মকর্তা সমূহ");
         arrayList.add(hashMap);
 
 
@@ -284,7 +284,7 @@ public class FireService extends AppCompatActivity {
         hashMap.put("upTime", "১৮ আগষ্ট ২০১৬");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
-        hashMap.put("sectorName", "ফায়ার সার্ভিস");
+        hashMap.put("sectorName", "ফায়ার সার্ভিস কর্মকর্তা সমূহ");
         arrayList.add(hashMap);
 
 

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="HealthPackage.HospitalMenu"
-    android:background="#ffffff"
+    android:background="#009688"
     >
 
     <androidx.appcompat.widget.Toolbar
@@ -14,8 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
-        app:titleTextColor="@color/white"
-        android:background="#ffffff"
+        app:titleTextColor="@color/black"
+        android:background="#009688"
+        app:title="স্বাস্থ্য সেবা সমূহ"
         >
 
     </androidx.appcompat.widget.Toolbar>
@@ -37,25 +38,50 @@
                 android:orientation="vertical"
                 >
 
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/no_wifi"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="5dp"
-                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#009688"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="5dp"
+                        >
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/Lottie"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:lottie_rawRes="@raw/hospital"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            android:visibility="visible"
+                            />
+
+
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="blood donet sonparka same lines text here nice kggtyfiayhgasfgagfhg"
+                    android:textSize="15sp"
+                    android:text="স্বাস্থ্য হলো একটি বিনিয়োগ,যা সময়ের সাথে আপনার জীবনের গুণমান বৃদ্ধি করে।"
                     android:textStyle="bold"
                     android:textColor="#000000"
-                    android:layout_marginTop="1dp"
                     android:layout_gravity="center_horizontal"
                     android:fontFamily="sans-serif"
                     android:textAlignment="center"
+                    android:layout_margin="3dp"
                     />
 
 
@@ -66,7 +92,7 @@
                     android:weightSum="1"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="8dp"
                     >
 
                     <androidx.cardview.widget.CardView
@@ -110,17 +136,7 @@
                                 android:layout_gravity="center_horizontal"
                                 />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="10sp"
-                                android:text="oposon Hospital"
-                                android:textStyle="bold"
-                                android:textColor="#000000"
-                                android:layout_marginTop="1dp"
-                                android:layout_gravity="center_horizontal"
-                                android:fontFamily="serif"
-                                />
+
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -229,24 +245,14 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="15sp"
-                                android:text="Near Pharmecy"
+                                android:text="ফার্মেসি"
                                 android:textStyle="bold"
                                 android:textColor="#000000"
                                 android:layout_marginTop="1dp"
                                 android:layout_gravity="center_horizontal"
                                 />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="10sp"
-                                android:text="oposon Hospital"
-                                android:textStyle="bold"
-                                android:textColor="#000000"
-                                android:layout_marginTop="1dp"
-                                android:layout_gravity="center_horizontal"
-                                android:fontFamily="serif"
-                                />
+
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>

@@ -61,6 +61,14 @@ public class HospitalName extends AppCompatActivity {
         doctorListRecyclerGridView = findViewById(R.id.doctorListRecyclerGridView);
         toolbar = findViewById(R.id.toolbar);
 
+        toolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+                finish();
+            }
+        });
+
 
         UnionDetailsTable();
         DoctorListGirdAdapter doctorListGirdAdapter  = new DoctorListGirdAdapter();

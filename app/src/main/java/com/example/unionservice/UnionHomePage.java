@@ -312,6 +312,7 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         Oyaris.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                webViewActivity.ToolBarText ="ওয়ারিশ সনদ";
                 webViewActivity.url= "https://www.savarup.com/successor_apps";
                 Intent intent = new Intent(getActivity(),webViewActivity.class);
                 startActivity(intent);
@@ -476,6 +477,7 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         bdJobs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                PdfViewer.ToolText = "চাকুরি খুঁজুন";
                 webViewActivity.url = "https://www.bdjobs.com/";
                 Intent intent = new Intent(getActivity(), webViewActivity.class);
                 startActivity(intent);

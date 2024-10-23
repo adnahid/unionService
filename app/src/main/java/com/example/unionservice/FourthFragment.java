@@ -25,10 +25,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import ItemLayout.DetailsUnion;
 import ItemLayout.ThanaPolicy;
@@ -52,6 +56,29 @@ public class FourthFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_fourth, container, false);
         recyclerViewUnionGridView = view.findViewById(R.id.recyclerViewUnionGridView);
+        ImageSlider image_slider = view.findViewById(R.id.image_slider);
+
+        //Image Slider
+        String url = "https://i.postimg.cc/L4PhmPbL/Yellow-White-Minimalist-Quote-Reminder-Facebook-Post.png";
+        String url1st = "https://i.pinimg.com/originals/29/0f/1b/290f1bd21caf451f479d1d5748abb536.jpg";
+        String url2nd = "https://i.pinimg.com/736x/2f/cb/80/2fcb80c870189aea42860cd966f79a30.jpg";
+        String url3rd = "https://i.pinimg.com/originals/f5/a6/96/f5a696841c554f2272e5cf394a5054a9.jpg";
+        String url4th = "https://i.pinimg.com/originals/d5/ac/0a/d5ac0a5c97b318e70dc4416a8e0ccdae.jpg";
+        String url5th = "https://th.bing.com/th/id/R.891c9d9b03f1a9e0a6357edd4a3fb84e?rik=Lr7dJ4MwTA86lg&pid=ImgRaw&r=0";
+        String url6th = "https://i.pinimg.com/736x/bb/b8/af/bbb8aff784130f9a32516910f301535d.jpg";
+        String url7th = "https://th.bing.com/th/id/OIP.PhAFtFOEudjCUrpj1PfnEwAAAA?rs=1&pid=ImgDetMain";
+
+        List<SlideModel> list = new ArrayList<>();
+        list.add(new SlideModel(url, ScaleTypes.FIT));
+        list.add(new SlideModel(url1st, ScaleTypes.FIT));
+        list.add(new SlideModel(url2nd, ScaleTypes.FIT));
+        list.add(new SlideModel(url3rd, ScaleTypes.FIT));
+        list.add(new SlideModel(url4th, ScaleTypes.FIT));
+
+        list.add(new SlideModel(url5th, ScaleTypes.FIT));
+        list.add(new SlideModel(url6th, ScaleTypes.FIT));
+        list.add(new SlideModel(url7th, ScaleTypes.FIT));
+        image_slider.setImageList(list);
 
 
          UnionDetailsTable();

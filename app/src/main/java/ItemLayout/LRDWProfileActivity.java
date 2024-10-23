@@ -70,6 +70,14 @@ public class LRDWProfileActivity extends AppCompatActivity {
         advocateCh02des.setText(AdCh02Des);
         toolbar.setTitle(Tooltv);
 
+        toolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+                finish();
+            }
+        });
+
         advocatePhone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

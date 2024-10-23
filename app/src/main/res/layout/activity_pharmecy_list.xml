@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="HealthPackage.PharmecyList"
-    android:background="#ffffff"
+    android:background="#3A1B1B"
     >
 
     <androidx.appcompat.widget.Toolbar
@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:navigationIcon="@drawable/baseline_arrow_back_24"
-        app:title="Pharmecy List"
-        app:titleTextColor="#673AB7"
-        android:background="@color/white"
+        app:title="ফার্মেসি লিস্ট"
+        app:titleTextColor="#ffffff"
+        android:background="#3A1B1B"
         >
 
     </androidx.appcompat.widget.Toolbar>

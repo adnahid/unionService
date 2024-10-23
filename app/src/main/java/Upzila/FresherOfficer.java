@@ -1,6 +1,8 @@
 package Upzila;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -161,6 +163,9 @@ public class FresherOfficer extends AppCompatActivity {
                     UpzilaPersonProfile.UPBscBatchNo = upBatchNo;
                     UpzilaPersonProfile.ToolTv = sectorName;
 
+                    Bitmap bitmap = ( (BitmapDrawable) readHolder.uPImage.getDrawable() ).getBitmap();
+                    UpzilaPersonProfile.ImageBitmap = bitmap;
+
                     startActivity(intent);
                 }
             });
@@ -254,11 +259,6 @@ public class FresherOfficer extends AppCompatActivity {
     public void DetailsTable(){
 
         arrayList = new ArrayList<>();
-
-
-
-
-
 
         hashMap = new HashMap<>();
         hashMap.put("upName", "মোঃ আশরাফুল ইসলাম সরকার");

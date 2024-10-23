@@ -6,17 +6,12 @@
     android:orientation="vertical">
 
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/vathaCard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        >
+
 
     <Button
         android:id="@+id/vathaName"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
         android:textStyle="bold"
         android:textColor="@color/white"
@@ -28,5 +23,5 @@
         />
 
 
-    </androidx.cardview.widget.CardView>
+
 </LinearLayout>

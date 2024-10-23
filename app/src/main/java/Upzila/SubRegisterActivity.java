@@ -257,8 +257,8 @@ public class SubRegisterActivity extends AppCompatActivity {
         hashMap = new HashMap<>();
         hashMap.put("upName", "রাজীব মজুমদার");
         hashMap.put("upLevel", "সাব-রেজিস্ট্রার");
+        hashMap.put("upImage", "https://cdn-icons-png.flaticon.com/128/17701/17701311.png");
         hashMap.put("upNumber", "০১৯২২৪৫৩৮৬৫");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
         hashMap.put("upGmail", "srtahirpur@yahoo.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
         hashMap.put("upTime", "২২ মার্চ ২০১৯");
@@ -268,26 +268,26 @@ public class SubRegisterActivity extends AppCompatActivity {
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "রাজীব মজুমদার");
-        hashMap.put("upLevel", "সাব-রেজিস্ট্রার");
-        hashMap.put("upNumber", "০১৯২২৪৫৩৮৬৫");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "srtahirpur@yahoo.com");
+        hashMap.put("upName", "মোঃকামাল উদ্দিন");
+        hashMap.put("upLevel", "মোহরার (টি.সি.)");
+        hashMap.put("upNumber", "০১৭১৮-২৩৪২৫৭");
+        hashMap.put("upImage", "https://i.postimg.cc/c4QP67Hx/resister-1.png");
+        hashMap.put("upGmail", "kamaluddin234257@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "১৫ ডিসেম্বর ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         hashMap.put("sectorName", "রেজিস্ট্রার");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "রাজীব মজুমদার");
-        hashMap.put("upLevel", "সাব-রেজিস্ট্রার");
-        hashMap.put("upNumber", "০১৯২২৪৫৩৮৬৫");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "srtahirpur@yahoo.com");
+        hashMap.put("upName", "সমীরন চক্রবর্তী");
+        hashMap.put("upLevel", "মোহরার (২)");
+        hashMap.put("upNumber", "০১৭১৮-২১০৯৬৬");
+        hashMap.put("upImage", "https://i.postimg.cc/k5hpLfjc/resister-3.png");
+        hashMap.put("upGmail", "samironsharma@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "১৮ সেপ্টেম্বর ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         hashMap.put("sectorName", "রেজিস্ট্রার");
@@ -296,18 +296,31 @@ public class SubRegisterActivity extends AppCompatActivity {
 
 
         hashMap = new HashMap<>();
-        hashMap.put("upName", "জামিন মিয়া");
-        hashMap.put("upLevel", "স্টেশন অফিসার");
-        hashMap.put("upNumber", "০১৬২২১৬৫১২৮");
-        hashMap.put("upImage", "http://file-chittagong.portal.gov.bd/uploads/a490cfeb-992f-476d-9529-9d5ae5191e5f//640/5de/2bd/6405de2bd1438727275200.jpg");
-        hashMap.put("upGmail", "jamimmiah120@gmail.com");
+        hashMap.put("upName", "মোঃহাবিবুল্লাহ");
+        hashMap.put("upLevel", "অফিস সহকারী");
+        hashMap.put("upNumber", "০১৮১৫-৭১৭১৯৮");
+        hashMap.put("upImage", "https://i.postimg.cc/3JHcMyZP/resister-4.png");
+        hashMap.put("upGmail", "habibullah717198@gmail.com");
         hashMap.put("upTimeTitle", "যোগদানের তারিখ");
-        hashMap.put("upTime", "২২ মার্চ ২০১৯");
+        hashMap.put("upTime", "২৪ ফেব্রুয়ারী ২০১৯");
         hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
         hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
         hashMap.put("sectorName", "রেজিস্ট্রার");
         arrayList.add(hashMap);
 
+
+        hashMap = new HashMap<>();
+        hashMap.put("upName", "আকলিমা আক্তার");
+        hashMap.put("upLevel", "অফিস সহায়ক");
+        hashMap.put("upImage", "https://cdn-icons-png.flaticon.com/128/17701/17701311.png");
+        hashMap.put("upNumber", "০১৬৮৬-৯৬৫০০৭");
+        hashMap.put("upGmail", "এই মর্মে জানা যায়নি");
+        hashMap.put("upTimeTitle", "যোগদানের তারিখ");
+        hashMap.put("upTime", "২৪ ফেব্রুয়ারী ২০১৯");
+        hashMap.put("upBatchNo", "ব্যাচ (বিসিএস)");
+        hashMap.put("upBatch", "এই মর্মে জানা যায়নি");
+        hashMap.put("sectorName", "রেজিস্ট্রার");
+        arrayList.add(hashMap);
 
 
 

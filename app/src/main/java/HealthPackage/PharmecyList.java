@@ -28,6 +28,8 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class PharmecyList extends AppCompatActivity {
 
     RecyclerView pharmecyRecyclerView;
@@ -63,26 +65,25 @@ public class PharmecyList extends AppCompatActivity {
     }
 
     private class PharmecyAdapter extends RecyclerView.Adapter{
-
         int Native = 0;
         int Read = 1;
-
-
         private class readHolder extends RecyclerView.ViewHolder{
-            TextView pharmacyTitle,pharmacyName,pharmacyAddress,pharmacySameLineTv;
-            ImageView pharmacyImage;
-            CardView pharmacyCardView,pharmacyDail,pharmacyMessage;
+            TextView amDiverName,amDiverNicName,amItemTitle1,amItemTitle2,amItemTitle3,amPlaceAddress;
+            CircleImageView diverImage;
+            CardView ambCardview,amDiverPhone,amDiverMessage;
 
             public readHolder(@NonNull View itemView) {
                 super(itemView);
-                pharmacyTitle = itemView.findViewById(R.id.pharmacyTitle);
-                pharmacyName = itemView.findViewById(R.id.pharmacyName);
-                pharmacyAddress = itemView.findViewById(R.id.pharmacyAddress);
-                pharmacySameLineTv = itemView.findViewById(R.id.pharmacySameLineTv);
-                pharmacyImage = itemView.findViewById(R.id.pharmacyImage);
-                pharmacyCardView = itemView.findViewById(R.id.pharmacyCardView);
-                pharmacyDail = itemView.findViewById(R.id.pharmacyDail);
-                pharmacyMessage = itemView.findViewById(R.id.pharmacyMessage);
+                amDiverName = itemView.findViewById(R.id.amDiverName);
+                amDiverNicName = itemView.findViewById(R.id.amDiverNicName);
+                amItemTitle1 = itemView.findViewById(R.id.amItemTitle1);
+                amItemTitle2 = itemView.findViewById(R.id.amItemTitle2);
+                amItemTitle3 = itemView.findViewById(R.id.amItemTitle3);
+                amPlaceAddress = itemView.findViewById(R.id.amPlaceAddress);
+                diverImage = itemView.findViewById(R.id.diverImage);
+                ambCardview = itemView.findViewById(R.id.ambCardview);
+                amDiverPhone = itemView.findViewById(R.id.amDiverPhone);
+                amDiverMessage = itemView.findViewById(R.id.amDiverMessage);
 
 
             }
@@ -103,7 +104,7 @@ public class PharmecyList extends AppCompatActivity {
             LayoutInflater layoutInflater = getLayoutInflater();
 
 
-            View view = layoutInflater.inflate(R.layout.pharmacy_item, parent, false);
+            View view = layoutInflater.inflate(R.layout.ambulance_item, parent, false);
             return new readHolder(view);
 //            if (viewType == Read) {
 //                View view = layoutInflater.inflate(R.layout.ambulance_item, parent, false);
@@ -123,45 +124,45 @@ public class PharmecyList extends AppCompatActivity {
             readHolder readHolder = (readHolder) holder;
             hashMap = arrayList.get(position);
             //hashMap = finalArrayList.get(position);
-            String pharmacyTitle  = hashMap.get("pharmacyTitle");
-            String pharmacyName = hashMap.get("pharmacyName");
-            String pharmacyAddress  = hashMap.get("pharmacyAddress");
-            String pharmacyImage = hashMap.get("pharmacyImage");
-            String pharmacySameLineTv  = hashMap.get("pharmacySameLineTv");
+            String name  = hashMap.get("name");
+            String nicName = hashMap.get("nicName");
+            String image  = hashMap.get("image");
             String phone = hashMap.get("phone");
-
-
-            readHolder.pharmacyCardView.startAnimation(AnimationUtils.loadAnimation(readHolder.pharmacyCardView.getContext(),R.anim.recycler_anim03));
-            Picasso.get().load(pharmacyImage).placeholder(R.drawable.doctor).into(readHolder.pharmacyImage);
-
-            readHolder.pharmacyTitle.setText(pharmacyTitle);
-            readHolder.pharmacyName.setText(pharmacyName);
-            readHolder.pharmacyAddress.setText(pharmacyAddress);
-            readHolder.pharmacySameLineTv.setText(pharmacySameLineTv);
+            String title1  = hashMap.get("title1");
+            String title2 = hashMap.get("title2");
+            String title3  = hashMap.get("title3");
+            String address = hashMap.get("address");
 
 
 
+            readHolder.ambCardview.startAnimation(AnimationUtils.loadAnimation(readHolder.ambCardview.getContext(),R.anim.recycler_anim02));
 
-            readHolder.pharmacyDail.setOnClickListener(new View.OnClickListener() {
+            readHolder.amDiverName.setText(name);
+            readHolder.amDiverNicName.setText(nicName);
+            readHolder.amItemTitle1.setText(title1);
+            readHolder.amItemTitle2.setText(title2);
+            readHolder.amItemTitle3.setText(title3);
+            readHolder.amPlaceAddress.setText(address);
+
+            Picasso.get().load(image).placeholder(R.drawable.person).into(readHolder.diverImage);
+
+
+            readHolder.amDiverPhone.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(Intent.ACTION_DIAL);
                     intent.setData(Uri.parse("tel:"+phone));
                     startActivity(intent);
+
                 }
             });
 
-            readHolder.pharmacyMessage.setOnClickListener(new View.OnClickListener() {
+
+            readHolder.amDiverMessage.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                        Intent intent = new Intent(Intent.ACTION_SEND);
-//                        intent = Intent.createChooser(intent,"sms:"+phoneNumber);
-//                        startActivity(intent);
-
-                    Uri uri = Uri.parse("smsto:" + phone);
-
+                    Uri uri = Uri.parse("smsto:" +phone);
                     Intent smsSIntent = new Intent(Intent.ACTION_SENDTO, uri);
-                    // add the message at the sms_body extra field
                     smsSIntent.putExtra("sms_body", body);
                     try{
                         startActivity(smsSIntent);
@@ -171,9 +172,9 @@ public class PharmecyList extends AppCompatActivity {
                         ex.printStackTrace();
                     }
 
-
                 }
             });
+
 
 
 
@@ -218,67 +219,96 @@ public class PharmecyList extends AppCompatActivity {
 //        }
 
     }
+//    private void finalArrayListTable(){
+//
+//        finalArrayList = new ArrayList<>();
+//
+//        for ( int x=0; x<arrayList.size(); x++){
+//
+//            if ( x>1 && x%30==0){
+//                hashMap = new HashMap<>();
+//                hashMap.put("itemType","NativeAd");
+//                finalArrayList.add(hashMap);
+//            }
+//
+//            hashMap = arrayList.get(x);
+//            finalArrayList.add(hashMap);
+//        }
+//
+//    }
 
 
     public void DetailsTable(){
 
         arrayList = new ArrayList<>();
         hashMap = new HashMap<>();
-        hashMap.put("pharmacyTitle","Maa Medical Hol");
-        hashMap.put("pharmacyName","Dr.Alli Hasan Mbbs bsc dhaka Medical");
-        hashMap.put("pharmacyAddress",  "Sirajpur,Companigongetc");
-        hashMap.put("pharmacyImage",  "https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
-        hashMap.put("pharmacySameLineTv",  "pharmecy Relative same lines");
-        hashMap.put("phone",  "01632-243524");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("pharmacyTitle","Maa Medical Hol");
-        hashMap.put("pharmacyName","Dr.Alli Hasan Mbbs bsc dhaka Medical");
-        hashMap.put("pharmacyAddress",  "Sirajpur,Companigongetc");
-        hashMap.put("pharmacyImage",  "https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
-        hashMap.put("pharmacySameLineTv",  "pharmecy Relative same lines");
-        hashMap.put("phone",  "01632-243524");
+        hashMap.put("name","ফার্মেসী");
+        hashMap.put("nicName","মোঃ আবদুল হাকিম মোহন\n"+"রবি আহমেদ স্বরণ");
+        hashMap.put("image","https://cdn-icons-png.flaticon.com/128/9069/9069004.png");
+        hashMap.put("phone","০১৮৬১-১১৭৭১১,০১৮২৯-৮৮২৩৫১");
+        hashMap.put("title1","জনপ্রিয় ফার্মেসী");
+        hashMap.put("title3","সকল প্রকার দেশী-বিদেশী ঔষধ পাইকারী ও খুচরা বিক্রয় করা হয়।");
+        hashMap.put("address","ডি.বি রোড, কানকিরহাট, সেনবাগ, নোয়াখালী।");
         arrayList.add(hashMap);
 
 
+
         hashMap = new HashMap<>();
-        hashMap.put("pharmacyTitle","Maa Medical Hol");
-        hashMap.put("pharmacyName","Dr.Alli Hasan Mbbs bsc dhaka Medical");
-        hashMap.put("pharmacyAddress",  "Sirajpur,Companigongetc");
-        hashMap.put("pharmacyImage",  "https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
-        hashMap.put("pharmacySameLineTv",  "pharmecy Relative same lines");
-        hashMap.put("phone",  "01632-243524");
+        hashMap.put("name","ফার্মেসী");
+        hashMap.put("nicName","মোঃ আবদুল হাকিম মোহন\n"+"রবি আহমেদ স্বরণ");
+        hashMap.put("image","https://cdn-icons-png.flaticon.com/128/9069/9069004.png");
+        hashMap.put("phone","০১৮৬১-১১৭৭১১,০১৮২৯-৮৮২৩৫১");
+        hashMap.put("title1","জনপ্রিয় ফার্মেসী");
+        hashMap.put("title3","সকল প্রকার দেশী-বিদেশী ঔষধ পাইকারী ও খুচরা বিক্রয় করা হয়।");
+        hashMap.put("address","ডি.বি রোড, কানকিরহাট, সেনবাগ, নোয়াখালী।");
         arrayList.add(hashMap);
 
 
+
         hashMap = new HashMap<>();
-        hashMap.put("pharmacyTitle","Maa Medical Hol");
-        hashMap.put("pharmacyName","Dr.Alli Hasan Mbbs bsc dhaka Medical");
-        hashMap.put("pharmacyAddress",  "Sirajpur,Companigongetc");
-        hashMap.put("pharmacyImage",  "https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
-        hashMap.put("pharmacySameLineTv",  "pharmecy Relative same lines");
-        hashMap.put("phone",  "01632-243524");
+        hashMap.put("name","ফার্মেসী");
+        hashMap.put("nicName","মোঃ আবদুল হাকিম মোহন\n"+"রবি আহমেদ স্বরণ");
+        hashMap.put("image","https://cdn-icons-png.flaticon.com/128/9069/9069004.png");
+        hashMap.put("phone","০১৮৬১-১১৭৭১১,০১৮২৯-৮৮২৩৫১");
+        hashMap.put("title1","জনপ্রিয় ফার্মেসী");
+        hashMap.put("title3","সকল প্রকার দেশী-বিদেশী ঔষধ পাইকারী ও খুচরা বিক্রয় করা হয়।");
+        hashMap.put("address","ডি.বি রোড, কানকিরহাট, সেনবাগ, নোয়াখালী।");
         arrayList.add(hashMap);
 
 
+
         hashMap = new HashMap<>();
-        hashMap.put("pharmacyTitle","Maa Medical Hol");
-        hashMap.put("pharmacyName","Dr.Alli Hasan Mbbs bsc dhaka Medical");
-        hashMap.put("pharmacyAddress",  "Sirajpur,Companigongetc");
-        hashMap.put("pharmacyImage",  "https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
-        hashMap.put("pharmacySameLineTv",  "pharmecy Relative same lines");
-        hashMap.put("phone",  "01632-243524");
+        hashMap.put("name","ফার্মেসী");
+        hashMap.put("nicName","মোঃ আবদুল হাকিম মোহন\n"+"রবি আহমেদ স্বরণ");
+        hashMap.put("image","https://cdn-icons-png.flaticon.com/128/9069/9069004.png");
+        hashMap.put("phone","০১৮৬১-১১৭৭১১,০১৮২৯-৮৮২৩৫১");
+        hashMap.put("title1","জনপ্রিয় ফার্মেসী");
+        hashMap.put("title3","সকল প্রকার দেশী-বিদেশী ঔষধ পাইকারী ও খুচরা বিক্রয় করা হয়।");
+        hashMap.put("address","ডি.বি রোড, কানকিরহাট, সেনবাগ, নোয়াখালী।");
         arrayList.add(hashMap);
 
 
+
         hashMap = new HashMap<>();
-        hashMap.put("pharmacyTitle","Maa Medical Hol");
-        hashMap.put("pharmacyName","Dr.Alli Hasan Mbbs bsc dhaka Medical");
-        hashMap.put("pharmacyAddress",  "Sirajpur,Companigongetc");
-        hashMap.put("pharmacyImage",  "https://cdn-icons-png.flaticon.com/128/16146/16146868.png");
-        hashMap.put("pharmacySameLineTv",  "pharmecy Relative same lines");
-        hashMap.put("phone",  "01632-243524");
+        hashMap.put("name","ফার্মেসী");
+        hashMap.put("nicName","মোঃ আবদুল হাকিম মোহন\n"+"রবি আহমেদ স্বরণ");
+        hashMap.put("image","https://cdn-icons-png.flaticon.com/128/9069/9069004.png");
+        hashMap.put("phone","০১৮৬১-১১৭৭১১,০১৮২৯-৮৮২৩৫১");
+        hashMap.put("title1","জনপ্রিয় ফার্মেসী");
+        hashMap.put("title3","সকল প্রকার দেশী-বিদেশী ঔষধ পাইকারী ও খুচরা বিক্রয় করা হয়।");
+        hashMap.put("address","ডি.বি রোড, কানকিরহাট, সেনবাগ, নোয়াখালী।");
+        arrayList.add(hashMap);
+
+
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","ফার্মেসী");
+        hashMap.put("nicName","মোঃ আবদুল হাকিম মোহন\n"+"রবি আহমেদ স্বরণ");
+        hashMap.put("image","https://cdn-icons-png.flaticon.com/128/9069/9069004.png");
+        hashMap.put("phone","০১৮৬১-১১৭৭১১,০১৮২৯-৮৮২৩৫১");
+        hashMap.put("title1","জনপ্রিয় ফার্মেসী");
+        hashMap.put("title3","সকল প্রকার দেশী-বিদেশী ঔষধ পাইকারী ও খুচরা বিক্রয় করা হয়।");
+        hashMap.put("address","ডি.বি রোড, কানকিরহাট, সেনবাগ, নোয়াখালী।");
         arrayList.add(hashMap);
 
 

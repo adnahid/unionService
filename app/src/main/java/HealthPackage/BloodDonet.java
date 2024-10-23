@@ -3,6 +3,7 @@ package HealthPackage;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,7 +20,8 @@ import Blood.BloodSocialMedia;
 public class BloodDonet extends AppCompatActivity {
 
     Toolbar toolbar;
-    CardView donetSearch,socialMediaDonner;
+    CardView donetSearch,socialMediaDonner,
+    donnerCommunication,donnerComete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,8 @@ public class BloodDonet extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         donetSearch = findViewById(R.id.donetSearch);
         socialMediaDonner = findViewById(R.id.socialMediaDonner);
+        donnerCommunication = findViewById(R.id.donnerCommunication);
+        donnerComete = findViewById(R.id.donnerComete);
 
 
         toolbar.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +57,24 @@ public class BloodDonet extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(BloodDonet.this, BloodSocialMedia.class);
                 startActivity(intent);
+            }
+        });
+
+        donnerCommunication.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent intent = new Intent(BloodDonet.this, BloodSocialMedia.class);
+//                startActivity(intent);
+
+                Toast.makeText(BloodDonet.this, "শীঘ্রই আসতেছি", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        donnerComete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(BloodDonet.this, "শীঘ্রই আসতেছি", Toast.LENGTH_SHORT).show();
+
             }
         });
 

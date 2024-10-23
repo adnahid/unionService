@@ -64,7 +64,7 @@ public class Muchapur extends AppCompatActivity {
             public readHolder(@NonNull View itemView) {
                 super(itemView);
                 vathaName = itemView.findViewById(R.id.vathaName);
-                vathaCard = itemView.findViewById(R.id.vathaCard);
+                //vathaCard = itemView.findViewById(R.id.vathaCard);
 
             }
         }
@@ -85,7 +85,7 @@ public class Muchapur extends AppCompatActivity {
             String dName = hashMap.get("name");
 
             //Picasso.get().load(dcImage).placeholder(R.drawable.doctor).into(readHolder.dcImage);
-            readHolder.vathaCard.startAnimation(AnimationUtils.loadAnimation(readHolder.vathaCard.getContext(),R.anim.recycler_anim03));
+            readHolder.vathaName.startAnimation(AnimationUtils.loadAnimation(readHolder.vathaName.getContext(),R.anim.recycler_anim03));
             readHolder.vathaName.setText(dName);
 
 
