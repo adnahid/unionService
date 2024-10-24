@@ -150,9 +150,10 @@
                         >
 
                         <ImageView
+                            android:id="@+id/emergencyCall"
                             android:layout_width="30dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/hospital"
+                            android:src="@drawable/doctor"
                             android:layout_gravity="center_horizontal"
                             android:padding="5dp"
                             />
@@ -222,9 +223,10 @@
                         >
 
                         <ImageView
+                            android:id="@+id/ministryCall"
                             android:layout_width="30dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/hospital"
+                            android:src="@drawable/doctor"
                             android:layout_gravity="center_horizontal"
                             android:padding="5dp"
                             />
@@ -306,9 +308,10 @@
                             >
 
                             <ImageView
+                                android:id="@+id/fireServiceCall"
                                 android:layout_width="30dp"
                                 android:layout_height="40dp"
-                                android:src="@drawable/hospital"
+                                android:src="@drawable/doctor"
                                 android:layout_gravity="center_horizontal"
                                 android:padding="5dp"
                                 />
@@ -375,9 +378,10 @@
                             >
 
                             <ImageView
+                                android:id="@+id/docKidsCall"
                                 android:layout_width="30dp"
                                 android:layout_height="40dp"
-                                android:src="@drawable/hospital"
+                                android:src="@drawable/doctor"
                                 android:layout_gravity="center_horizontal"
                                 android:padding="5dp"
                                 />
@@ -445,9 +449,10 @@
                             >
 
                             <ImageView
+                                android:id="@+id/foodCall"
                                 android:layout_width="30dp"
                                 android:layout_height="40dp"
-                                android:src="@drawable/hospital"
+                                android:src="@drawable/doctor"
                                 android:layout_gravity="center_horizontal"
                                 android:padding="5dp"
                                 />
@@ -523,9 +528,10 @@
                             >
 
                             <ImageView
+                                android:id="@+id/healthShebaCall"
                                 android:layout_width="30dp"
                                 android:layout_height="40dp"
-                                android:src="@drawable/hospital"
+                                android:src="@drawable/doctor"
                                 android:layout_gravity="center_horizontal"
                                 android:padding="5dp"
                                 />
@@ -592,9 +598,10 @@
                             >
 
                             <ImageView
+                                android:id="@+id/emerKidsCall"
                                 android:layout_width="30dp"
                                 android:layout_height="40dp"
-                                android:src="@drawable/hospital"
+                                android:src="@drawable/doctor"
                                 android:layout_gravity="center_horizontal"
                                 android:padding="5dp"
                                 />
@@ -662,9 +669,10 @@
                             >
 
                             <ImageView
+                                android:id="@+id/emeRiverCall"
                                 android:layout_width="30dp"
                                 android:layout_height="40dp"
-                                android:src="@drawable/hospital"
+                                android:src="@drawable/doctor"
                                 android:layout_gravity="center_horizontal"
                                 android:padding="5dp"
                                 />

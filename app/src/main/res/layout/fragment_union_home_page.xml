@@ -59,6 +59,7 @@
 
 
                 <ImageView
+                    android:id="@+id/varthaImage"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/doctor"
@@ -106,6 +107,7 @@
 
 
                 <ImageView
+                    android:id="@+id/mapImage"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/doctor"
@@ -126,6 +128,8 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+
     </LinearLayout>
 
 
@@ -177,6 +181,7 @@
                     android:layout_below="@+id/title2"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_marginTop="3dp"
                     >
 
 
@@ -227,6 +232,7 @@
                                     />
 
                                     <ImageView
+                                        android:id="@+id/upDetailsImage"
                                         android:layout_width="30dp"
                                         android:layout_height="40dp"
                                         android:src="@drawable/doctor"
@@ -237,7 +243,6 @@
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
-
 
 
                         <androidx.cardview.widget.CardView
@@ -275,6 +280,7 @@
                                     />
 
                                 <ImageView
+                                    android:id="@+id/edImage"
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
@@ -291,6 +297,7 @@
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
+
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/animalOfficer"
@@ -327,6 +334,7 @@
                                     />
 
                                 <ImageView
+                                    android:id="@+id/animalImage"
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
@@ -391,6 +399,7 @@
 
 
                                 <ImageView
+                                    android:id="@+id/farmerImage"
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
@@ -400,8 +409,6 @@
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
-
-
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/foodOfficer"
@@ -436,14 +443,15 @@
                                     />
 
 
-
                                 <ImageView
+                                    android:id="@+id/foodImage"
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="3dp"
                                     />
+
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
@@ -483,6 +491,7 @@
 
 
                                 <ImageView
+                                    android:id="@+id/regImage"
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
@@ -540,14 +549,15 @@
                                     />
 
 
-
                                 <ImageView
+                                    android:id="@+id/electionImage"
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="3dp"
                                     />
+
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
@@ -587,12 +597,14 @@
 
 
                                 <ImageView
+                                    android:id="@+id/fishImage"
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="3dp"
                                     />
+
                             </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
@@ -632,6 +644,7 @@
 
 
                                 <ImageView
+                                    android:id="@+id/vumiImage"
                                     android:layout_width="40dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
@@ -1154,7 +1167,7 @@
             </androidx.cardview.widget.CardView>
 
 
-            <androidx.cardview.widget.CardView
+    <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:foreground="?android:attr/selectableItemBackground"
@@ -1536,6 +1549,7 @@
                             />
 
                         <ImageView
+                            android:id="@+id/policeImage"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/doctor"
@@ -1585,6 +1599,7 @@
                             />
 
                         <ImageView
+                            android:id="@+id/jobImage"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/doctor"
@@ -1653,6 +1668,7 @@
                     android:layout_below="@+id/title1"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp"
                     >
 
 
@@ -1699,6 +1715,7 @@
                                 >
 
                                 <ImageView
+                                    android:id="@+id/warFightImage"
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
@@ -1767,6 +1784,7 @@
                                 >
 
                                 <ImageView
+                                    android:id="@+id/postOfficeImage"
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
@@ -1835,6 +1853,7 @@
                                 >
 
                                 <ImageView
+                                    android:id="@+id/pastListImage"
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
@@ -1903,6 +1922,7 @@
                                 >
 
                                 <ImageView
+                                    android:id="@+id/vathaImage"
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
                                     android:src="@drawable/doctor"
@@ -1991,6 +2011,7 @@
                     android:layout_below="@+id/titleSp"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp"
                     >
 
 
@@ -2019,6 +2040,7 @@
 
 
                             <ImageView
+                                android:id="@+id/polyImage"
                                 android:layout_width="30dp"
                                 android:layout_height="40dp"
                                 android:src="@drawable/doctor"
@@ -2065,6 +2087,7 @@
 
 
                             <ImageView
+                                android:id="@+id/fierServiceImage"
                                 android:layout_width="30dp"
                                 android:layout_height="40dp"
                                 android:src="@drawable/doctor"
@@ -2111,6 +2134,7 @@
 
 
                             <ImageView
+                                android:id="@+id/lowerImage"
                                 android:layout_width="30dp"
                                 android:layout_height="40dp"
                                 android:src="@drawable/doctor"
@@ -2157,6 +2181,7 @@
 
 
                             <ImageView
+                                android:id="@+id/writerImage"
                                 android:layout_width="30dp"
                                 android:layout_height="40dp"
                                 android:src="@drawable/doctor"
@@ -2247,6 +2272,7 @@
                                     >
 
                                     <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/hospitalImage"
                                         android:layout_width="40dp"
                                         android:layout_height="40dp"
                                         android:padding="3dp"
@@ -2294,6 +2320,7 @@
                                     >
 
                                     <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/bloodImage"
                                         android:layout_width="40dp"
                                         android:layout_height="40dp"
                                         android:padding="3dp"
@@ -2340,6 +2367,7 @@
                                     >
 
                                     <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/ambulanceImage"
                                         android:layout_width="40dp"
                                         android:layout_height="40dp"
                                         android:padding="3dp"
@@ -2363,6 +2391,8 @@
                                 </LinearLayout>
 
                             </androidx.cardview.widget.CardView>
+
+
                         </LinearLayout>
 
 
@@ -2383,17 +2413,17 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/exit"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="10dp"
-        android:padding="5dp"
-        >
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/exit"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:padding="5dp"-->
+<!--        >-->
 
-    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+<!--    </com.google.android.material.floatingactionbutton.FloatingActionButton>-->
 
 
 </RelativeLayout>

@@ -8,7 +8,7 @@
 
     <item android:id="@+id/probidan2010"
         android:title="2010 Probidan"
-        android:icon="@drawable/exit"
+        android:icon="@drawable/doctor"
         android:iconTint="@color/white"
         android:checkable="true"
         >
@@ -16,7 +16,7 @@
 
         <item android:id="@+id/probidan2016"
             android:title="2016 Probidan"
-            android:icon="@drawable/exit"
+            android:icon="@drawable/doctor"
             android:iconTint="@color/white"
             android:checkable="true"
             >
@@ -24,7 +24,7 @@
 
         <item android:id="@+id/probidan2022"
             android:title="2022 Probidan"
-            android:icon="@drawable/exit"
+            android:icon="@drawable/doctor"
             android:iconTint="@color/white"
             android:checkable="true"
             >

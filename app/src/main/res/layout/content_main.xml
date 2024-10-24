@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="হোম"
-            android:icon="@drawable/exit"
+            android:icon="@drawable/home"
             android:padding="8dp"
             />
 
@@ -76,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="জরুরী"
-            android:icon="@drawable/exit"
+            android:icon="@drawable/emergency_calll"
             android:padding="8dp"
             />
 
@@ -87,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ইউনিয়ন"
-            android:icon="@drawable/exit"
+            android:icon="@drawable/union"
             android:padding="8dp"
             />
 

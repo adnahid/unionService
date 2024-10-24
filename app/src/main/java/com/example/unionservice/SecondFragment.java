@@ -10,6 +10,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import com.squareup.picasso.Picasso;
 
 
 public class SecondFragment extends Fragment {
@@ -27,6 +30,9 @@ public class SecondFragment extends Fragment {
     CardView jathioEmrService,govNews,fireService,femaleAndChildren,vokytha,
             health,chailderHelp,vounna;
 
+    ImageView emergencyCall,ministryCall,fireServiceCall,docKidsCall,
+            foodCall,healthShebaCall,emerKidsCall,emeRiverCall;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -41,6 +47,47 @@ public class SecondFragment extends Fragment {
         health = myView.findViewById(R.id.health);
         chailderHelp = myView.findViewById(R.id.chailderHelp);
         vounna = myView.findViewById(R.id.vounna);
+
+
+        //ImageView
+        emergencyCall = myView.findViewById(R.id.emergencyCall);
+        ministryCall = myView.findViewById(R.id.ministryCall);
+        fireServiceCall = myView.findViewById(R.id.fireServiceCall);
+        docKidsCall = myView.findViewById(R.id.docKidsCall);
+        foodCall = myView.findViewById(R.id.foodCall);
+        healthShebaCall = myView.findViewById(R.id.healthShebaCall);
+        emerKidsCall = myView.findViewById(R.id.emerKidsCall);
+        emeRiverCall = myView.findViewById(R.id.emeRiverCall);
+
+        //ImageUrl
+        String emergencyCallUrl = "https://cdn-icons-png.flaticon.com/128/9747/9747121.png";
+        String ministryCallUrl = "https://cdn-icons-png.flaticon.com/128/3014/3014736.png";
+        String fireServiceCallUrl = "https://cdn-icons-png.flaticon.com/128/12252/12252834.png";
+        String docKidsCallUrl = "https://cdn-icons-png.flaticon.com/128/4278/4278846.png";
+        String foodCallUrl = "https://cdn-icons-png.flaticon.com/128/9434/9434620.png";
+        String healthShebaCallUrl = "https://cdn-icons-png.flaticon.com/128/3195/3195462.png";
+        String emerKidsCallUrl = "https://cdn-icons-png.flaticon.com/128/12570/12570546.png";
+        String emeRiverCallUrl = "https://cdn-icons-png.flaticon.com/128/11483/11483369.png";
+
+
+
+
+
+
+        Picasso.get().load(emergencyCallUrl).placeholder(R.drawable.doctor).into(emergencyCall);
+        Picasso.get().load(ministryCallUrl).placeholder(R.drawable.doctor).into(ministryCall);
+        Picasso.get().load(fireServiceCallUrl).placeholder(R.drawable.doctor).into(fireServiceCall);
+        Picasso.get().load(docKidsCallUrl).placeholder(R.drawable.doctor).into(docKidsCall);
+        Picasso.get().load(foodCallUrl).placeholder(R.drawable.doctor).into(foodCall);
+        Picasso.get().load(healthShebaCallUrl).placeholder(R.drawable.doctor).into(healthShebaCall);
+        Picasso.get().load(emerKidsCallUrl).placeholder(R.drawable.doctor).into(emerKidsCall);
+        Picasso.get().load(emeRiverCallUrl).placeholder(R.drawable.doctor).into(emeRiverCall);
+
+
+
+
+
+
 
 
 

@@ -68,7 +68,7 @@
                     android:id="@+id/doctor_hospitalImage"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/hospital"
+                    android:src="@drawable/doctor"
                     android:layout_marginStart="2dp"
                     android:padding="2dp"
                     />

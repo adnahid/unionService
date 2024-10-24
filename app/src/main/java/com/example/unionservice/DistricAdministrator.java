@@ -30,6 +30,7 @@ public class DistricAdministrator extends AppCompatActivity {
 
     public static String adph = "";
     public static String adgm = "";
+    public static String ToolBarText = "";
 
     ImageView admisImage;
     TextView admisTextTv,admisTextTv2;
@@ -61,6 +62,8 @@ public class DistricAdministrator extends AppCompatActivity {
                 finish();
             }
         });
+
+        toolbar.setTitle(ToolBarText);
 
         admisTextTv.setText(DetailsTv);
         admisTextTv2.setText(DetailsTv2);

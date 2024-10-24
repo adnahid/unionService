@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
@@ -42,6 +43,7 @@ import Upzila.FresherOfficer;
 import Upzila.SubRegisterActivity;
 import Upzila.VumiOfficer;
 import Vatha.VathaThalika;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 
 public class UnionHomePage extends Fragment {
@@ -52,6 +54,13 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         poll,pastTeam,fireOfficer,educationOPfficer,animalOfficer,farmerOfficer,foodOfficer,
         subRegister,electionOffice,fresherOfficer,vumiOfficer,advocate,decumentWritter,vathaThalika,
         meassageItem,mapItem,repoter,internet;
+
+
+ImageView varthaImage,mapImage,upDetailsImage,edImage,animalImage,farmerImage,foodImage,regImage,
+         electionImage,fishImage,vumiImage,policeImage,jobImage,warFightImage,postOfficeImage,pastListImage,
+         vathaImage,polyImage,fierServiceImage,lowerImage,writerImage;
+
+CircleImageView hospitalImage,bloodImage,ambulanceImage;
 
 
 
@@ -69,8 +78,35 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
        View view = inflater.inflate(R.layout.fragment_union_home_page, container, false);
         ImageSlider image_slider = view.findViewById(R.id.image_slider);
 
-        //cardView
+        //ImageView
 
+        varthaImage = view.findViewById(R.id.varthaImage);
+        mapImage = view.findViewById(R.id.mapImage);
+        upDetailsImage = view.findViewById(R.id.upDetailsImage);
+        edImage = view.findViewById(R.id.edImage);
+        animalImage = view.findViewById(R.id.animalImage);
+        farmerImage = view.findViewById(R.id.farmerImage);
+        foodImage = view.findViewById(R.id.foodImage);
+        regImage = view.findViewById(R.id.regImage);
+        electionImage = view.findViewById(R.id.electionImage);
+        fishImage = view.findViewById(R.id.fishImage);
+        vumiImage = view.findViewById(R.id.vumiImage);
+        policeImage = view.findViewById(R.id.policeImage);
+        jobImage = view.findViewById(R.id.jobImage);
+        warFightImage = view.findViewById(R.id.warFightImage);
+        postOfficeImage = view.findViewById(R.id.postOfficeImage);
+        pastListImage = view.findViewById(R.id.pastListImage);
+        vathaImage = view.findViewById(R.id.vathaImage);
+        polyImage = view.findViewById(R.id.polyImage);
+        fierServiceImage = view.findViewById(R.id.fierServiceImage);
+        lowerImage = view.findViewById(R.id.lowerImage);
+        writerImage = view.findViewById(R.id.writerImage);
+        hospitalImage = view.findViewById(R.id.hospitalImage);
+        bloodImage = view.findViewById(R.id.bloodImage);
+        ambulanceImage = view.findViewById(R.id.ambulanceImage);
+
+
+        //cardView
         meassageItem = view.findViewById(R.id.meassageItem);
         mapItem = view.findViewById(R.id.mapItem);
         hospital = view.findViewById(R.id.hospital);
@@ -115,6 +151,8 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
 
 
 
+
+
         //Image Slider
         String url = "https://i.postimg.cc/L4PhmPbL/Yellow-White-Minimalist-Quote-Reminder-Facebook-Post.png";
         String url1st = "https://i.pinimg.com/originals/29/0f/1b/290f1bd21caf451f479d1d5748abb536.jpg";
@@ -138,10 +176,58 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
         image_slider.setImageList(list);
 
 
+        //ImageUrl
+        String varthaUrl = "https://cdn-icons-png.flaticon.com/128/15879/15879869.png";
+        String mapUrl = "https://cdn-icons-png.flaticon.com/128/475/475489.png";
+        String upzilaDetailsUrl = "https://cdn-icons-png.flaticon.com/128/9485/9485469.png";
+        String edUrl = "https://cdn-icons-png.flaticon.com/128/18098/18098163.png";
+        String animationUrl = "https://cdn-icons-png.flaticon.com/128/3900/3900208.png";
+        String farmerUrl = "https://cdn-icons-png.flaticon.com/128/2870/2870898.png";
+        String foodUrl = "https://cdn-icons-png.flaticon.com/128/8441/8441671.png";
+        String subRegUrl = "https://cdn-icons-png.flaticon.com/128/15836/15836711.png";
+        String eleUrl = "https://cdn-icons-png.flaticon.com/128/273/273803.png";
+        String fishUrl = "https://cdn-icons-png.flaticon.com/128/10649/10649497.png";
+        String vumiUrl = "https://cdn-icons-png.flaticon.com/128/10838/10838144.png";
+        String policeUrl = "https://cdn-icons-png.flaticon.com/128/1022/1022382.png";
+        String jobUrl = "https://cdn-icons-png.flaticon.com/128/1503/1503438.png";
+        String fightUrl = "https://cdn-icons-png.flaticon.com/128/16453/16453941.png";
+        String postUrl = "https://cdn-icons-png.flaticon.com/128/6829/6829986.png";
+        String pastPersonUrl = "https://cdn-icons-png.flaticon.com/128/1800/1800170.png";
+        String vathaUrl = "https://cdn-icons-png.flaticon.com/128/2388/2388982.png";
+        String polyUrl = "https://t4.ftcdn.net/jpg/08/75/50/59/240_F_875505924_HZUlVQu8yeXJySS9KDU6K3Qh5ELKs2VS.jpg";
+        String fireUrl = "https://cdn-icons-png.flaticon.com/128/14040/14040690.png";
+        String advocateUrl = "https://cdn-icons-png.flaticon.com/128/2710/2710029.png";
+        String writerUrl = "https://cdn-icons-png.flaticon.com/128/1995/1995627.png";
+        String hosUrl = "https://cdn-icons-png.flaticon.com/128/4320/4320371.png";
+        String donnerUrl = "https://cdn-icons-png.flaticon.com/128/1883/1883495.png";
+        String aumUrl = "https://cdn-icons-png.flaticon.com/128/2955/2955666.png";
 
 
 
-
+        Picasso.get().load(varthaUrl).placeholder(R.drawable.doctor).into(varthaImage);
+        Picasso.get().load(mapUrl).placeholder(R.drawable.doctor).into(mapImage);
+        Picasso.get().load(upzilaDetailsUrl).placeholder(R.drawable.doctor).into(upDetailsImage);
+        Picasso.get().load(edUrl).placeholder(R.drawable.doctor).into(edImage);
+        Picasso.get().load(animationUrl).placeholder(R.drawable.doctor).into(animalImage);
+        Picasso.get().load(farmerUrl).placeholder(R.drawable.doctor).into(farmerImage);
+        Picasso.get().load(foodUrl).placeholder(R.drawable.doctor).into(foodImage);
+        Picasso.get().load(subRegUrl).placeholder(R.drawable.doctor).into(regImage);
+        Picasso.get().load(eleUrl).placeholder(R.drawable.doctor).into(electionImage);
+        Picasso.get().load(fishUrl).placeholder(R.drawable.doctor).into(fishImage);
+        Picasso.get().load(vumiUrl).placeholder(R.drawable.doctor).into(vumiImage);
+        Picasso.get().load(policeUrl).placeholder(R.drawable.doctor).into(policeImage);
+        Picasso.get().load(jobUrl).placeholder(R.drawable.doctor).into(jobImage);
+        Picasso.get().load(fightUrl).placeholder(R.drawable.doctor).into(warFightImage);
+        Picasso.get().load(postUrl).placeholder(R.drawable.doctor).into(postOfficeImage);
+        Picasso.get().load(pastPersonUrl).placeholder(R.drawable.doctor).into(pastListImage);
+        Picasso.get().load(vathaUrl).placeholder(R.drawable.doctor).into(vathaImage);
+        Picasso.get().load(polyUrl).placeholder(R.drawable.doctor).into(polyImage);
+        Picasso.get().load(fireUrl).placeholder(R.drawable.doctor).into(fierServiceImage);
+        Picasso.get().load(advocateUrl).placeholder(R.drawable.doctor).into(lowerImage);
+        Picasso.get().load(writerUrl).placeholder(R.drawable.doctor).into(writerImage);
+        Picasso.get().load(hosUrl).placeholder(R.drawable.doctor).into(hospitalImage);
+        Picasso.get().load(donnerUrl).placeholder(R.drawable.doctor).into(bloodImage);
+        Picasso.get().load(aumUrl).placeholder(R.drawable.doctor).into(ambulanceImage);
 
 
 
@@ -162,6 +248,7 @@ CardView Oyaris,FamilySonod,Carikthik,Unmarried,Married,DeadSonod,Prothoon,
                 DistricAdministrator.DetailsTv = "মাননীয় প্রধানমন্ত্রীর কার্যালয়ে বাসত্মবায়নাধীন সাপোর্ট টু ডিজিটাল বাংলাদেশ (এটুআই) প্রোগ্রাম কর্তৃক জাতীয় পোর্টাল ফ্রেমওয়ার্কের আওতায় জনগণের দোরগোড়ায় বিভিন্ন ই-সেবা নিশ্চিত করার লক্ষে কোম্পানীগঞ্জ উপজেলা ওয়েব পোর্টাল প্রস্ত্তত করা হয়েছে। দিন বদলের সনদ বাস্তবায়নে মাননীয় প্রধানমন্ত্রীর ডিজিটাল বাংলাদেশ গড়ার প্রত্যয়ে তথ্য প্রযুক্তির মাধ্যমে জনগণের দোরগোড়ায় সহজে সেবা ও তথ্য পৌঁছে দেয়ার নিমিত্ত প্রস্ত্ততকৃত কোম্পানীগঞ্জ উপজেলা ওয়েব পোর্টাল জনগণের প্রভূত কল্যান বয়ে আনবে মর্মে আমরা বিশ্বাস করি। কোম্পানীগঞ্জ উপজেলা ওয়েব পোর্টালকে আরো তথ্য বহুল করার লক্ষে সকলের সার্বিক সহযোগিতা কামনা করছি।";
                 DistricAdministrator.DetailsTv2 = "উপজেলা নির্বাহী অফিসার \n কোম্পানীগঞ্জ, নোয়াখালী।";
                 DistricAdministrator.url = "https://file-chittagong.portal.gov.bd/uploads/ad417e95-ec3f-4963-898b-2c409d9a631d//65e/56b/37c/65e56b37c87a3188449437.jpg";
+                DistricAdministrator.ToolBarText = "মহোদয়ের বার্তা";
                 startActivity(intent);
 
             }

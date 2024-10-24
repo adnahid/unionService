@@ -8,14 +8,14 @@
 
     <item android:id="@+id/home"
         android:title="হোম"
-        android:icon="@color/white"
+        android:icon="@drawable/home"
         android:checkable="true"
         >
     </item>
 
     <item android:id="@+id/mySelf"
         android:title="ডেভোলপার"
-        android:icon="@color/white"
+        android:icon="@drawable/developre"
         android:checkable="true"
         >
     </item>
@@ -30,7 +30,7 @@
 
         <item android:id="@+id/appsDetails"
             android:title="অ্যাপস সম্পর্কে"
-            android:icon="@color/white"
+            android:icon="@drawable/details"
             android:checkable="true"
             >
         </item>
@@ -38,14 +38,14 @@
 
         <item android:id="@+id/share"
             android:title="শেয়ার করুন"
-            android:icon="@color/white"
+            android:icon="@drawable/share"
             android:checkable="true"
             >
         </item>
 
         <item android:id="@+id/rate"
             android:title="রিভিউ দিন"
-            android:icon="@color/white"
+            android:icon="@drawable/share"
             android:checkable="true"
             >
         </item>
@@ -58,21 +58,21 @@
         >
         <item android:id="@+id/emailSent"
             android:title="ইমেইল করুন"
-            android:icon="@color/white"
+            android:icon="@drawable/gmail"
             android:checkable="true"
             >
         </item>
 
         <item android:id="@+id/contact"
             android:title="প্রয়োজনে যোগাযোগ"
-            android:icon="@color/white"
+            android:icon="@drawable/communicatin"
             android:checkable="true"
             >
         </item>
 
         <item android:id="@+id/abs"
             android:title="বিজ্ঞাপন দিন"
-            android:icon="@color/white"
+            android:icon="@drawable/adds"
             android:checkable="true"
             >
         </item>
@@ -84,14 +84,14 @@
         >
         <item android:id="@+id/policy"
             android:title="প্রাইভেসি পলিসি"
-            android:icon="@color/white"
+            android:icon="@drawable/policy"
             android:checkable="true"
             >
         </item>
 
         <item android:id="@+id/updateCheak"
             android:title="অ্যাপ আপডেট চেক"
-            android:icon="@color/white"
+            android:icon="@drawable/updatecheck"
             android:checkable="true"
             >
         </item>

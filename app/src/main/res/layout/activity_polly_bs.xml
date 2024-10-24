@@ -167,7 +167,7 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
-                                    android:src="@drawable/hospital"
+                                    android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="5dp"
                                     />
@@ -236,7 +236,7 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
-                                    android:src="@drawable/hospital"
+                                    android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="5dp"
                                     />
@@ -316,7 +316,7 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
-                                    android:src="@drawable/hospital"
+                                    android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="5dp"
                                     />
@@ -386,7 +386,7 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
-                                    android:src="@drawable/hospital"
+                                    android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="5dp"
                                     />
@@ -458,7 +458,7 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
-                                    android:src="@drawable/hospital"
+                                    android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="5dp"
                                     />
@@ -542,7 +542,7 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
-                                    android:src="@drawable/hospital"
+                                    android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="5dp"
                                     />
@@ -612,7 +612,7 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
-                                    android:src="@drawable/hospital"
+                                    android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="5dp"
                                     />
@@ -684,7 +684,7 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="40dp"
-                                    android:src="@drawable/hospital"
+                                    android:src="@drawable/doctor"
                                     android:layout_gravity="center_horizontal"
                                     android:padding="5dp"
                                     />

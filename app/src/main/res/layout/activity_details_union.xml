@@ -73,7 +73,7 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="15dp"
         android:backgroundTint="#673AB7"
-        android:src="@drawable/copy"
+        android:src="@drawable/doctor"
         >
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 

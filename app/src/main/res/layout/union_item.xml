@@ -36,7 +36,7 @@
                     android:id="@+id/unionImage"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/hospital"
+                    android:src="@drawable/doctor"
                     android:layout_gravity="center_horizontal"
                     android:padding="5dp"
                     />

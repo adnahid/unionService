@@ -120,7 +120,7 @@
                             <ImageView
                                 android:layout_width="50dp"
                                 android:layout_height="60dp"
-                                android:src="@drawable/hospital"
+                                android:src="@drawable/doctor"
                                 android:layout_gravity="center_horizontal"
                                 />
 
@@ -236,7 +236,7 @@
                             <ImageView
                                 android:layout_width="50dp"
                                 android:layout_height="60dp"
-                                android:src="@drawable/hospital"
+                                android:src="@drawable/doctor"
                                 android:layout_gravity="center_horizontal"
                                 />
 
@@ -283,7 +283,7 @@
                             <ImageView
                                 android:layout_width="50dp"
                                 android:layout_height="60dp"
-                                android:src="@drawable/hospital"
+                                android:src="@drawable/doctor"
                                 android:layout_gravity="center_horizontal"
                                 />
 
